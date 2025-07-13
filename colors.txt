@@ -1,0 +1,11 @@
+fefce7 white
+c9442d red
+292928 background
+fedb00 yellow
+8052a1 drvier
+407236 emplacement
+63c6c3 nav
+279ab6 support
+34865b teamate
+
+%20 = space in name
