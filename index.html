@@ -8,19 +8,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-<a style="position: fixed;" class="bar-button"  onclick="
-    let it = document.querySelector('.sidebar');
-    it.classList.remove('hidden');
-    it.classList.toggle('slide');
-    it.classList.toggle('slideAway');
-    it.style.webkitAnimation = 'none';
-    it.offsetHeight;
-    it.style.animation = null;
-    main.style.filter  = 'brightness(50%)';">
-       <img src="images/navbarstack.png">
-</a>
-  <div class="sidebar hidden slideAway">
-        <a style="display: block;" class="bar-button" onclick="
+    <a class="bar-button"  onclick="
         let it = document.querySelector('.sidebar');
         it.classList.remove('hidden');
         it.classList.toggle('slide');
@@ -28,15 +16,27 @@
         it.style.webkitAnimation = 'none';
         it.offsetHeight;
         it.style.animation = null;
-        main.style.filter  = 'brightness(100%)'">
+        main.style.filter  = 'brightness(50%)';">
         <img src="images/navbarstack.png">
-        </a>
-        
-        <a href="index.html">Home</a>
-        <a href="pages/interactive.html">Interative</a>
-        <a href="pages/roles.html">Roles</a>
-        <a href="pages/contact.html">Contact</a>
-  </div>
+    </a> <!-- main page burger button-->
+    <div class="sidebar hidden slideAway">
+            <a style="display: block;" class="bar-button" onclick="
+            let it = document.querySelector('.sidebar');
+            it.classList.remove('hidden');
+            it.classList.toggle('slide');
+            it.classList.toggle('slideAway');
+            it.style.webkitAnimation = 'none';
+            it.offsetHeight;
+            it.style.animation = null;
+            main.style.filter  = 'brightness(100%)'">
+            <img src="images/navbarstack.png">
+            </a>
+            <a style="opacity: 0;">hidden</a><!--FIX THIS-->
+            <a href="index.html">Home</a>
+            <a href="pages/interactive.html">Interative</a>
+            <a href="pages/roles.html">Roles</a>
+            <a href="pages/contact.html">Contact</a>
+    </div> <!--sidebar-->
 </a>
     <div id="main">
         

@@ -92,7 +92,7 @@ p, a {
 .bar-button{
     margin: 2vw;
     z-index: 1;
-    display: fixed;
+    position: fixed;
 }
 .sidebar {
     height: 100%;
@@ -101,7 +101,8 @@ p, a {
     z-index: 1; /* Stay on top */
     background-color: #3c3b3d;
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; 
+    transition: 0.5s;
+    outline:#fedb00 solid 7px; 
 }
 
 @keyframes slide {
@@ -134,6 +135,7 @@ p, a {
     color: #fedb00;
     display: block;
     transition: 0.3s;
+    padding: 8px 8px 8px 20px;
 }
 
 .sidebar a:hover {
