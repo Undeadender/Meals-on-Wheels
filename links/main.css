@@ -37,6 +37,7 @@ body{
     margin: 2% auto;
     width:50%;
     display: block;
+    min-width: 450px;
 
 }
 /* Style page content */
@@ -148,7 +149,7 @@ body{
   .sidebar a {font-size: 18px;}
 }
 @media (max-width: 450px) {
-    .download-button-anchor {width:100%;}
+    .download-button-anchor {width:100%;min-width: 0;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}
