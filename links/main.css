@@ -88,21 +88,25 @@ body{
 
 
 .bar-button{
-    margin: 2vw;
+    margin: 3vh;
     z-index: 1;
-    position: fixed;
+    display: block;
+    
+}
+.navbarstack{
+    height: 5vw ;
+    max-height: 36px;
 }
 .sidebar {
     height: 100%;
-    width: 250px;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     background-color: #3c3b3d;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
-    outline:#fedb00 solid 7px; 
+    outline:#fedb00 solid 7px;
+     
 }
-
 @keyframes slide {
     0%      {
       left:-250px;
@@ -133,7 +137,7 @@ body{
     color: #fedb00;
     display: block;
     transition: 0.3s;
-    padding: 8px 8px 8px 20px;
+    padding: 8px 20px;
 }
 
 .sidebar a:hover {
@@ -150,6 +154,7 @@ body{
 }
 @media (max-width: 450px) {
     .download-button-anchor {width:100%;min-width: 0;}
+    .download-button {border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}

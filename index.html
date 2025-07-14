@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-    <a class="bar-button"  onclick="
-        let it = document.querySelector('.sidebar');
+    <a style="position: fixed;" class="bar-button" 
+        onclick="let it = document.querySelector('.sidebar');
         it.classList.remove('hidden');
         it.classList.toggle('slide');
         it.classList.toggle('slideAway');
@@ -18,10 +18,10 @@
         it.offsetHeight;
         it.style.animation = null;
         main.style.filter  = 'brightness(50%)';">
-        <img src="images/navbarstack.png">
+        <img class="navbarstack" src="images/navbarstack.png">
     </a> <!-- main page burger button-->
     <div class="sidebar hidden slideAway">
-            <a style="display: block;" class="bar-button" onclick="
+            <a  style="padding: 0; margin:3vh 0 0 20px ;" class="bar-button" onclick="
             let it = document.querySelector('.sidebar');
             it.classList.remove('hidden');
             it.classList.toggle('slide');
@@ -30,9 +30,8 @@
             it.offsetHeight;
             it.style.animation = null;
             main.style.filter  = 'brightness(100%)'">
-            <img src="images/navbarstack.png">
+            <img class="navbarstack" src="images/navbarstack.png">
             </a>
-            <a style="opacity: 0;">hidden</a><!--FIX THIS-->
             <a href="index.html">Home</a>
             <a href="pages/interactive.html">Interative</a>
             <a href="pages/roles.html">Roles</a>
