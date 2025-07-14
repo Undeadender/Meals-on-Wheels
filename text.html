@@ -1,0 +1,65 @@
+<head>
+    <title>Meals on Wheels</title>
+    <link rel="stylesheet" href="links/main.css">
+    <script src="links/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        @keyframes slide {
+    0%      {
+      left:-250px;
+      display: none;
+  }
+    100%    {
+      left:0px;
+      display:block;
+  }
+}
+.slide, .slideAway {
+    animation-name: slide;
+    animation-timing-function:linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.slideAway {
+    animation-direction:reverse;  
+}
+
+.hidden{
+  display:none
+}
+
+    </style>
+</head>
+
+<body>
+
+<a class="bar-button"  onclick="
+    let it = document.querySelector('#div');
+    it.classList.remove('hidden');
+    it.classList.toggle('slide');
+    it.classList.toggle('slideAway');
+    it.style.webkitAnimation = 'none';
+    it.offsetHeight;
+    it.style.animation = null;
+    openBar()">
+       <img src="images/navbarstack.png">
+</a>
+  <div id="div" class="sidebar hidden slideAway">
+    <a class="bar-button" id="navBar-toggle" onclick="
+        let it = document.querySelector('#div');
+        it.classList.remove('hidden');
+        it.classList.toggle('slide');
+        it.classList.toggle('slideAway');
+        it.style.webkitAnimation = 'none';
+        it.offsetHeight;
+        it.style.animation = null;
+        openBar()">
+        <img src="images/navbarstack.png">
+    </a>
+        <a href="index.html">Home</a>
+        <a href="pages/interactive.html">Interative</a>
+        <a href="pages/roles.html">Roles</a>
+        <a href="pages/contact.html">Contact</a>
+  </div>
+  <p id="main">wdfhwghergwjkafgvnejvbkewdnj</p>
+</body>
