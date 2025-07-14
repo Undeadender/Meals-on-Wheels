@@ -3,36 +3,51 @@
 
 <head>
     <title>Meals on Wheels</title>
-    <link rel="stylesheet" href="Links/main.css">
-    <script src="Links/main.js"></script>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link rel="stylesheet" href="/links/main.css">
+    <script src="/links/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
-<body style="background-color:#292928;">
-    <div class="text-div">
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <a href="/index.html">Home</a>
+        <a href="/pages/interactive.html">Interative</a>
+        <a href="/pages/roles.html">Roles</a>
+        <a href="/pages/contact.html">Contact</a>
+    </div>
+    <p onclick="openBar()" class="bar-button"> <img src="/images/favicon.ico"> </p>
+    <div id="main">
+        
+        
         <p class="title">Meals on Wheels</p>
-        <p>Hosted below is our comprehensive PDF that will teach you how to run the Meals on Wheels strategy.
+      
+        <p class="text">Hosted below is our comprehensive PDF that will teach you how to run the Meals on Wheels strategy.
         <br>Feel free to download and share with your friends!</p>
+            
+        <a class="download-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.2%20SH.pdf">
+            <button class="download-button">Download MoW.PDF (Sharable 5.26MB)</button>
+        </a>
+        
+        <a class="download-button-anchor"target="_blank"href="https://drive.google.com/uc?export=download&id=1QLnqWlrP9_xhcTmYuLZxL2BgXskjrpm0">
+            <button class="download-button">Download Mow.PDF (Full Quality 126MB)</button>
+        </a>
+        
+        <iframe frameBorder="0" scrolling="auto" class="pdf"
+        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.2%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
+        ></iframe>
+        
+            <p class="text">There are several links in the document that will send you to specific clips in the Meals on Wheels Video Companion.
+            <br>Embedded below is the video in it's entirety.
+            <br>If you're new to the strategy, <span style="color:#fedb00">make sure to at least watch the first 3 minutes</span>, the rest is gameplay of MoW in action! </p>
+        
+        <iframe class="video"
+            src="https://www.youtube.com/embed/8yxNORH_Aro"
+        ></iframe>
+        
+        <p class="text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+        
     </div>
-    <a class="download-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.2%20SH.pdf">
-        <button class="download-button">Download MoW.PDF (Sharable 5.26MB)</button>
-    </a>
-    <a class="download-button-anchor"target="_blank"href="https://drive.google.com/uc?export=download&id=1QLnqWlrP9_xhcTmYuLZxL2BgXskjrpm0">
-        <button class="download-button">Download Mow.PDF (Full Quality 126MB)</button>
-    </a>
-    <iframe frameBorder="0" scrolling="auto" class="pdf"
-    src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.2%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
-    ></iframe>
-    <div class="text-div">
-        <p>There are several links in the document that will send you to specific clips in the Meals on Wheels Video Companion.
-        <br>Embedded below is the video in it's entirety.
-        <br>If you're new to the strategy, <span style="color:#fedb00">make sure to at least watch the first 3 minutes</span>, the rest is gameplay of MoW in action! </p>
-    </div>
-    <iframe class="video"
-        src="https://www.youtube.com/embed/8yxNORH_Aro"
-    ></iframe>
-    <div class="text-div">
-        <p>Thanks for your interest in our strategy, have fun!</p>
-    </div>
+
 </body>
 
 </html>
