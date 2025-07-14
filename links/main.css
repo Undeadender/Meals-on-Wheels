@@ -8,23 +8,24 @@
     }
 p, a {
     font-family: "Myriad Pro";
-    font-size: 20px;
     color: #fefce7;
 
     line-height: 2;
+}
+body{ 
+    font-size:120%;
 }
 .download-button {
     background-color:#fedb00;
     border:none;
     height: 40px;
     width: 100%;
-    font-size:18px;
+    font-size:.8em;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s;
     color: black;
     display: inline-block;
-    min-width: 500px;
 } 
 .download-button:hover {
     opacity: .8;
@@ -36,7 +37,6 @@ p, a {
     margin: 2% auto;
     width:50%;
     display: block;
-    min-width: 500px;
 
 }
 /* Style page content */
@@ -80,14 +80,11 @@ p, a {
     text-align: center;
     padding: 7%;
     margin: 0;
-    font-size: 100px;
+    font-size: 5em;
     color: #fedb00;
 
 }
 
-.subtitle{
-    font-size: 40px;
-}
 
 .bar-button{
     margin: 2vw;
@@ -149,4 +146,11 @@ p, a {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+@media (max-width: 450px) {
+    .download-button-anchor {width:100%;}
+    .pdf {width: 100%;}
+    .body {font-size: 100%;}
+    .title {font-size: 2em;}
+
 }
