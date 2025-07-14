@@ -65,7 +65,7 @@ body{
     margin: auto;
     max-width: 1000px;
     display: block;
-    border: #fedb00 7px solid;
+    border: #fedb00 .5vw solid;
 }
 .text{
     margin: 3% auto;
