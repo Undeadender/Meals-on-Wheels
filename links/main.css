@@ -44,7 +44,7 @@ body{
 
 #main {
     transition: .5s;
-    background-color:hsl(0, 0%, 10%);
+    background-color:#1a1a1a;
     outline: 20px solid #fedb00;
     background-size: auto;
     padding-bottom: 2%;
@@ -160,3 +160,8 @@ body{
     .title {font-size: 2em;}
 
 }
+  @media (prefers-color-scheme: dark) {
+       .main {
+         background-color: #1a1a1a; /* Dark background */
+       }
+     }
