@@ -130,7 +130,6 @@ body{
   display:none
 }
 
-/* The navigation menu links */
 .sidebar a {
     text-decoration: none;
     font-size: 25px;
@@ -144,14 +143,23 @@ body{
   color: #ffa600;
 }
 
-
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+.driver-title {
+    color: #8052a1;
+    outline-color: #8052a1;
 }
+
+#driver-main {
+    transition: .5s;
+    background-color:#1a1a1a;
+    outline: 20px solid #8052a1;
+    background-size: auto;
+    padding-bottom: 2%;
+    min-height: 100vh;
+}
+
+
+
+
 @media (max-width: 450px) {
     .download-button-anchor {width:100%;min-width: 0;}
     .download-button {border-radius: 0px;}
@@ -160,8 +168,3 @@ body{
     .title {font-size: 2em;}
 
 }
-  @media (prefers-color-scheme: dark) {
-       .main {
-         background-color: #1a1a1a; /* Dark background */
-       }
-     }
