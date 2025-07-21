@@ -8,20 +8,40 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
-        <a href="../index.html">Home</a>
-        <a href="interactive.html">Interative</a>
-        <a href="roles.html">Roles</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <p onclick="openBar()" class="bar-button"> <img src="../images/navbarstack.png"> </p>
+    <a style="position: fixed;" class="bar-button" 
+        onclick="let it = document.querySelector('.sidebar');
+        it.classList.remove('hidden');
+        it.classList.toggle('slide');
+        it.classList.toggle('slideAway');
+        it.style.webkitAnimation = 'none';
+        it.offsetHeight;
+        it.style.animation = null;
+        main.style.filter  = 'brightness(50%)';">
+        <img class="navbarstack" src="../images/navbarstack.png">
+    </a> <!-- main page burger button-->
+    <div class="sidebar hidden slideAway">
+            <a  style="padding: 0; margin:3vh 0 0 20px ;" class="bar-button" onclick="
+            let it = document.querySelector('.sidebar');
+            it.classList.remove('hidden');
+            it.classList.toggle('slide');
+            it.classList.toggle('slideAway');
+            it.style.webkitAnimation = 'none';
+            it.offsetHeight;
+            it.style.animation = null;
+            main.style.filter  = 'brightness(100%)'">
+            <img class="navbarstack" src="../images/navbarstack.png">
+            </a>
+            <a href="../index.html">Home</a>
+            <a href="interactive.html">Interative</a>
+            <a href="roles.html">Roles</a>
+    </div> <!--sidebar-->
+</a>
     <div id="main">
         
         
-        <p class="title">Broken</p>
-      
-        
+        <p class="title">Coming Soon</p>
+          
+
         
         <p class="text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
         
