@@ -156,6 +156,19 @@ body{
     padding-bottom: 2%;
     min-height: 100vh;
 }
+.nav-title {
+    color: #63c6c3;
+    outline-color: #63c6c3;
+}
+
+#nav-main {
+    transition: .5s;
+    background-color:#1a1a1a;
+    outline: 20px solid #63c6c3;
+    background-size: auto;
+    padding-bottom: 2%;
+    min-height: 100vh;
+}
 
 
 
