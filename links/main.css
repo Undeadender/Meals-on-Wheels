@@ -244,9 +244,5 @@ body{
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}
-    .subtitle {font-size: 1.5em; top: 2.4em;}
-    .loadout {font-size: .7em;}
-    .loadout img{height: 6vh ; }
-    
-
+    .subtitle {font-size: 1.5em; top: 2.4em;} 
 }
