@@ -4,7 +4,7 @@
     font-family:"Myriad Pro";
     font-style:normal;
     font-weight:normal;
-    src : url(../fonts/MyriadPro-Regular.otf);
+    src : url(/Meals-on-Wheels/fonts/MyriadPro-Regular.otf);
     }
 p, a {
     font-family: "Myriad Pro";
@@ -40,12 +40,54 @@ body{
     min-width: 450px;
 
 }
+
+
+
+.role-button {
+    background:none;
+    border:none;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: 0.3s;
+    color: black;
+;
+    display: inline-block;
+    text-align: center;
+} 
+.role-button:hover {
+    opacity: .8;
+}
+.role-button {
+    width: 40%;
+    height: inherit;
+    margin: 3px;
+    cursor: pointer;
+}
+.role-button p {
+    color: #fedb00;
+    font-size:2em;
+    margin: 0;
+}
+.role-button img{
+    width: 100%;
+    display: block;
+}
+.centered-box{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
 /* Style page content */
 
 #main {
     transition: .5s;
-    background-color:#1a1a1a;
     outline: 20px solid #fedb00;
+    background-color:#1a1a1a;
     background-size: auto;
     padding-bottom: 2%;
     min-height: 100vh;
@@ -145,7 +187,6 @@ body{
 
 .driver-title {
     color: #8052a1;
-    outline-color: #8052a1;
 }
 
 #driver-main {
@@ -158,7 +199,6 @@ body{
 }
 .nav-title {
     color: #63c6c3;
-    outline-color: #63c6c3;
 }
 
 #nav-main {
