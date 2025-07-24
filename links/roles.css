@@ -42,3 +42,13 @@
     float:left;
     width: 60%;
 }
+
+.loadout img{
+    float:right;
+    height: 12vh;
+}
+.loadout{
+    display: block;
+    margin: auto;
+    
+}

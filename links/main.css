@@ -74,6 +74,7 @@ body{
     width: 70%;
     text-align: center;
     padding: 1%;
+    clear: both;
 }
 
 .title{
@@ -81,23 +82,29 @@ body{
     background: 100% url('../images/backgroudHQ.png');
     outline:#fedb00 solid 10px;
     text-align: center;
-    padding: 7%;
+    padding: 6%;
     margin: 0;
     font-size: 5em;
     color: #fedb00;
+    line-height: 1;
 }
 .subtitle{
     margin: 0;
     background: 100% url('../images/backgroudHQ.png');
-    outline:#fedb00 solid 4px;
+    outline:#fedb00 solid 3px;
     text-align: center;
-    padding: 1%;
+    padding-top: 4%;
+    padding-bottom: 2%;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #fedb00;
+    position: sticky;
+    top: 1.2em;
+    line-height: 1;
 }
 .subtitle-2{
     margin: 0;
+    padding-top: 25px;
     border:#fedb00 solid;
     border-width: 0 0 3px 0;
     text-align: center;
@@ -106,8 +113,46 @@ body{
     width: 40%;
     font-size: 2em;
     color: #fedb00;
+    display: block;
+    clear: both;
+    line-height: 1;
+}
+.subtitle-3 {
+    margin: 0;
+    border:#fedb00 solid;
+    border-width: 0 0 1.5px 0;
+    text-align: center;
+    margin-left: 2%;
+    width: 25%;
+    font-size: 1.2em;
+    color: #fedb00;
+    display: block;
+    clear: both;
+    line-height: 1;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+    outline:#fedb00 solid 4px;
+    line-height: 1;
+    z-index: 1;
+}
+.header a {
+    display: inline;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fedb00;
+    /*border: #fedb00 solid; */
+    padding:  inherit ;
+    height: inherit;
+    border-width: 0 4px 0 0;
+
+    
+}
 
 .bar-button{
     margin: 3vh;
@@ -123,7 +168,7 @@ body{
     height: 100%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    background-color: #3c3b3d;
+    background-color: #1a1a1a;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
     outline:#fedb00 solid 7px;
@@ -193,11 +238,15 @@ body{
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .download-button-anchor {width:100%;min-width: 0;}
     .download-button {border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}
+    .subtitle {font-size: 1.5em; top: 2.4em;}
+    .loadout {font-size: .7em;}
+    .loadout img{height: 6vh ; }
+    
 
 }
