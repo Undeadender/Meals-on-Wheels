@@ -52,16 +52,9 @@
     margin: auto;
     
 }
-.mobile-text {
-    display: none;
-}
-.desktop-text {
-    display: inline;
-}
+
 
 @media (max-width: 500px) {
-    .mobile-text {display: inline;}
-    .desktop-text {display: none;}
     .loadout {font-size: .6em; }  
     .loadout img{height: 15vh;}
 }
