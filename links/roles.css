@@ -45,16 +45,36 @@
 
 .loadout img{
     float:right;
-    height: 12vh;
+    height: 15vw;
+}
+.outline-img{
+    outline: #fedb00 4px solid;
 }
 .loadout {
     display: block;
     margin: auto;
+    padding-left: 2%;
     
+}
+.sop-video {
+    aspect-ratio: 16/  9;
+    width: 30vw;
+    margin: auto;
+    display: block;
+    border: #fedb00 .2vw solid;
+    float: right;
+}
+.video-text {
+    margin: 3% auto;
+    width: 90%;
+    text-align: center;
+    padding: 1%;
+    clear: both;
 }
 
 
 @media (max-width: 500px) {
     .loadout {font-size: .6em; }  
-    .loadout img{height: 15vh;}
+    .loadout img{height: 20vw;}
+    .sop-video {float: none; width: 70vw;}
 }

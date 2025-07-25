@@ -138,14 +138,16 @@ body{
     margin: 0;
     border:#fedb00 solid;
     border-width: 0 0 1.5px 0;
-    text-align: center;
-    margin-left: 2%;
+    text-align: left;
+    margin-left: 3%;
     width: 25%;
     font-size: 1.2em;
     color: #fedb00;
     display: block;
     clear: both;
     line-height: 1;
+    padding-left: 1.5vw;
+    margin-top: 5vw;
 }
 .text{
     margin: 3% auto;
@@ -175,7 +177,7 @@ body{
 .header a {
     display: inline;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fedb00;
     /*border: #fedb00 solid; */
     padding:  inherit ;
@@ -251,7 +253,10 @@ body{
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}
-    .subtitle {font-size: 1.5em; top: 2.4em;}
+    .subtitle {font-size: 1.2em; top: 2em;}
+    .subtitle-2{font-size: 1.1em; width: 80%;}
     .mobile-text {display: inline;}
     .desktop-text {display: none;}
+    .subtitle-3{ width: 100%; margin-left: 0;}
+    .header {font-size: .8em;}
 }
