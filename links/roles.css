@@ -38,9 +38,14 @@
     gap: 10%;
 }
 
+.levi-info {
+    margin: 5%;
+    overflow: auto;
+}
+
 .levi-info img{
-    float:left;
-    width: 60%;
+    float:right;
+    width: 50%;
 }
 
 .loadout img{
@@ -48,12 +53,16 @@
     height: 15vw;
 }
 .outline-img{
-    outline: #fedb00 4px solid;
+    border: #fedb00 .5vw solid;
+}
+.outline-img-white{
+    border: #fefce7 .5vw solid;
 }
 .loadout {
     display: block;
     margin: auto;
     padding-left: 2%;
+    overflow: auto;
     
 }
 .sop-video {
@@ -67,7 +76,7 @@
 .video-text {
     margin: 3% auto;
     width: 90%;
-    text-align: center;
+    text-align: left;
     padding: 1%;
     clear: both;
 }

@@ -93,7 +93,7 @@ body{
     outline:#fedb00 solid 10px;
     text-align: center;
     padding: 6%;
-    margin: 0;
+    margin-top: .1em;
     font-size: 5em;
     color: #fedb00;
     line-height: 1;
@@ -110,8 +110,7 @@ body{
     background: 100% url('../images/backgroudHQ.png');
     outline:#fedb00 solid 3px;
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    padding: 3%;
     margin: 0;
     font-size: 2.5em;
     color: #fedb00;
@@ -151,9 +150,22 @@ body{
 }
 .text{
     margin: 3% auto;
-    width: 70%;
+    width: 80%;
+    text-align: left;
+    padding: 1%;
+    clear: both;
+}
+.short-text{
+    margin: 3% auto;
+    width: 80%;
     text-align: center;
     padding: 1%;
+    clear: both;
+}
+
+.break {
+    border: solid #fedb00 3px;
+    border-width: 0 0 3px 0; 
     clear: both;
 }
 
@@ -163,6 +175,16 @@ body{
 .desktop-text {
     display: inline;
 }
+
+/* TEXT Colors*/
+.Accent-White {color:#fefce7 ;}
+.Airstrike-Red {color:#c9442d ;}
+.Support-Blue {color:#279ab6 ;}
+.Democracy-Yellow {color:#fedb00 ;}
+.Driver-Purple {color: #8052a1;}
+.Teammate-Green {color:#34865b ;}
+.Nav-Blue {color:#63c6c3 ;}
+
 
 .header {
     position: sticky;
