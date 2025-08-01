@@ -258,11 +258,12 @@ body{
 }
 .side-image iframe {
     float:right;
-    height: 15vw;
+    width: 30vw;
     aspect-ratio: 16/  9;
     margin: auto;
     display: block;
     border: #fedb00 .5vw solid;
+    z-index: 1;
 }
 
 .break {
@@ -373,7 +374,7 @@ body{
 }
 
 .role-seat {
-    height: 40vh;
+    width: 40vw;
     
 }
 
@@ -393,5 +394,5 @@ body{
     .header {font-size: .8em;}
     .glossary {font-size: .7em;}
     .side-image img{height: 25vw;}
-    .side-image iframe{height: 25vw;}
+    .side-image iframe{width: 100%;}
 }
