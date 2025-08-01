@@ -49,7 +49,40 @@ body{
     min-width: 450px;
 
 }
-
+.centered-box{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.centered-box button {
+    font-family: "Myriad Pro";
+    border:none;
+    height: 40px;
+    width: 100%;
+    font-size:.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    display: inline-block;
+} 
+.centered-box button:hover {
+    opacity: .8;
+}
+.centered-box button:active {
+    background-color: #ffa600;
+}
+.glossary{
+    font-family: "Myriad Pro";
+    border:none;
+    font-size:.9em;
+    border-radius: 4px;
+    transition: 0.3s;
+    display: inline-block;
+}
 
 /* Style page content */
 
@@ -129,6 +162,19 @@ body{
     z-index: 1;
     clear: both;
 }
+.subtitle-no-stick{
+    margin: 3% 0 1%;
+    background: 100% url('../images/backgroudHQ.png');
+    outline:#fedb00 solid 3px;
+    text-align: center;
+    padding: 3%;
+    font-size: 2.5em;
+    color: #fedb00;
+    line-height: 1;
+    z-index: 1;
+    clear: both;
+}
+
 .subtitle-2{
     margin: 0;
     padding-top: 25px;
@@ -181,12 +227,42 @@ body{
     padding: 1%;
     clear: both;
 }
+
+
+.warnining-text{
+    margin: 1% auto 3%;
+    width: 80%;
+    text-align: center;
+    padding: 1%;
+    clear: both;
+    outline:#fedb00 solid 6px;
+}
 .short-text{
     margin: 1% auto 3%;
     width: 80%;
     text-align: center;
     padding: 1%;
     clear: both;
+}
+
+.side-image {
+    display: block;
+    margin: auto;
+    padding-left: 2%;
+    overflow: auto;
+    width: 85%;   
+}
+.side-image img{
+    float:right;
+    height: 15vw;
+}
+.side-image iframe {
+    float:right;
+    height: 15vw;
+    aspect-ratio: 16/  9;
+    margin: auto;
+    display: block;
+    border: #fedb00 .5vw solid;
 }
 
 .break {
