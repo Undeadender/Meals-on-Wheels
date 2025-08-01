@@ -391,4 +391,7 @@ body{
     .desktop-text {display: none;}
     .subtitle-3{ width: 100%; margin-left: 0;}
     .header {font-size: .8em;}
+    .glossary {font-size: .7em;}
+    .side-image img{height: 25vw;}
+    .side-image iframe{height: 25vw;}
 }
