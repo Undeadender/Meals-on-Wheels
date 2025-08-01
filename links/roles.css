@@ -37,6 +37,25 @@
     justify-content: center;
     gap: 10%;
 }
+.centered-box button {
+    font-family: "Myriad Pro";
+    border:none;
+    height: 40px;
+    width: 100%;
+    font-size:.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    display: inline-block;
+} 
+.centered-box button:hover {
+    opacity: .8;
+}
+.centered-box button:active {
+    background-color: #ffa600;
+}
+
 
 .levi-info {
     margin: 5%;
@@ -75,6 +94,21 @@
    display: inline;
 }
 
+.image-cluster2{
+   float: inline-start;
+   width: 22vw;
+   text-align: center;
+   color: #fedb00;
+   font-size: 1.6em;
+   
+}
+.image-cluster2 img{
+    border: #fedb00 .5vw solid;
+   max-height: 20vw;
+   max-width: 30vw;
+   display: inline;
+}
+
 .loadout {
     display: block;
     margin: auto;
@@ -96,6 +130,11 @@
     text-align: left;
     padding: 1%;
     clear: both;
+}
+
+#nav-sec, #drive-sec{
+    display: none;
+    
 }
 
 
