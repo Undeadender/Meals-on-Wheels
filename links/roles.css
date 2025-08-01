@@ -125,11 +125,12 @@
     float: right;
 }
 .video-text {
-    margin: 3% auto;
+    margin: 1% auto 3%;
     width: 90%;
     text-align: left;
     padding: 1%;
     clear: both;
+    
 }
 
 #nav-sec, #drive-sec{
