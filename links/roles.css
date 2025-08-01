@@ -55,9 +55,26 @@
 .outline-img{
     border: #fedb00 .5vw solid;
 }
+.outline-img2{
+    border: #fedb00 .5vw solid;
+    width: 30vw;
+}
 .outline-img-white{
     border: #fefce7 .5vw solid;
 }
+.image-cluster{
+   float: inline-start;
+   width: 30vw;
+   text-align: center;
+   
+}
+.image-cluster img{
+    border: #fedb00 .5vw solid;
+   max-height: 20vw;
+   max-width: 30vw;
+   display: inline;
+}
+
 .loadout {
     display: block;
     margin: auto;

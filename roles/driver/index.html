@@ -4,68 +4,151 @@
 <head>
     <title>Driver Role</title>
     <link rel="stylesheet" href="/Meals-on-Wheels/links/main.css">
+    <link rel="stylesheet" href="/Meals-on-Wheels/links/roles.css">
     <script src="links/main.js"></script>
-    <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/driver.ico">
+    <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/driver icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-    <a style="position: fixed;" class="bar-button" 
-        onclick="let it = document.querySelector('.sidebar');
-        it.classList.remove('hidden');
-        it.classList.toggle('slide');
-        it.classList.toggle('slideAway');
-        it.style.webkitAnimation = 'none';
-        it.offsetHeight;
-        it.style.animation = null;
-        main.style.filter  = 'brightness(50%)';">
-        <img class="navbarstack" src="/Meals-on-Wheels/images/navbarstack.png">
-    </a> <!-- main page burger button-->
-    <div class="sidebar hidden slideAway">
-            <a  style="padding: 0; margin:3vh 0 0 20px ;" class="bar-button" onclick="
-            let it = document.querySelector('.sidebar');
-            it.classList.remove('hidden');
-            it.classList.toggle('slide');
-            it.classList.toggle('slideAway');
-            it.style.webkitAnimation = 'none';
-            it.offsetHeight;
-            it.style.animation = null;
-            main.style.filter  = 'brightness(100%)'">
-            <img class="navbarstack" src="/Meals-on-Wheels/images/navbarstack.png">
-            </a>
-            <a href="/Meals-on-Wheels/">Home</a>
-            <a href="/Meals-on-Wheels/interactive/">Interative</a>
-            <a href="/Meals-on-Wheels/roles/">Roles</a>
-    </div> <!--sidebar-->
-</a>
+
     <div id="main">
+        <div class="header">
+            <a href="/Meals-on-Wheels/">Home</a>
+            <a href="/Meals-on-Wheels/interactive/">Interactive</a>
+            <a href="/Meals-on-Wheels/roles/">Roles</a>
+            <a href="/Meals-on-Wheels/roles/sailing-team/"><span class="desktop-text">Sailing Team</span> <span class="mobile-text"> Sailing </span></a>
+        </div>
         
-        
-        <p class="title driver-title">Meals on Wheels</p>
+        <p class="title driver-title">Driver</p>
       
-        <p class="text">Hosted below is our comprehensive PDF that will teach you how to run the Meals on Wheels strategy.
-        <br>Feel free to download and share with your friends!</p>
+        <p class="text">If any role is at the center of MoW, it is the <span class="Teammate-Green">Gunner</span>. You direct the power of the <span class="Support-Blue"> RR</span> to take down Leviathans. 
+            This frees the team from the oppressive area denial effect of these superheavy units. 
+            You are equipped to take hits like a beast, and your Shield Generator Pack is critical to protecting the <span class="Driver-Purple">FRV</span>.</p>
+        
+        <div> <!--GUIDE-->
+            <p class="subtitle">Driving Guide</p>
+                <p class="subtitle-2">Threats</p>  
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Illuminate_Exploding_Barrel.png">
+                        <br>Does damage to passengers while setting them alight</p>
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Harvester_Enemy_Icon.png">
+                        <br>High Damage beam can melt the <span class="Driver-Purple">FRV</span></p>
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Fleshmob_Enemy_Icon.png">
+                        <br>Attacks Can Flip the <span class="Driver-Purple">FRV</span>. Acts as a solid barrier.</p>
+                    <div class="hidden-break"></div>
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Stingray_Enemy_Icon.png">
+                        <br>Can heavily damage the <span class="Driver-Purple">FRV</span> in a single strafe</p>
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Leviathan_Enemy_Icon.png">
+                        <br>Can damage the <span class="Driver-Purple">FRV</span> often popping a tire</p>
+                    <p class="image-cluster"><img src="/Meals-on-Wheels/images/driver/Illuminate_Lightning_Spire.png"
+                        ><img src="/Meals-on-Wheels/images/driver/gayzer.png"><br>These obstacles within outposts, 
+                            the Lighting Spire can wipe a team while the Gazer can heavily damage the <span class="Driver-Purple">FRV</span>. 
+                            Both can be destroyed by <span class="Teammate-Green">Spotter</span> with the <span class="Support-Blue">GL</span> </p>
+                
+                <p class="subtitle-2">Hazards</p>
+                    <p class="subtitle-4">Solid</p>
+                        <p style="text-align: center;" ><img class="outline-img2" src="/Meals-on-Wheels/images/driver/solid/Cant-drive-thu_01.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/solid/Cant-drive-thu_02.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/solid/Cant-drive-thu_03.png">
+                            <br>Solid, no matter the speed: Pristine car (Will explode), Sand bags, Trees.</p>
+                        
+                    <p class="subtitle-4">Weak</p>
+                        <p style="text-align: center;" ><img class="outline-img2" src="/Meals-on-Wheels/images/driver/weak/drive-thu_01.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/weak/drive-thu_02.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/weak/drive-thu_03.png">
+                            <br>All can be driven through at  moderate speeds, but are solid at low speeds: Concreter barrier, Illuminate beacon, Crates.</p>
+                    <p class="subtitle-4">Kill on collision</p>
+                        <p style="text-align: center;" ><img class="outline-img2" src="/Meals-on-Wheels/images/driver/deadly_collision/deadly-collision_01.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/deadly_collision/deadly-collision_02.png">
+                            <br>These will explode, killing passengers: Illuminate batteries only at high speed, Spike bush</p>
+                    <p class="subtitle-4">Illuminate barriers</p>
+                        <p style="text-align: center;" ><img class="outline-img2" src="/Meals-on-Wheels/images/driver/barrier/illminate-barrier_01.png">
+                            <img class="outline-img2"  src="/Meals-on-Wheels/images/driver/barrier/illminate-barrier_02.png">
+                            <br>Can contain Hidden barrels Can be driven through w/o blowing barrels. 
+                            Illuminate can miss and hit a barrel causing, it to explode</p>
+                    <p class="subtitle-4">Destroyed cars</p>
+                        <p style="text-align: center;" ><img class="outline-img2" src="/Meals-on-Wheels/images/driver/destroyed car.png">
+                            <br>Acts as a ramp at low speed. Able to be driven through at high speed but, will push away while driving through it, and explode after</p>
+
+                <p class="subtitle-2">Parking</p>
+                    <p class="short-text">Avoid Parking near barrels. Avoid Parking in an open area. Alleys often work well
+                        <br>If the <span class="Driver-Purple">FRV</span> is damaged or overrun after parking, 
+                        it is better to find a safe place and drop a new one
+                        <br>Park in a position where the <span class="Driver-Purple">HMG</span> turret
+                        is useful if possible, examples below.
+                        <br><img style="height: 30vh;" class="outline-img" src="/Meals-on-Wheels/images/driver/parking.png">
+                        </p>
+                <p class="subtitle-2">General</p>
+                    <p class="short-text">The handbrake can be used to turn the <span class="Driver-Purple">FRV</span> quickly.
+                        It is more important to be in control of the <span class="Driver-Purple">FRV</span> than it is to be fast.
+                        Flipping over or ejecting teammates slows you way down.
+                        Try to keep the map visible to be able to orient yourself.
+                        <br>DO NOT try to be your own <span class="Nav-Blue">Navigator</span>.</p>
+                    <p style="text-align: center;"><img class="outline-img" style="width: 50vw;" src="/Meals-on-Wheels/images/driver/driver info.png">
+                        <img class="outline-img" style="width: 33.9vw;" src="/Meals-on-Wheels/images/driver/map.png">  </p>
+        
+        </div>
             
-        <a class="download-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.3%20SH.pdf">
-            <button class="download-button">Download MoW.PDF (Sharable 5.09MB)</button>
-        </a>
+
+        <div> <!--SOPS-->
+        <p class="subtitle"> Standard Operating Procedures</p>
+
+
+
+        <p class="subtitle-2">Objectives</p>
+        <p class="short-text">Park <span class="Driver-Purple">FRV</span> in a central location that is easy to exit from.
+        </p>
+
+        <p class="subtitle-2">Outpost</p>
+        <p class="video-text" style="overflow: auto;"><iframe class="sop-video" 
+            src="https://www.youtube.com/embed/8yxNORH_Aro?si=30Ji0ajWSthXBtWM&amp;clip=Ugkxcl957sJTrDDhH7xg1bjf-mQSjmYOuyZ5&amp;clipt=EKzsBBj12gc"></iframe>
+            Determine the layout of the outpost, if there are Lightning Spire/barrels, and the number of ships.
+            <br>If there are barrels in the way of the <span class="Driver-Purple">FRV</span>, bring the 
+            <span class="Driver-Purple">FRV</span> to a safe distance and direct <span class="Teammate-Green">Spotter</span> 
+            to shoot the barrel by saying, “<span class="Democracy-Yellow">SPOTTER SHOOT BARREL FRONT/LEFT/RIGHT</span>”.
+            <br>If there are Lightning Spires, direct <span class="Teammate-Green">Spotter</span> to destroy the Lightning Spire by saying, 
+            “<span class="Democracy-Yellow">SPOTTER SHOOT LIGHTNING SPIRE FRONT/LEFT/RIGHT</span>”, while maintaining a safe distance.
+            <br>If the outpost has 1 ship or navigable with <span class="Driver-Purple">FRV</span>, 
+            direct <span class="Teammate-Green">Gunner</span> to shoot a ship saying,
+             ”<span class="Democracy-Yellow">LEFT/RIGHT SIDE STRIP SHIELD</span>”, while <span class="Teammate-Green">Gunner</span> is shooting, 
+            position <span class="Driver-Purple">FRV</span> for a clear door shot at a distance of at least 5m 
+            from the <span class="Teammate-Green">Spotter's</span> <span class="Support-Blue">Grenade Launcher</span>.
+            <br>If <span class="Teammate-Green">Security</span> is <span class="Nav-Blue">Navigator</span>, 
+            you can direct them to destroy a ship while <span class="Teammate-Green">Gunner</span> and 
+            <span class="Teammate-Green">Spotter</span> destroy a ship on the opposing side.
+            <br>If the outpost has 2-3 ships and is impassable with the <span class="Driver-Purple">FRV</span>
+            or is overrun with hostile forces, direct a team member to throw an Orbital Laser at 
+            the outpost without exiting the vehicle.
+            <br>Circle back later if the laser does not destroy all ships.
+        </p>
         
-        <a class="download-button-anchor"target="_blank"href="https://drive.google.com/uc?export=download&id=17zDsseOCelpL6pGOgd5rvf7Yiiv0eG2b">
-            <button class="download-button">Download Mow.PDF (Full Quality 129MB)</button>
-        </a>
         
-        <iframe frameBorder="0" scrolling="auto" class="pdf"
-        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%201.3%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
-        ></iframe>
-        
-        <p class="text">There are several links in the document that will send you to specific clips in the Meals on Wheels Video Companion.
-        <br>Embedded below is the video in it's entirety.
-        <br>If you're new to the strategy, <span style="color:#fedb00">make sure to at least watch the first 3 minutes</span>, the rest is gameplay of MoW in action! </p>
-        
-        <iframe class="video"
-            src="https://www.youtube.com/embed/8yxNORH_Aro"
-        ></iframe>
-        
-        <p class="text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+
+        <p class="subtitle-2">Takedown</p>
+        <p class="video-text" style="overflow: auto;"><iframe class="sop-video" src="https://www.youtube.com/embed/8yxNORH_Aro?si=U01TVE7HkLvsxdy3&amp;clip=UgkxvqNeuq3z1-GEn0bNOkTyG8qxXi1KzjWL&amp;clipt=EPWbAxiK5QQ"></iframe>
+            Allow the team to dismount and park in a location safe from Leviathan nearby, then resume normal role.
+        </p>
+
+        <p class="subtitle-2">Tips</p>
+        <p class="text">
+            Whenever parking the car make it clear you are stopping by saying, “<span class="Democracy-Yellow">OUT</span>”.
+            If in a safe location, <span class="Teammate-Green">Security</span> should drop their <span class="Driver-Purple">FRV</span>
+            before <span class="Teammate-Green">Logistics</span>.
+            When parking drop off squad in advantageous position and park in a safe location ~50m away.
+            Certain Biomes are more difficult to drive on than others, 
+            <br>this is our list of Easiest to most difficult: Mega City (Defense) / Sandy / Arctic / Mega  City (Liberation) / Moor / Swamp / Primordial
+            <br><a href="https://helldivers.wiki.gg/wiki/Biomes">https://helldivers.wiki.gg/wiki/Biomes</a>
+            <br>The rear of the <span class="Driver-Purple">FRV</span> has full cover from the Shield, the sides have half cover,
+             and the front has limited cover (<span class="Teammate-Green">Gunner</span> and 
+             <span class="Nav-Blue">Navigator</span> only).
+            <br>The best way to takedown a leviathan in Transit is to intercept it. 
+            Learn to predict where the Leviathan will be and deploy the Whaling Team there.
+        </p>
+
+        </div>
+
+
+           
+        <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
         
     </div>
 

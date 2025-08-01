@@ -10,56 +10,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-    <a style="position: fixed;" class="bar-button" 
-        onclick="let it = document.querySelector('.sidebar');
-        it.classList.remove('hidden');
-        it.classList.toggle('slide');
-        it.classList.toggle('slideAway');
-        it.style.webkitAnimation = 'none';
-        it.offsetHeight;
-        it.style.animation = null;
-        main.style.filter  = 'brightness(50%)';">
-        <img class="navbarstack" src="/Meals-on-Wheels/images/navbarstack.png">
-    </a> <!-- main page burger button-->
-    <div class="sidebar hidden slideAway">
-            <a  style="padding: 0; margin:3vh 0 0 20px ;" class="bar-button" onclick="
-            let it = document.querySelector('.sidebar');
-            it.classList.remove('hidden');
-            it.classList.toggle('slide');
-            it.classList.toggle('slideAway');
-            it.style.webkitAnimation = 'none';
-            it.offsetHeight;
-            it.style.animation = null;
-            main.style.filter  = 'brightness(100%)'">
-            <img class="navbarstack" src="/Meals-on-Wheels/images/navbarstack.png">
-            </a>
-            <a href="/Meals-on-Wheels/">Home</a>
-            <a href="/Meals-on-Wheels/interactive/">Interative</a>
-            <a href="/Meals-on-Wheels/roles/">Roles</a>
-    </div> <!--sidebar-->
-</a>
     <div id="main">
         
+        <div class="header">
+            <a href="/Meals-on-Wheels/">Home</a>
+            <a href="/Meals-on-Wheels/interactive/">Interactive</a>
+            <a href="/Meals-on-Wheels/roles/">Roles</a>
+        </div>
         
-        <p class="title">Sailing Team(WIP)</p>
-        <p class="text">Since the invasion of Super Earth, the Leviathans have terrorized our citizens and SEAF forces. 
-            The lives of countless Helldivers cut short from these nearly impervious enemies. 
-            As a member of the WHALING TEAM, you will bring the fight to THEM. You will understand your quarry, bringing the might of the RECOILLESS RIFLE to harpoon them from our skies. 
-            No longer will they fly unrestricted through our cities. No longer will our allies fear them. 
-            The Illuminate will know of our victory by the carcasses left in our wake.</p>    
-        <p class="text">Consisting of Gunner and Spotter. 
-            The RR reloading mechanic has the highest damage output in the game; it is their harpoon gun. 
-            With its flexibility, the RR is the perfect candidate to take on the superheavy Illuminate LEVIATHAN. 
-            The Whaling Team will determine the threat level of Leviathans and when to engage them. 
-            They pave the way for the squad and remove this threat from the skies.
+        <p class="title">Sailing Team</p>
+        <p class="text">All through the history of Super Earth, we have coveted the fastest ships of our time. 
+            From the clipper ships of olde, to the FTL Super Destroyers. 
+            In your mission profile, the quickest craft by far is the FAST RECON VEHICLE.
+            <br><br>As a member of the SAILING TEAM, you will be in charge of steering clear of hazards and navigating the ship for safe passage.
+            Your cargo will be Supply Packs and one really pissed-off privateer.
+            <br><br>Deliverance will be your mission.
+            <br><br>Information is your weapon.
+            <br><br>The Illuminate will never know what hit them, and you'll be back in time for tea.</p> 
+        <div class="break"></div>  
+        <p class="text">This includes our <span class="Teammate-Green">Logistics</span> and 
+            <span class="Teammate-Green">Security</span>; one will be designated <span class="Driver-Purple">Driver</span>, 
+            and the other, <span class="Nav-Blue">Navigator</span>. 
+            The <span class="Driver-Purple">FRV</span> will propel you through your mission, it will be your ship. 
+            It is also a focal point for your squad, making it easy to keep everyone together for a speedy getaway. 
+            The Sailing Team gives the <span class="Support-Blue">RR</span> platform rapid deployment, extra security, and longevity through the use of resupplies.
         </p>
+        
+        <div class="break"></div>
+
+        <p class="short-text">Click on an icon bellow to be directed to each sub-roles page</p>
+
         <div class="centered-box"> 
         
+            <div class="role-button"  >
+                <p><span class="Driver-Purple">Driver</span></p>
+                <a target="_self"
+                    href="/Meals-on-Wheels/roles/driver/">
+                    <img src="/Meals-on-Wheels/images/driver icon.png">
+                </a>
+            </div>
             <div class="role-button">
+                <p><span class="Nav-Blue">Navigator</span></p>
+                <a target="_self"
+                    href="/Meals-on-Wheels/roles/navigator/">
+                    <img src="/Meals-on-Wheels/images/Navigator icon.png">
+                </a>
+            </div>
+        </div>
+        <p class="short-text">Click on an icon bellow to be directed to each roles page</p>
+
+        <div class="centered-box"> 
+        
+            <div class="role-button"  >
                 <p>Logistics</p>
                 <a target="_self"
                     href="/Meals-on-Wheels/roles/logistics/">
-                    <img style="margin-top: 20%;" src="/Meals-on-Wheels/images/Logistics icon.png">
+                    <img style="margin-top: 13%;" src="/Meals-on-Wheels/images/Logistics icon.png">
                 </a>
             </div>
             <div class="role-button">
@@ -71,8 +77,7 @@
             </div>
          
         </div>
-        
-        <p class="text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+        <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
         
     </div>
 
