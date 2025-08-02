@@ -274,6 +274,10 @@ body{
 .hidden-break {
     clear: both;
 }
+.mobile-break {
+    clear: both;
+    display: none;
+}
 
 
 /*CHANGE FOR DIFF TEXT*/
@@ -282,6 +286,13 @@ body{
 }
 .desktop-text {
     display: none;
+}
+
+.mobile {
+    display: none;
+}
+.desktop {
+    display: inline;
 }
 
 /* TEXT Colors*/
@@ -390,9 +401,12 @@ body{
     .subtitle-2{font-size: 1.1em; width: 80%;}
     .mobile-text {display: inline;}
     .desktop-text {display: none;}
+    .mobile {display: inline;}
+    .desktop {display: none;}
     .subtitle-3{ width: 100%; margin-left: 0;}
     .header {font-size: .8em;}
     .glossary {font-size: .7em;}
     .side-image img{height: 25vw;}
     .side-image iframe{width: 100%;}
+    .mobile-break {display: block;}
 }

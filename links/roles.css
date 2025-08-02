@@ -86,6 +86,33 @@
     float:right;
     height: 15vw;
 }
+
+.loadout-armor {
+    display: inline;
+    margin: auto;
+    padding-left: 2%;
+    overflow: auto; 
+    float: left;
+    text-align: center;
+    width: 65%;
+}
+.loadout-armor-img {
+    display: inline;
+    margin: auto;
+    overflow: auto; 
+    float: right;
+    text-align: center;
+    font-family: "Myriad Pro";
+    color: #fefce7;
+    line-height: 1.2;
+    font-size: 1.4em;
+}
+.loadout-armor-img img{
+    height: 15vw;
+    display: inline;
+    
+}
+
 .sop-video {
     aspect-ratio: 16/  9;
     width: 30vw;
@@ -108,9 +135,16 @@
     
 }
 
+#weight{
+    clear: both;
+}
 
 @media (max-width: 500px) {
     .loadout {font-size: .6em; }  
     .loadout img{height: 20vw;}
     .sop-video {float: none; width: 70vw;}
+    #weight {clear: none;}
+    .loadout-armor-img {font-size: .9em;}
+
+
 }
