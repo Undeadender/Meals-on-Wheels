@@ -20,3 +20,31 @@ function driveFunction() {
     x.style.display = "none";
   }
 }
+
+function quizFunction(choice, other) {
+  const x = document.getElementById(choice);
+  const y = document.getElementById(other);
+  x.style.display = "block";
+  y.style.display = "none";
+   
+}
+
+function resetquiz() {
+  document.querySelectorAll("[id$='c']").forEach(el => {
+    el.style.display = "block";
+  });
+  const ids = [
+    "spot", "gun", "dlogi", "logi", "dsecu", "secu", 
+    "dexp", "dq", "sda", "gq", "hmch", "sob", 
+    "boom", "secuq", "logiq"
+  ];
+
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.display = "none";
+    }
+  });
+
+}
+
