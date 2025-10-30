@@ -10,5 +10,3 @@ fedb00 yellow
 e68332 link
 
 %20 = space in name
-
-&rsquo; = '

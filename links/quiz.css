@@ -28,7 +28,8 @@
     background-color: #fedb00;
 } 
 .answers button:hover {
-    opacity: .8;
+    background-color: #ffa600;
+
 }
 .answers button:active {
     background-color: #ffa600;
@@ -48,7 +49,9 @@
     background-color: #fedb00;
 } 
 .reset:hover {
-    opacity: .8;
+    opacity: 1;
+    background-color: #ffa600;
+
 }
 .reset:active {
     background-color: #ffa600;

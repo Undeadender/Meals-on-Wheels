@@ -37,7 +37,8 @@ body{
     display: inline-block;
 } 
 .download-button:hover {
-    opacity: .8;
+    opacity: 1;
+    background-color: #ffa600;
 }
 .download-button:active {
     background-color: #ffa600;
@@ -70,7 +71,9 @@ body{
     display: inline-block;
 } 
 .centered-box button:hover {
-    opacity: .8;
+    opacity: 1;
+    background-color: #ffa600;
+
 }
 .centered-box button:active {
     background-color: #ffa600;
