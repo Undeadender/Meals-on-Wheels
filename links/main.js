@@ -21,6 +21,15 @@ function driveFunction() {
   }
 }
 
+function showquiz() {
+  var x = document.getElementById("quiz-sec");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }  
+}
+
 function quizFunction(choice, other) {
   const x = document.getElementById(choice);
   const y = document.getElementById(other);

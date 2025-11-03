@@ -23,7 +23,7 @@ a {
 body{ 
     font-size:120%;
 }
-.download-button {
+.link-button {
     font-family: "Myriad Pro";
     background-color:#fedb00;
     border:none;
@@ -36,14 +36,14 @@ body{
     color: black;
     display: inline-block;
 } 
-.download-button:hover {
+.link-button:hover {
     opacity: 1;
     background-color: #ffa600;
 }
-.download-button:active {
+.link-button:active {
     background-color: #ffa600;
 }
-.download-button-anchor {
+.link-button-anchor {
     margin: 2% auto;
     width:50%;
     display: block;
@@ -69,9 +69,11 @@ body{
     transition: 0.3s;
     color: black;
     display: inline-block;
+    background-color:#fedb00;
+    
 } 
 .centered-box button:hover {
-    opacity: 1;
+    opacity: .8;
     background-color: #ffa600;
 
 }
@@ -395,8 +397,8 @@ body{
 
 
 @media (max-width: 500px) {
-    .download-button-anchor {width:100%;min-width: 0;}
-    .download-button {border-radius: 0px;}
+    .link-button-anchor {width:100%;min-width: 0;}
+    .link-button {border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title {font-size: 2em;}

@@ -5,6 +5,7 @@
     <title>Meals On Wheels</title>
     <link rel="stylesheet" href="/Meals-on-Wheels/links/main.css">
     <link rel="stylesheet" href="/Meals-on-Wheels/links/roles.css">
+    <link rel="stylesheet" href="/Meals-on-Wheels/links/quiz.css">
     <script src="links/main.js"></script>
     <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,19 +19,18 @@
      
     <div class="header">
             <a href="/Meals-on-Wheels/">Home</a>
-            <a href="/Meals-on-Wheels/quiz/">WCSIP?</a>
             <a href="/Meals-on-Wheels/pdf/">PDF</a>
     </div> 
         
         
         <p class="title">Meals on Wheels</p>
         <p class="short-text" style="margin-bottom: 0;">For a more condensed version of content on this site the PDF exists</p>
-        <a style="margin-top: 0; width: 40%;" class="download-button-anchor"target="_self"href="/Meals-on-Wheels/pdf/">
-            <button class="download-button">PDF</button>
+        <a style="margin-top: 0; width: 40%;" class="link-button-anchor"target="_self"href="/Meals-on-Wheels/pdf/">
+            <button class="link-button">PDF</button>
         </a>
 
       
-
+    <div> <!--main text--> 
         <p class="text">As the Illuminate ravages our outer worlds, we take to the streets, in our Jeeps. Shaving valuable minutes off of each operation with the use of the FAST RECON VEHICLE (FRV),
             <br>We will utilize our greatest tech since Roman times -- ROADS.
             <br><br>However, an ominous presence plagues our valiant helldivers in the form of the massive and terrible LEVIATHAN.
@@ -164,12 +164,145 @@
             who sends the goods down range. Embedded to the right is a video of the Resupply Drill. 
             <br>Every MoW operator is well-versed in it. Learn it, love it.
         </p>
-        
+    </div>    
         
     <p class="short-text" style="margin-bottom: 0;">For a quiz on what class should play click the button below</p>
-    <a style="margin-top: 0; width: 40%;" class="download-button-anchor"target="_self"href="/Meals-on-Wheels/quiz/">
-        <button class="download-button">WCSIP?</button>
-    </a>
+    <div class="centered-box">
+            <button onclick="showquiz()">WCSIP?</button>
+    </div>
+
+    <div id="quiz-sec"> <!--QUIZ-->   
+        <p class="subtitle">What Class Should I Play?</p> 
+
+        <button class="reset" onclick="resetquiz()">Reset</button>
+        <div>
+            <p class="question">Have you played MoW before?</p>
+            <div class="answers">
+                <button id="dexpc" onclick="quizFunction('dexp','gqc')">At least once</button>
+                <button id="gqc" onclick="quizFunction('gq','dexpc')">Never have I ever</button>
+            </div>
+        </div>
+        
+        <div id="dexp">
+            <p class="question">Are you an experienced driver?</p>
+            <div class="answers">
+                <button id="dqc" onclick="quizFunction('dq','hmchc')">Hell YES!!</button>
+                <button id="hmchc" onclick="quizFunction('hmch','dqc')">Not really...</button>
+            </div>
+        </div>
+        
+         
+        
+        <div id="dq">
+            <p class="question">Do you want to drive?</p>
+            <div class="answers">
+                <button id="sdac" onclick="quizFunction('sda','hmch2c')">Hell YES!!</button>
+                <button id="hmch2c" onclick="quizFunction('hmch','sdac')">Nope</button>
+            </div>
+        </div>
+        <div id="hmch">
+            <p class="question">How much have you run run MoW?</p>
+            <div class="answers">
+                <button id="sobc" onclick="quizFunction('sob','boomc')">Tons</button>
+                <button id="boomc" onclick="quizFunction('boom','sobc')">A bit</button>
+            </div>
+        </div>
+        <div id="sob">
+            <p class="question">Streetsmart or Booksmart</p>
+            <div class="answers">
+                <button id="spotc" onclick="quizFunction('spot','logic')">Streetsmart</button>
+                <button id="logic" onclick="quizFunction('logi','spotc')">Booksmart</button>
+            </div>
+        </div>
+        <div id="boom">
+            <p class="question">Quality or Quantity of BOOM</p>
+            <div class="answers">
+                <button id="gunc" onclick="quizFunction('gun','secuc')">5 BIG BOOMS</button>
+                <button id="secuc" onclick="quizFunction('secu','gunc')">BOOMS, BOOMS EVERYWHERE</button>
+            </div>
+        </div>
+        <div id="sda">
+            <p class="question">Support or Direct Action?</p>
+            <div class="answers">
+                <button id="dlogic" onclick="quizFunction('dlogi','dsecuc')">Support</button>
+                <button id="dsecuc" onclick="quizFunction('dsecu','dlogic')">Put me in Coach!</button>
+            </div>
+        </div>
+
+        <div id="gq">
+            <p class="question">is Gunner open?</p>
+            <div class="answers">
+                <button id="gun2c" onclick="quizFunction('gun','secuqc')">Yes</button>
+                <button id="secuqc" onclick="quizFunction('secuq','gun2c')">No</button>
+            </div>
+        </div>
+
+
+        <div id="secuq">
+            <p class="question">is Security open?</p>
+            <div class="answers">
+                <button id="secu2c" onclick="quizFunction('secu','logiqc')">Yes</button>
+                <button id="logiqc" onclick="quizFunction('logiq','secu2c')">No</button>
+            </div>
+        </div>
+
+        <div id="logiq">
+            <p class="question">is Logistics open?</p>
+            <div class="answers">
+                <button id="logi2c" onclick="quizFunction('logi','spot2c')">Yes</button>
+                <button id="spot2c" onclick="quizFunction('spot','logi2c')">Godspeed Helldiver</button>
+            </div>
+        </div>
+
+
+        <div id="gun" class="role-button">
+                <p>Gunner</p>
+                <a target="_self"
+                    href="/Meals-on-Wheels/whaling-team/gunner/">
+                    <img src="/Meals-on-Wheels/images/Gunner icon.png">
+                </a>
+            </div>
+        <div id="spot" class="role-button">
+            <p>Spotter</p>
+            <a target="_self"
+                href="/Meals-on-Wheels/whaling-team/spotter/">
+                <img src="/Meals-on-Wheels/images/spotter icon.png">
+            </a>
+        </div>
+
+        <div id="logi" class="role-button"  >
+                <p>Logistics</p>
+                <a target="_self"
+                    href="/Meals-on-Wheels/sailing-team/logistics/">
+                    <img style="margin-top: 13%;" src="/Meals-on-Wheels/images/Logistics icon.png">
+                </a>
+            </div>
+        <div id="secu" class="role-button">
+            <p>Security</p>
+            <a target="_self"
+                href="/Meals-on-Wheels/sailing-team/security/">
+                <img src="/Meals-on-Wheels/images/Sercurity icon.png">
+            </a>
+        </div>
+        <div id="dlogi" class="role-button"  >
+                <p ><span class="Driver-Purple">Driver Logistics</span></p>
+                <a target="_self"
+                    href="/Meals-on-Wheels/sailing-team/logistics/">
+                    <img style="margin-top: 13%;" src="/Meals-on-Wheels/images/Logistics icon.png">
+                </a>
+            </div>
+    
+        <div id="dsecu" class="role-button">
+            <p><span class="Driver-Purple">Driver Security</span></p>
+            <a target="_self"
+                href="/Meals-on-Wheels/sailing-team/security/">
+                <img src="/Meals-on-Wheels/images/Sercurity icon.png">
+            </a>
+        </div>
+    
+    </div>
+
+
         
     <p class="short-text">Click on an icon bellow to be directed to each teams page</p>
     <div class="centered-box"> 

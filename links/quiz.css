@@ -67,6 +67,10 @@
     font-size:1em;
 }
 
+#quiz-sec{
+    display: none;
+}
+
 
 @media (max-width: 500px) {
     .answers button {font-size: .8em;}
