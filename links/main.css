@@ -20,6 +20,16 @@ a {
 }
 
 
+.cascadia-mono-text {
+  font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.75;
+  font-size: 90%;
+}
+
+
 body{ 
     font-size:120%;
 }
@@ -401,7 +411,7 @@ body{
     .link-button {border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
-    .title {font-size: 2em;}
+    .title {font-size: 1.8em;}
     .subtitle {font-size: 1.2em; top: 2em;}
     .subtitle-2{font-size: 1.1em; width: 80%;}
     .mobile-text {display: inline;}
