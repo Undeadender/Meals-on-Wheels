@@ -547,7 +547,7 @@ body{
 
 
 @media (max-width: 500px) {
-    .text, .short-text,.video-text, .warnining-text{font-size: 80%;line-height: 1.7;}
+    .text, .short-text,.video-text, .warnining-text, .levi-info{font-size: 80%;line-height: 1.7;}
     .link-button-anchor {width:100%;min-width: 0;}
     .link-button {border-radius: 0px;}
     .pdf {width: 100%;}
@@ -573,4 +573,5 @@ body{
     .loadout-armor-img {font-size: .7em;}
     .loadout-armor-img img{height: 23vw;}
     .role-button p {font-size: 1em;}
+    .levi-info img{float: none; width: 100%;}
 }
