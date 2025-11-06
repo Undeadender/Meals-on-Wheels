@@ -54,7 +54,7 @@ body{
     background-color: #ffa600;
 }
 .link-button-anchor {
-    margin: 2% auto;
+    margin: 0 auto;
     width:50%;
     display: block;
     min-width: 450px;
@@ -146,6 +146,7 @@ body{
 
 .title{
     margin: 0;
+    margin-bottom: 10px;
     background: 100% url('../images/backgroudHQ.png');
     outline:#fedb00 solid 10px;
     text-align: center;
@@ -167,7 +168,7 @@ body{
     background: 100% url('../images/backgroudHQ.png');
     outline:#fedb00 solid 3px;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     margin: 0;
     font-size: 2.5em;
     color: #fedb00;
@@ -295,13 +296,6 @@ body{
 }
 
 
-/*CHANGE FOR DIFF TEXT*/
-.mobile-text {
-    display: inline;
-}
-.desktop-text {
-    display: none;
-}
 
 .mobile {
     display: none;
@@ -331,11 +325,9 @@ body{
     z-index: 2;
 }
 .header a {
-    display: inline;
     text-decoration: none;
     font-size: 1.2em;
     color: #fedb00;
-    /*border: #fedb00 solid; */
     padding:  inherit ;
     height: inherit;
     border-width: 0 4px 0 0;
@@ -405,8 +397,157 @@ body{
 }
 
 
+.role-button {
+    background:none;
+    border:none;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: 0.3s;
+    color: black;
+    width: 40%;
+    height: inherit;
+    margin: 3px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+} 
+.role-button:hover {
+    opacity: .8;
+}
+.role-button p {
+    color: #fedb00;
+    font-size:2em;
+    margin: 0;
+}
+.role-button img{
+    width: 100%;
+    display: block;
+}
+
+
+.levi-info {
+    margin: 5%;
+    overflow: auto;
+}
+
+.levi-info img{
+    float:right;
+    width: 50%;
+}
+
+
+.outline-img{
+    border: #fedb00 .5vw solid;
+}
+.outline-img2{
+    border: #fedb00 .5vw solid;
+    width: 30vw;
+}
+.outline-img-white{
+    border: #fefce7 .5vw solid;
+}
+.image-cluster{
+   float: inline-start;
+   width: 30vw;
+   text-align: center;
+   
+}
+.image-cluster img{
+    border: #fedb00 .5vw solid;
+   max-height: 20vw;
+   max-width: 30vw;
+   display: inline;
+}
+
+.image-cluster2{
+   float: inline-start;
+   width: 22vw;
+   text-align: center;
+   color: #fedb00;
+   font-size: 1.6em;
+   
+}
+.image-cluster2 img{
+    border: #fedb00 .5vw solid;
+   max-height: 20vw;
+   max-width: 30vw;
+   display: inline;
+}
+
+.loadout {
+    display: block;
+    margin: auto;
+    padding-left: 2%;
+    overflow: auto;   
+}
+.loadout img{
+    float:right;
+    height: 15vw;
+}
+
+.loadout-armor {
+    display: inline;
+    margin: auto;
+    padding-left: 2%;
+    overflow: auto; 
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.gunner-loadout-armor .loadout-armor{
+    width: 73%;
+}
+
+
+
+
+.loadout-armor-img {
+    display: inline;
+    margin: auto;
+    overflow: auto; 
+    float: right;
+    text-align: center;
+    font-family: "Myriad Pro";
+    color: #fefce7;
+    line-height: 1.2;
+    font-size: 1em;
+}
+
+.loadout-armor-img img{
+    height: 10vw;
+    display: inline;
+    
+}
+
+
+.sop-video {
+    aspect-ratio: 16/  9;
+    width: 20vw;
+    margin: auto;
+    display: block;
+    border: #fedb00 .2vw solid;
+    float: right;
+}
+.video-text {
+    margin: 1% auto 3%;
+    width: 90%;
+    text-align: left;
+    padding: 1%;
+    clear: both;
+    
+}
+
+#nav-sec, #drive-sec{
+    display: none;
+    
+}
+
+
 
 @media (max-width: 500px) {
+    .text, .short-text,.video-text, .warnining-text{font-size: 80%;line-height: 1.7;}
     .link-button-anchor {width:100%;min-width: 0;}
     .link-button {border-radius: 0px;}
     .pdf {width: 100%;}
@@ -414,8 +555,6 @@ body{
     .title {font-size: 1.8em;}
     .subtitle {font-size: 1.2em; top: 2em;}
     .subtitle-2{font-size: 1.1em; width: 80%;}
-    .mobile-text {display: inline;}
-    .desktop-text {display: none;}
     .mobile {display: inline;}
     .desktop {display: none;}
     .subtitle-3{ width: 100%; margin-left: 0;}
@@ -424,4 +563,14 @@ body{
     .side-image img{height: 25vw;}
     .side-image iframe{width: 100%;}
     .mobile-break {display: block;}
+    .loadout{font-size: .6em; }
+    .loadout-armor{width: 96%;font-size: .6em;}  
+    .loadout img{height: 20vw;}
+    .sop-video {float: none; width: 60%;}
+    .gunner-loadout-armor .loadout-armor{ width: 66%;}
+    .gunner-loadout-armor .loadout-armor-img{font-size: .7em;}
+    .gunner-loadout-armor .loadout-armor-img img{height: 13vw;}
+    .loadout-armor-img {font-size: .7em;}
+    .loadout-armor-img img{height: 23vw;}
+    .role-button p {font-size: 1em;}
 }
