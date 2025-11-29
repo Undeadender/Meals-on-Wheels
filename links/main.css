@@ -312,7 +312,9 @@ body{
 .Driver-Purple {color: #8052a1;}
 .Teammate-Green {color:#34865b ;}
 .Nav-Blue {color:#63c6c3 ;}
-
+.Shock-Blue {color:#6b63e5 ;}
+.Swarm-Blue {color:#5fd4b5 ;}
+.Bot-Red {color:#631011 ;}
 
 .header {
     position: sticky;
@@ -556,7 +558,7 @@ body{
 .s-title{
     margin: 0;
     margin-bottom: 10px;
-    background: 100% url('../images/backgroudHQ.png');
+    background: 100% url('../images/shock-swarm/backgroundclear.png');
     outline:#631011 solid 10px;
     text-align: center;
     padding: 6%;
