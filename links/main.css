@@ -548,6 +548,81 @@ body{
 
 #reinepual{font-size: .8em;}
 
+
+
+
+/*Shock and Swarm*/
+
+.s-title{
+    margin: 0;
+    margin-bottom: 10px;
+    background: 100% url('../images/backgroudHQ.png');
+    outline:#631011 solid 10px;
+    text-align: center;
+    padding: 6%;
+    margin-top: .1em;
+    font-size: 5em;
+    color: #fefce7;
+    line-height: 1;
+}
+
+#s-main {
+    transition: .5s;
+    outline: 20px solid #631011;
+    background-color:#1a1a1a;
+    background-size: auto;
+    padding-bottom: 2%;
+    min-height: 100vh;
+    
+}
+
+.s-header {
+    position: sticky;
+    top: 0;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+    outline:#631011 solid 4px;
+    line-height: 1;
+    z-index: 2;
+}
+.s-header a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fefce7;
+    padding:  inherit ;
+    height: inherit;
+    border-width: 0 4px 0 0;
+
+    
+}
+.s-link-button {
+    font-family: "Myriad Pro";
+    background-color:#631011;
+    border:none;
+    height: 40px;
+    width: 100%;
+    font-size:.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    display: inline-block;
+    color: #fefce7;
+} 
+.s-link-button:hover {
+    opacity: 1;
+    background-color: #ffa600;
+}
+.s-link-button-anchor {
+    margin: 0 auto;
+    width:50%;
+    display: block;
+    min-width: 450px;
+    
+
+}
+
 @media (max-width: 1150px) {
     /*homepage header sizing*/
     
