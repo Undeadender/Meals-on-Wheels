@@ -614,7 +614,7 @@ body{
 } 
 .s-link-button:hover {
     opacity: 1;
-    background-color: #ffa600;
+    background-color: #970f11;
 }
 .s-link-button-anchor {
     margin: 0 auto;
@@ -675,17 +675,17 @@ body{
 
 @media (max-width: 500px) {
     .text, .short-text,.video-text, .warnining-text, .levi-info, .loadout{font-size: 90%;line-height: 1.8;}
-    .link-button-anchor {width:100%;min-width: 0;}
-    .link-button {border-radius: 0px;}
+    .link-button-anchor, .s-link-button-anchor {width:100%;min-width: 0;}
+    .link-button, .s-link-button{border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
-    .title {font-size: 1.8em;}
+    .title, .s-title{font-size: 1.8em;}
     .subtitle {font-size: 115%; top: 2.4em; line-height: 1.1;}
     .subtitle-2{font-size: 100%; width: 80%;}
     .subtitle-3{ width: 100%; font-size: 95%; margin-left: 0;}
     .mobile {display: inline;}
     .desktop {display: none;}
-    .header {font-size: .8em;}
+    .header, .s-header {font-size: .8em;}
     .glossary {font-size: .7em;}
     .side-image img{height: 25vw;}
     .side-image iframe{width: 100%;}
