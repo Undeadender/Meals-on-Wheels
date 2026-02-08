@@ -568,6 +568,19 @@ body{
     line-height: 1;
 }
 
+.s-subtitle-no-stick{
+    margin: 3% 0 1%;
+    background: 100% url('../images/backgroudHQ.png');
+    outline:#631011 solid 3px;
+    text-align: center;
+    padding: 3%;
+    font-size: 2.5em;
+    color: #fefce7;
+    line-height: 1;
+    z-index: 1;
+    clear: both;
+}
+
 #s-main {
     transition: .5s;
     outline: 20px solid #631011;
@@ -680,7 +693,7 @@ body{
     .pdf {width: 100%;}
     .body {font-size: 100%;}
     .title, .s-title{font-size: 1.8em;}
-    .subtitle {font-size: 115%; top: 2.4em; line-height: 1.1;}
+    .subtitle, .s-subtitle-no-stick, .subtitle-no-stick {font-size: 115%; top: 2.4em; line-height: 1.1;}
     .subtitle-2{font-size: 100%; width: 80%;}
     .subtitle-3{ width: 100%; font-size: 95%; margin-left: 0;}
     .mobile {display: inline;}
