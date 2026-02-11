@@ -1,7 +1,3 @@
-var gunActive = false;
-var spotActive = false;
-var secActive = false;
-var logiActive = false;
 
 
 function navFunction() {
@@ -27,66 +23,98 @@ function driveFunction() {
   }
 }
 
-function showroleinfo(roleSec, driveNavSec) {
-  var a = document.getElementById(roleSec);
-  var b = document.getElementById("drive-sec");
-  var c = document.getElementById("nav-sec");
-  var x = document.getElementById("whale-sec");
-  var y = document.getElementById("sail-sec");
-  
-  if (roleSec === "spot-sec" || roleSec === "gun-sec") {
-    y.style.display = "none";
-    x.style.display = "block";
-  } else {
-    y.style.display = "block";
-    x.style.display = "none";
+const roleIds = [
+  "nav-sec",
+  "drive-sec",
+  "spot-sec",
+  "gun-sec",
+  "sec-sec",
+  "logi-sec",
+  "sail-sec",
+  "whale-sec"
+];
+
+// Toggle a single section
+function toggleSection(sectionId, buttonEl) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+
+  // Toggle visibility
+  const isVisible = window.getComputedStyle(section).display !== "none";
+  section.style.display = isVisible ? "none" : "block";
+
+  // Toggle button color
+  if (buttonEl) buttonEl.classList.toggle("red-toggle", !isVisible);
+
+  // Automatically update Sail/Whale
+  syncDependentSections();
+}
+
+// Show or hide Sail and Whale based on dependencies
+function syncDependentSections() {
+  // Whale: visible if Gunner or Spotter is visible
+  const whale = document.getElementById("whale-sec");
+  const gun = document.getElementById("gun-sec");
+  const spot = document.getElementById("spot-sec");
+  const whaleBtn = document.querySelector("p[data-section='whale-sec']");
+  if (whale) {
+    const showWhale = (gun && window.getComputedStyle(gun).display !== "none") ||
+                       (spot && window.getComputedStyle(spot).display !== "none");
+    whale.style.display = showWhale ? "block" : "none";
+    if (whaleBtn) whaleBtn.classList.toggle("red-toggle", showWhale);
   }
-  if (driveNavSec === "nav-sec") {
-    b.style.display = "none";
-    c.style.display = "block";
-  } else if (driveNavSec === "drive-sec") {
-    b.style.display = "block";
-    c.style.display = "none";
-  } else {
-    b.style.display = "none";
-    c.style.display = "none";
-  }
-  if (a.style.display === "block") {
-    a.style.display = "none";
-  } else {
-    a.style.display = "block";
+
+  // Sail: visible if any of logi, sec, drive, nav are visible
+  const sail = document.getElementById("sail-sec");
+  const sailBtn = document.querySelector("p[data-section='sail-sec']");
+  const dependents = ["logi-sec", "sec-sec", "drive-sec", "nav-sec"].map(id => document.getElementById(id));
+  if (sail) {
+    const showSail = dependents.some(el => el && window.getComputedStyle(el).display !== "none");
+    sail.style.display = showSail ? "block" : "none";
+    if (sailBtn) sailBtn.classList.toggle("red-toggle", showSail);
   }
 }
 
-function showall() {
-  var x = document.getElementById("nav-sec");
-  var y = document.getElementById("drive-sec");
-  var z = document.getElementById("spot-sec");
-  var a = document.getElementById("gun-sec");
-  var b = document.getElementById("sec-sec");
-  var c = document.getElementById("logi-sec");
-  var d = document.getElementById("sail-sec");
-  var e = document.getElementById("whale-sec");
-  if (y.style.display === "block") {
-    y.style.display = "none";
-    x.style.display = "none";
-    z.style.display = "none";
-    a.style.display = "none";
-    b.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "none";
-    e.style.display = "none";
-  } else {
-    y.style.display = "block";
-    x.style.display = "block";
-    z.style.display = "block";
-    a.style.display = "block";
-    b.style.display = "block";
-    c.style.display = "block";
-    d.style.display = "block";
-    e.style.display = "block";
-  }
+// Show all sections
+function showAll() {
+  roleIds.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) section.style.display = "block";
+
+    const button = document.querySelector(`p[data-section='${id}']`);
+    if (button) button.classList.add("red-toggle");
+  });
+
+  syncDependentSections();
+
+  document.getElementById("show-button").style.display = "none";
+  document.getElementById("hide-button").style.display = "inline-block";
 }
+
+// Hide all sections
+function hideAll() {
+  roleIds.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) section.style.display = "none";
+
+    const button = document.querySelector(`p[data-section='${id}']`);
+    if (button) button.classList.remove("red-toggle");
+  });
+
+  syncDependentSections();
+
+  document.getElementById("show-button").style.display = "inline-block";
+  document.getElementById("hide-button").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
 
 function showquiz() {
   var x = document.getElementById("quiz-sec");
@@ -121,6 +149,6 @@ function resetquiz() {
       el.style.display = "none";
     }
   });
-
+  hideAll();
 }
 

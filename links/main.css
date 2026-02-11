@@ -1,5 +1,5 @@
 
-
+/* remove excess styles# */
 @font-face {
     font-family:"Myriad Pro";
     font-style:normal;
@@ -28,7 +28,6 @@ a {
   line-height: 1.75;
   font-size: 90%;
 }
-
 
 body{ 
     font-size:120%;
@@ -60,6 +59,32 @@ body{
     min-width: 450px;
 
 }
+
+.role-centered-box {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;     
+}
+
+.role-centered-box button {
+    font-family: "Myriad Pro";
+    border: none;
+    height: 40px;
+    width: 180px;          /* fixed or min-width — NOT 100% */
+    font-size: .9em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    background-color: #fedb00;
+}
+
 .centered-box{
     margin: auto;
     width: 80%;
@@ -163,22 +188,8 @@ body{
     color: #63c6c3;
 }
 
+
 .subtitle{
-    margin: 0;
-    background: 100% url('../images/backgroudHQ.png');
-    outline:#fedb00 solid 3px;
-    text-align: center;
-    padding: 2%;
-    margin: 0;
-    font-size: 2.5em;
-    color: #fedb00;
-    position: sticky;
-    top: 1.2em;
-    line-height: 1;
-    z-index: 1;
-    clear: both;
-}
-.subtitle-no-stick{
     margin: 3% 0 1%;
     background: 100% url('../images/backgroudHQ.png');
     outline:#fedb00 solid 3px;
@@ -311,10 +322,11 @@ body{
 .Democracy-Yellow {color:#fedb00 ;}
 .Driver-Purple {color: #8052a1;}
 .Teammate-Green {color:#34865b ;}
-.Nav-Blue {color:#63c6c3 ;}
+.Nav-Blue {color:#63c6c3;}
 .Shock-Blue {color:#6b63e5 ;}
 .Swarm-Blue {color:#5fd4b5 ;}
 .Bot-Red {color:#631011 ;}
+.red-toggle { color: red !important; } /* override any class when active */
 
 .header {
     position: sticky;
@@ -400,26 +412,26 @@ body{
 
 
 .role-button {
-    background:none;
-    border:none;
-    width: 100%;
-    height: 100%;
+    background: none;
+    border: none;
     border-radius: 4px;
     transition: 0.3s;
-    color: black;
-    width: 40%;
-    height: inherit;
     margin: 3px;
     cursor: pointer;
-    display: inline-block;
     text-align: center;
-} 
+
+    flex: 1 1 100px;   /* grow shrink base-size */
+    max-width: 300px;  /* prevents giant boxes */
+    min-width: 80px;  /* prevents collapse */
+}
+.role-button.logistics img {
+    margin-top: 10%;
+}
 .role-button:hover {
     opacity: .8;
 }
 .role-button p {
-    color: #fedb00;
-    font-size:2em;
+    font-size: 3vw;
     margin: 0;
 }
 .role-button img{
@@ -462,19 +474,25 @@ body{
    display: inline;
 }
 
-.image-cluster2{
-   float: inline-start;
-   width: 22vw;
-   text-align: center;
-   color: #fedb00;
-   font-size: 1.6em;
-   
+.image-cluster2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers the items horizontally */
+    gap: 2vw; /* space between items */
 }
-.image-cluster2 img{
-    border: #fedb00 .5vw solid;
-   max-height: 20vw;
-   max-width: 30vw;
-   display: inline;
+
+.image-cluster2 {
+    text-align: center;
+    color: #fedb00;
+    font-size: 1.6em;
+}
+
+.image-cluster2 img {
+    border: #fedb00 0.5vw solid;
+    max-height: 20vw;
+    max-width: 30vw;
+    display: block;
+    margin: 0 auto; /* center the image inside its container */
 }
 
 .loadout {
@@ -541,17 +559,22 @@ body{
     
 }
 
-#nav-sec, #drive-sec{
+#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec {
     display: none;
     
 }
+
 
 #sail-head-break { display: none;}
 
 #reinepual{font-size: .8em;}
 
 
-
+#hide-button {
+    display: none;
+    background-color: red;
+    color:#fefce7 ;
+}
 
 /*Shock and Swarm*/
 
