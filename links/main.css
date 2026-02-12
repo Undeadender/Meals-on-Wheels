@@ -272,6 +272,14 @@ body{
     clear: both;
 }
 
+.long-text{
+    margin: 1% auto 3%;
+    width: 80%;
+    text-align: left;
+    padding: 1%;
+    clear: both;
+}
+
 .side-image {
     display: block;
     margin: auto;
@@ -291,6 +299,7 @@ body{
     display: block;
     border: #fedb00 .5vw solid;
     z-index: 1;
+    margin-left: 2%;
 }
 
 .break {
@@ -457,6 +466,7 @@ body{
 .outline-img2{
     border: #fedb00 .5vw solid;
     width: 30vw;
+    height: auto;
 }
 .outline-img-white{
     border: #fefce7 .5vw solid;
@@ -512,7 +522,7 @@ body{
     padding-left: 2%;
     overflow: auto; 
     float: left;
-    text-align: center;
+    text-align: left;
     width: 50%;
 }
 
@@ -558,8 +568,8 @@ body{
     clear: both;
     
 }
-
-#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec {
+/* Sections */
+#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec {
     display: none;
     
 }
