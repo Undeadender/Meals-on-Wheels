@@ -145,7 +145,7 @@ function quizFunction(choice, other) {
 }
 
 function resetquiz() {
-  document.querySelectorAll("[id$='c']").forEach(el => {
+  document.querySelectorAll("[id$='x']").forEach(el => {
     el.style.display = "block";
   });
   const ids = [
