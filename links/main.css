@@ -276,6 +276,7 @@ body{
 .side-image {
     display: block;
     margin: auto;
+    margin-top: 3%;
     padding-left: 2%;
     overflow: auto;
     width: 85%;   
@@ -411,7 +412,7 @@ body{
 }
 
 .role-seat {
-    width: 40vw;
+    width: 30vw;
     
 }
 
@@ -458,12 +459,23 @@ body{
 
 .outline-img{
     border: #fedb00 .5vw solid;
+    
+}
+
+.left-space{
+    margin:0% 0% 0% 1%;
 }
 .outline-img2{
     border: #fedb00 .5vw solid;
     width: 30vw;
     height: auto;
 }
+.outline-img3{
+    border: #fedb00 .5vw solid;
+    width: 20vw;
+    height: auto;
+}
+
 .outline-img-white{
     border: #fefce7 .5vw solid;
 }
@@ -761,7 +773,9 @@ body{
     .mobile-break {display: block;}
     .loadout-armor{font-size: 90%em;}  
     .loadout img{height: 20vw;}
-    
+    .outline-img2{width: 90%;}
+
+
     .gunner-loadout-armor .loadout-armor{ width: 66%;}
     .gunner-loadout-armor .loadout-armor-img{font-size: .7em;}
     .gunner-loadout-armor .loadout-armor-img img{height: 23.2vw;}
