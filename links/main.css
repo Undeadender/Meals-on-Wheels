@@ -272,13 +272,6 @@ body{
     clear: both;
 }
 
-.long-text{
-    margin: 1% auto 3%;
-    width: 80%;
-    text-align: left;
-    padding: 1%;
-    clear: both;
-}
 
 .side-image {
     display: block;
@@ -335,7 +328,10 @@ body{
 .Shock-Blue {color:#6b63e5 ;}
 .Swarm-Blue {color:#5fd4b5 ;}
 .Bot-Red {color:#631011 ;}
-.red-toggle { color: red !important; } /* override any class when active */
+.op-toggle { opacity: .5 !important; } /* override any class when active */
+
+
+
 
 .header {
     position: sticky;
@@ -569,7 +565,7 @@ body{
     
 }
 /* Sections */
-#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec {
+#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, #rolling-sec, #shockswarm-sec, #rolling-sec {
     display: none;
     
 }
@@ -588,10 +584,10 @@ body{
 
 /*Shock and Swarm*/
 
-.s-title{
+.b-title{
     margin: 0;
     margin-bottom: 10px;
-    background: 100% url('../images/shock-swarm/backgroundclear.png');
+    background: 100% url('../images/bot/backgroundclear.png');
     outline:#631011 solid 10px;
     text-align: center;
     padding: 6%;
@@ -601,9 +597,9 @@ body{
     line-height: 1;
 }
 
-.s-subtitle-no-stick{
+.b-subtitle{
     margin: 3% 0 1%;
-    background: 100% url('../images/backgroudHQ.png');
+    background: 100% url('../images/bot/backgroundclear.png');
     outline:#631011 solid 3px;
     text-align: center;
     padding: 3%;
@@ -614,7 +610,7 @@ body{
     clear: both;
 }
 
-#s-main {
+#b-main {
     transition: .5s;
     outline: 20px solid #631011;
     background-color:#1a1a1a;
@@ -624,7 +620,7 @@ body{
     
 }
 
-.s-header {
+.b-header {
     position: sticky;
     top: 0;
     padding: 5px 10px;
@@ -634,7 +630,7 @@ body{
     line-height: 1;
     z-index: 2;
 }
-.s-header a {
+.b-header a {
     text-decoration: none;
     font-size: 1.2em;
     color: #fefce7;
@@ -644,7 +640,7 @@ body{
 
     
 }
-.s-link-button {
+.b-link-button {
     font-family: "Myriad Pro";
     background-color:#631011;
     border:none;
@@ -658,17 +654,44 @@ body{
     display: inline-block;
     color: #fefce7;
 } 
-.s-link-button:hover {
+.b-link-button:hover {
     opacity: 1;
     background-color: #970f11;
 }
-.s-link-button-anchor {
+.b-link-button-anchor {
     margin: 0 auto;
     width:50%;
     display: block;
     min-width: 450px;
     
 
+}
+.b-role-button {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 3px;
+    cursor: pointer;
+    text-align: center;
+    opacity: .5;
+    flex: 1 1 100px;   /* grow shrink base-size */
+    max-width: 300px;  /* prevents giant boxes */
+    min-width: 80px;  /* prevents collapse */
+}
+.b-role-button.logistics img {
+    margin-top: 10%;
+}
+.b-role-button:hover {
+    opacity: .8;
+}
+.b-role-button p {
+    font-size: 3vw;
+    margin: 0;
+}
+.b-role-button img{
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 1150px) {
@@ -721,17 +744,17 @@ body{
 
 @media (max-width: 500px) {
     .text, .short-text,.video-text, .warnining-text, .levi-info, .loadout{font-size: 90%;line-height: 1.8;}
-    .link-button-anchor, .s-link-button-anchor {width:100%;min-width: 0;}
-    .link-button, .s-link-button{border-radius: 0px;}
+    .link-button-anchor, .b-link-button-anchor {width:100%;min-width: 0;}
+    .link-button, .b-link-button{border-radius: 0px;}
     .pdf {width: 100%;}
     .body {font-size: 100%;}
-    .title, .s-title{font-size: 1.8em;}
-    .subtitle, .s-subtitle-no-stick, .subtitle-no-stick {font-size: 115%; top: 2.4em; line-height: 1.1;}
+    .title, .b-title{font-size: 1.8em;}
+    .subtitle, .b-subtitle-no-stick, .subtitle-no-stick {font-size: 115%; top: 2.4em; line-height: 1.1;}
     .subtitle-2{font-size: 100%; width: 80%;}
     .subtitle-3{ width: 100%; font-size: 95%; margin-left: 0;}
     .mobile {display: inline;}
     .desktop {display: none;}
-    .header, .s-header {font-size: .8em;}
+    .header, .b-header {font-size: .8em;}
     .glossary {font-size: .7em;}
     .side-image img{height: 25vw;}
     .side-image iframe{width: 100%;}

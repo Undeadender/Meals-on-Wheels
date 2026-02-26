@@ -23,6 +23,17 @@ function driveFunction() {
   }
 }
 
+function simptoggleSection(sectionId, buttonEl) {
+  const section = document.getElementById(sectionId);
+  const element = document.getElementById(buttonEl);
+  if (section.style.display === "block") {
+  section.style.display = "none";
+  element.style.opacity = "0.5";
+  } else {
+    section.style.display = "block";
+    element.style.opacity = "1";
+  }
+}
 const roleIds = [
   "nav-sec",
   "drive-sec",
@@ -31,7 +42,7 @@ const roleIds = [
   "sec-sec",
   "logi-sec",
   "sail-sec",
-  "whale-sec"
+  "whale-sec",
 ];
 
 // Toggle a single section
@@ -43,8 +54,8 @@ function toggleSection(sectionId, buttonEl) {
   const isVisible = window.getComputedStyle(section).display !== "none";
   section.style.display = isVisible ? "none" : "block";
 
-  // Toggle button color
-  if (buttonEl) buttonEl.classList.toggle("red-toggle", !isVisible);
+  // Invert button color: now op-toggle when hidden
+  if (buttonEl) buttonEl.classList.toggle("op-toggle", isVisible);
 
   // Automatically update Sail/Whale
   syncDependentSections();
@@ -61,7 +72,7 @@ function syncDependentSections() {
     const showWhale = (gun && window.getComputedStyle(gun).display !== "none") ||
                        (spot && window.getComputedStyle(spot).display !== "none");
     whale.style.display = showWhale ? "block" : "none";
-    if (whaleBtn) whaleBtn.classList.toggle("red-toggle", showWhale);
+    if (whaleBtn) whaleBtn.classList.toggle("op-toggle", !showWhale); // inverted
   }
 
   // Sail: visible if any of logi, sec, drive, nav are visible
@@ -71,7 +82,7 @@ function syncDependentSections() {
   if (sail) {
     const showSail = dependents.some(el => el && window.getComputedStyle(el).display !== "none");
     sail.style.display = showSail ? "block" : "none";
-    if (sailBtn) sailBtn.classList.toggle("red-toggle", showSail);
+    if (sailBtn) sailBtn.classList.toggle("op-toggle", !showSail); // inverted
   }
 }
 
@@ -81,8 +92,8 @@ function showAll() {
     const section = document.getElementById(id);
     if (section) section.style.display = "block";
 
-    const button = document.querySelector(`p[data-section='${id}']`);
-    if (button) button.classList.add("red-toggle");
+    const container = document.querySelector(`[data-section='${id}']`)?.parentElement;
+    if (container) container.classList.remove("op-toggle"); // remove from parent div
   });
 
   syncDependentSections();
@@ -97,8 +108,8 @@ function hideAll() {
     const section = document.getElementById(id);
     if (section) section.style.display = "none";
 
-    const button = document.querySelector(`p[data-section='${id}']`);
-    if (button) button.classList.remove("red-toggle");
+    const container = document.querySelector(`[data-section='${id}']`)?.parentElement;
+    if (container) container.classList.add("op-toggle"); // add to parent div
   });
 
   syncDependentSections();

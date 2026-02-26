@@ -2,82 +2,87 @@
 <html>
 
 <head>
-    <title>Shock & Swarm</title>
+    <title>Automaton Strategies</title>
     <link rel="stylesheet" href="/Meals-on-Wheels/links/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Meals-on-Wheels/links/main.js"></script>
-    <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/shock-swarm/shock-swarm.ico">
+    <script src="/Meals-on-Wheels/links/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/bot/justbot.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light">
 </head>
 <body>
 
 
-    <div id="s-main">
-        <div class="s-header">
+    <div id="b-main">
+        <div class="b-header">
             <a href="/Meals-on-Wheels/">Back to MoW</a>
         </div>
-        <p class="s-title">Automaton Strategies</p>
+        <p class="b-title">Automaton Strategies</p>
 
         <p class="short-text" style="margin-bottom: 0;">For pages with just one of the two strategies, click the button below.</p>
         
-        <div class="centered-box">
-            <a  class="s-link-button-anchor"target="_self"href="/Meals-on-Wheels/bot-strats/shock-swarm">
-            <button style="background-color:#631011; color: #fefce7;"  class="s-link-button">Shock and Swarm</button>
-            </a>
-            <a class="s-link-button-anchor"target="_self"href="/Meals-on-Wheels/bot-strats/rolling-thunder/">
-            <button style="background-color:#631011; color: #fefce7;" class="s-link-button">Rolling Thunder</button>
-        </a>
+
+        <div class="role-centered-box"> <!--strats-->
+
+            <!-- shck -->
+            <div id="shockswarm" class="b-role-button">
+                <p  class="Democracy-Yellow" data-section="gun-sec"><span class="Shock-Blue">Shock</span> <span class="Accent-White">and</span> <span class="Swarm-Blue">Swarm</span></p>
+                <a onclick="simptoggleSection('shockswarm-sec','shockswarm')">
+                    <img src="/Meals-on-Wheels/images/bot/bot.png">
+                </a>
+            </div>
+
+            <!-- roll -->
+            <div id="rolling" class="b-role-button">
+                <p  class="Democracy-Yellow" data-section="spot-sec"><span class="Shock-Blue">Rolling</span>  <span class="Swarm-Blue">Thunder</span></p>
+                <a onclick="simptoggleSection('rolling-sec','rolling')">
+                    <img src="/Meals-on-Wheels/images/bot/rolling.png">
+                </a>
+            </div>
+
+            
         </div>
-
         
+        <div id="shockswarm-sec">
+    
+            <p class="b-subtitle"><span class="Shock-Blue">Shock</span> and <span class="Swarm-Blue">Swarm</span></p>
+    
+            <p class="short-text">Hosted below is our comprehensive PDF that will teach you how to run the
+                <span class="Shock-Blue">Shock</span> and <span class="Swarm-Blue">Swarm</span> strategy.
+                <br>It is a two to four player Automaton strategy.
+            <br>Feel free to download and share with your friends!</p>
+    
+            <a class="b-link-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Shock%20and%20Swarm%20rev%201.0%20SH.pdf">
+                <button class="b-link-button">Download Shock and Swarm 1.0 PDF (766KB)</button>
+            </a>
+    
+            <iframe frameBorder="0" scrolling="auto" class="pdf"
+            src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Shock%20and%20Swarm%20rev%201.0%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
+            ></iframe>
+    
+    
+            <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+    
+    
+        </div>
         
-
-        <p class="s-subtitle-no-stick"><span class="Shock-Blue">Shock</span> and <span class="Swarm-Blue">Swarm</span></p>
-      
-        <p class="short-text">Hosted below is our comprehensive PDF that will teach you how to run the 
-            <span class="Shock-Blue">Shock</span> and <span class="Swarm-Blue">Swarm</span> strategy.
-            <br>It is a two to four player Automaton strategy.
-        <br>Feel free to download and share with your friends!</p>
+        <div id="rolling-sec">
+            <p class="b-subtitle"><span class="Shock-Blue">Rolling</span>  <span class="Swarm-Blue">Thunder</span></p>
+            <p class="short-text">Hosted below is our comprehensive PDF that will teach you how to run the
+                <span class="Shock-Blue">Rolling</span>  <span class="Swarm-Blue">Thunder</span> strategy.
+                <br>It is a four player Automaton strategy built around the <span class="Driver-Purple">Bastion</span>.
+            <br>Feel free to download and share with your friends!</p>
             
-        <a class="s-link-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Shock%20and%20Swarm%20rev%201.0%20SH.pdf">
-            <button class="s-link-button">Download Shock and Swarm 1.0 PDF (766KB)</button>
-        </a>
-        
-        <iframe frameBorder="0" scrolling="auto" class="pdf"
-        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Shock%20and%20Swarm%20rev%201.0%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
-        ></iframe>
-        
-
-        <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
-
-        
-        
-        <p class="s-subtitle-no-stick"><span class="Shock-Blue">Rolling</span>  <span class="Swarm-Blue">Thunder</span></p>
-      
-        <p class="short-text">Hosted below is our comprehensive PDF that will teach you how to run the 
-            <span class="Shock-Blue">Rolling</span>  <span class="Swarm-Blue">Thunder</span> strategy.
-            <br>It is a four player Automaton strategy built around the <span class="Driver-Purple">Bastion</span>.
-        <br>Feel free to download and share with your friends!</p>
+            <a class="b-link-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Rolling%20Thunder%20rev%201.0%20SH.pdf">
+                <button class="b-link-button">Download Rolling Thunder 1.0 PDF (766KB)</button>
+            </a>
             
-        <a class="s-link-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Rolling%20Thunder%20rev%201.0%20SH.pdf">
-            <button class="s-link-button">Download Rolling Thunder 1.0 PDF (766KB)</button>
-        </a>
-        
-        <iframe frameBorder="0" scrolling="auto" class="pdf"
-        src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Rolling%20Thunder%20rev%201.0%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
-        ></iframe>
-        
-        <!--<p class="short-text">There are several links in the document that will send you to specific clips in the Meals on Wheels Video Companion.
-        <br>Embedded below is the video in it's entirety.
-        <br>If you're new to the strategy, <span style="color:#fedb00">make sure to at least watch the first 3 minutes</span>, the rest is gameplay of MoW in action! </p>
-        
-        <iframe class="video"
-            src="https://www.youtube.com/embed/8yxNORH_Aro"
-        ></iframe>
-        -->
-        <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
-        
+            <iframe frameBorder="0" scrolling="auto" class="pdf"
+            src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Rolling%20Thunder%20rev%201.0%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
+            ></iframe>
+            <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+            
+        </div>
     </div>
 
 </body>
