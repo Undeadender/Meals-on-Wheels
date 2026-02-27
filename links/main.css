@@ -577,7 +577,8 @@ body{
     
 }
 /* Sections */
-#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, #rolling-sec, #shockswarm-sec, #rolling-sec {
+#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, 
+#rolling-sec, #shockswarm-sec, #pdf-sec,#web-but {
     display: none;
     
 }

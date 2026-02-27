@@ -1,4 +1,32 @@
 
+function showpdf() {
+  var x = document.getElementById("pdf-sec"); 
+  var y = document.getElementById("web-text");
+  var z = document.getElementById("web-but");
+  var w = document.getElementById("pdf-but");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+    w.style.display = "block";
+  } else {  
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+    w.style.display = "none";
+  }
+}
+
+function showToT(buttonEl) {
+  var x = document.getElementById("ToT-sec");
+  var element = buttonEl;
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    element.style.opacity = "0.5"; 
+  } else {
+    x.style.display = "block";
+    element.style.opacity = "1";
+  }}
 
 function navFunction() {
   var x = document.getElementById("nav-sec");
