@@ -1,0 +1,394 @@
+
+.sop-box-title{ 
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 2.5em;
+    margin-top: 1vw;
+    margin-bottom: 0px; 
+    padding-right: 7vw;
+    padding-left: 1vw;
+    padding-bottom: 0;
+    width: max-content;
+    line-height: 1;
+    color: var(--democracy-yellow);
+}
+.sop-box-seat{
+    grid-column: span 4;
+    grid-row: span 3;
+    align-content: center;
+}
+.sop-box-seat-title{
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding-right: 1vw;
+    padding-left: 7vw;
+    padding-bottom: 0;
+    width: max-content;
+    line-height: 1;
+    color: var(--democracy-yellow);
+    text-align: right; 
+    float: right;
+}
+.sop-box-text{
+    padding-left: 1vw;
+    margin-bottom: 0px;
+    margin-top: .3vw;
+    font-size: 1.1em;
+}
+
+.sop-video-box{
+    grid-column: span 4; 
+    aspect-ratio: 16/  9; 
+    width: 80%; 
+    margin: auto; 
+    display: block; 
+    border: var(--democracy-yellow) 7px solid;
+}
+.sop-box{
+    grid-column: span 8;
+}
+
+
+
+
+
+
+
+
+
+.top-grid{
+    background: 100% url('../images/backgroudHQ.png'); 
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    margin: 0; 
+    font-size: 8vw;
+}
+.class-icon-box{
+    grid-column: span 4; 
+    padding: 2vw;
+    border-bottom: 10px solid var(--democracy-yellow);
+    align-content: center;
+}
+.class-icon-box img{
+    width: 35%;
+    display: block;
+}
+.loadout-title-box{
+    grid-column: span 8;
+    border-bottom: 10px solid var(--democracy-yellow);
+    align-content: flex-end;
+}
+.loadout-title-box p{
+    padding-right: 2.5vw;
+    padding-left: 1vw;
+    margin-bottom: 0px;
+    text-align: right;
+    line-height: 1.3;
+    color: var(--democracy-yellow);
+    margin-block-start: 0;
+    
+}
+
+.main-grid{
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    margin: 0; 
+    font-size: 90%;
+    border-bottom: 12px solid var(--democracy-yellow); 
+}
+.stratagem-box{
+    margin-top: 2vw;
+    grid-column: span 3;
+    text-align: center;
+    flex-direction: column; 
+    align-content: center;
+}
+.stratagem-box p{
+    width: 80%;
+    display: inline-block;
+}
+.stratagem-box img{
+    width: 80%
+}
+.stratagem-box-title{
+    font-size: 1.5em;
+    color: var(--democracy-yellow);
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    
+    
+}
+
+.primary-title-box{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    grid-column: span 12; 
+    font-size: 2em;
+    line-height: 1.7;
+
+}    
+.primary-box{
+    border:solid var(--democracy-yellow);
+    border-width:  5px 0 5px 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: span 4;
+    text-align: right;
+    position: relative;
+} 
+.first{/* fixed the extra border on the first box */
+    border-left-width: 0;
+}
+.primary-box-title{
+    text-align: center; 
+    display: block;
+    border-bottom: 5px solid var(--democracy-yellow); 
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.primary-box img{ 
+    border: solid var(--democracy-yellow);
+    border-width: 0 5px 5px 0;
+    height: 7vw; 
+    float: left;
+}
+.primary-box-text {
+    padding-right: .6vw;
+    padding-top: .6vw;
+    margin: 0;
+    display: block;
+    line-height: 1.4;
+    
+}
+.primary-box .weapon-count {
+    position: absolute;
+    color: var(--democracy-yellow);
+    pointer-events: none; 
+    top: 3.5vw;
+    right: 20vw;
+    font-size: 2.5vw; 
+}
+   
+.gr-sc-title-box{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    grid-column: span 6; 
+    font-size: 2em;
+    line-height: 1.7;
+}    
+
+.gr-box{
+    border: solid var(--democracy-yellow);
+    border-width:  5px 0 0 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: span 6;
+    line-height: 1.25;
+    position: relative;
+    display: flex;
+    height: 7vw; 
+}
+
+
+.gr-box-text{
+    margin-left: .3vw;
+    margin-top: .3w;
+    display: block;
+    align-self: center;
+    font-size: clamp(60%, 100%, 100%);
+}
+.gr-box img{
+    height: 7vw; 
+    float: left;
+    border-right: 5px solid var(--democracy-yellow);
+}
+
+.gr-box .weapon-name,
+.gr-box .weapon-count {
+    position: absolute;
+    color: var(--democracy-yellow);
+    pointer-events: none; 
+}
+
+.gr-box .weapon-name {
+    top: 1px;
+    right: 42.5vw;
+    font-size: 1.5vw; 
+    text-align: right;
+}
+
+
+.gr-box .weapon-count {
+    top: 4vw;
+    right: 42.5vw;
+    font-size: 2vw; 
+}
+.gr-box.last-row, .sc-box.last-row{
+    border-bottom-width:  5px;
+}
+
+.sc-box{
+    border: solid var(--democracy-yellow);
+    border-width:  5px 0 0 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: span 6;
+    line-height: 1.25;
+    position: relative;
+    display: flex;
+    height: 7vw; 
+}
+.sc-box-text{
+    margin-left: .3vw;
+    margin-top: .3vw;
+    display: block;
+    align-self: center;
+    font-size: clamp(60%, 100%, 100%);
+}
+.sc-box img{
+    border-right: 5px solid var(--democracy-yellow);
+    height: 7vw; 
+    float: left;
+}
+.sc-box .weapon-name,
+.sc-box .weapon-count {
+    position: absolute;
+    color: var(--democracy-yellow);
+    pointer-events: none; 
+}
+
+.sc-box .weapon-name {
+    top: 1px;
+    right: 36vw;
+    font-size: 1.5vw; 
+    text-align: right;
+}
+
+
+.sc-box .weapon-count {
+    top: 4vw;
+    right: 36vw;
+    font-size: 2vw; 
+}
+
+.armor-text-box{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: span 4;
+    line-height: 1.6;
+    padding-left: 1vw; 
+
+}
+.armor-text-box-title{ /* TITLE */
+    padding-left: 1vw;
+    padding-right: 5vw; 
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 4em;
+}
+.armor-atr-box{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: span 4; 
+    text-align: center;
+}
+.armor-atr-box p{ /*PASSIVE/WEIGHT */
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    flex-direction: column;
+}
+.armor-atr-box div{ /*ATRITBUTE SPACING AND SIZING */
+    display: inline-flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+}
+.armor-atr-box img{
+    width: 100%;
+}
+.armor-atr-box.yellow img {
+    border: 5px solid var(--democracy-yellow);
+}
+.armor-atr-box.white img {
+    border: 5px solid var(--accent-white);
+}
+
+
+.armor-atr-box div p{ /*ATRITBUTE TEXT */
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+}
+.backpack-box{ /*ATRITBUTE SPACING AND SIZING */
+    display: inline-flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: top;
+    grid-column: span 3;
+    border: solid var(--democracy-yellow);
+    border-width: 12px 12px 12px 0;
+   
+}
+
+.backpack-box .top{
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.backpack-box .bottom{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.backpack-box img{
+    width: 60%;
+    border: 5px solid var(--democracy-yellow);
+}
+
+
+.backpack-box.full{
+    border-width: 0 12px 0 0;
+}
+
+.backpack-box.full img{
+    width: 100%;
+    border: none;
+
+}
+.tac-info-box{
+    grid-column: span 9;
+    grid-row: span 2;
+    border-top: 12px solid var(--democracy-yellow);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 1vw;
+}
+.tac-info-box-title{ /*Tac info title */ 
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 3.5em;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding-right: 10vw;
+    padding-left: 1vw;
+    
+}
+
+
+

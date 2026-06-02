@@ -1,3 +1,28 @@
+/* TEXT Color span classses*/
+.Accent-White {color:var(--accent-white) ;}
+.Airstrike-Red {color:var(--airstrike-red) ;}
+.Support-Blue {color:var(--support-blue) ;}
+.Democracy-Yellow {color:var(--democracy-yellow) ;}
+.Driver-Purple {color:var(--driver-purple);}
+.Teammate-Green {color:var(--teammate-green) ;}
+.Nav-Blue {color:var(--nav-blue);}
+.Shock-Blue {color:var(--shock-blue) ;}
+.Swarm-Blue {color:var(--swarm-blue) ;} 
+.Bot-Red {color:var(--bot-red) ;}
+.op-toggle { opacity: .5 !important; } /* override any class when active */
+
+:root {
+    --accent-white: #fefce7;
+    --airstrike-red: #c9442d;
+    --support-blue: #279ab6;
+    --democracy-yellow: #fedb00;
+    --driver-purple: #8052a1;
+    --teammate-green: #34865b;
+    --nav-blue: #63c6c3;
+    --shock-blue: #6b63e5;
+    --swarm-blue: #5fd4b5;
+    --bot-red: #631011;
+}
 
 /* remove excess styles# */
 @font-face {
@@ -8,15 +33,15 @@
     }
 p {
     font-family: "Myriad Pro";
-    color: #fefce7;
+    color: var(--accent-white);
 
-    line-height: 2;
+    line-height: 1.5;
 }
 a {
     color: #e68332;
     font-family: "Myriad Pro";
 
-    line-height: 2;
+    line-height: 1.5;
 }
 
 
@@ -34,7 +59,7 @@ body{
 }
 .link-button {
     font-family: "Myriad Pro";
-    background-color:#fedb00;
+    background-color:var(--democracy-yellow);
     border:none;
     height: 40px;
     width: 100%;
@@ -82,7 +107,7 @@ body{
     cursor: pointer;
     transition: 0.3s;
     color: black;
-    background-color: #fedb00;
+    background-color: var(--democracy-yellow);
 }
 
 .centered-box{
@@ -104,7 +129,7 @@ body{
     transition: 0.3s;
     color: black;
     display: inline-block;
-    background-color:#fedb00;
+    background-color:var(--democracy-yellow);
     
 } 
 .centered-box button:hover {
@@ -128,17 +153,16 @@ body{
 
 #main {
     transition: .5s;
-    outline: 20px solid #fedb00;
+    outline: 20px solid var(--democracy-yellow);
     background-color:#1a1a1a;
     background-size: auto;
-    padding-bottom: 2%;
     min-height: 100vh;
     
 }
 #driver-main {
     transition: .5s;
     background-color:#1a1a1a;
-    outline: 20px solid #8052a1;
+    outline: 20px solid var(--driver-purple);
     background-size: auto;
     padding-bottom: 2%;
     min-height: 100vh;
@@ -146,7 +170,7 @@ body{
 #nav-main {
     transition: .5s;
     background-color:#1a1a1a;
-    outline: 20px solid #63c6c3;
+    outline: 20px solid var(--nav-blue);
     background-size: auto;
     padding-bottom: 2%;
     min-height: 100vh;
@@ -165,7 +189,7 @@ body{
     margin: auto;
     max-width: 1000px;
     display: block;
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
 }
 
 
@@ -173,30 +197,30 @@ body{
     margin: 0;
     margin-bottom: 10px;
     background: 100% url('../images/backgroudHQ.png');
-    outline:#fedb00 solid 10px;
+    outline:var(--democracy-yellow) solid 10px;
     text-align: center;
-    padding: 6%;
+    padding: 3%;
     margin-top: .1em;
     font-size: 5em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     line-height: 1;
 }
 .driver-title {
-    color: #8052a1;
+    color: var(--driver-purple);
 }
 .nav-title {
-    color: #63c6c3;
+    color: var(--nav-blue);
 }
 
 
 .subtitle{
     margin: 3% 0 1%;
     background: 100% url('../images/backgroudHQ.png');
-    outline:#fedb00 solid 3px;
+    outline:var(--democracy-yellow) solid 3px;
     text-align: center;
     padding: 3%;
     font-size: 2.5em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     line-height: 1;
     z-index: 1;
     clear: both;
@@ -205,27 +229,27 @@ body{
 .subtitle-2{
     margin: 0;
     padding-top: 25px;
-    border:#fedb00 solid;
+    border:var(--democracy-yellow) solid;
     border-width: 0 0 3px 0;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     width: 40%;
     font-size: 2em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     display: block;
     clear: both;
     line-height: 1;
 }
 .subtitle-3 {
     margin: 0;
-    border:#fedb00 solid;
+    border:var(--democracy-yellow) solid;
     border-width: 0 0 1.5px 0;
     text-align: left;
     margin-left: 3%;
     width: 25%;
     font-size: 1.2em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     display: block;
     clear: both;
     line-height: 1;
@@ -234,14 +258,14 @@ body{
 }
 .subtitle-4 {
     margin: 0;
-    border:#fedb00 solid;
+    border:var(--democracy-yellow) solid;
     border-width: 0 0 2px 0;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
     font-size: 1.4em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     display: block;
     clear: both;
     line-height: 1;
@@ -262,7 +286,7 @@ body{
     text-align: center;
     padding: 1%;
     clear: both;
-    outline:#fedb00 solid 6px;
+    outline:var(--democracy-yellow) solid 6px;
 }
 .short-text{
     margin: 1% auto 3%;
@@ -291,13 +315,13 @@ body{
     aspect-ratio: 16/  9;
     margin: auto;
     display: block;
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
     z-index: 1;
     margin-left: 2%;
 }
 
 .break {
-    border: solid #fedb00 3px;
+    border: solid var(--democracy-yellow) 3px;
     border-width: 0 0 3px 0; 
     clear: both;
 }
@@ -318,18 +342,7 @@ body{
     display: inline;
 }
 
-/* TEXT Colors*/
-.Accent-White {color:#fefce7 ;}
-.Airstrike-Red {color:#c9442d ;}
-.Support-Blue {color:#279ab6 ;}
-.Democracy-Yellow {color:#fedb00 ;}
-.Driver-Purple {color: #8052a1;}
-.Teammate-Green {color:#34865b ;}
-.Nav-Blue {color:#63c6c3;}
-.Shock-Blue {color:#6b63e5 ;}
-.Swarm-Blue {color:#5fd4b5 ;}
-.Bot-Red {color:#631011 ;}
-.op-toggle { opacity: .5 !important; } /* override any class when active */
+
 
 
 
@@ -340,14 +353,14 @@ body{
     padding: 5px 10px;
     background-color: #1a1a1a;
     transition: 0.5s;
-    outline:#fedb00 solid 4px;
+    outline:var(--democracy-yellow) solid 4px;
     line-height: 1;
     z-index: 2;
 }
 .header a {
     text-decoration: none;
     font-size: 1.2em;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     padding:  inherit ;
     height: inherit;
     border-width: 0 4px 0 0;
@@ -372,7 +385,7 @@ body{
     background-color: #1a1a1a;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
-    outline:#fedb00 solid 7px;
+    outline:var(--democracy-yellow) solid 7px;
      
 }
 @keyframes slide {
@@ -401,7 +414,7 @@ body{
 .sidebar a {
     text-decoration: none;
     font-size: 25px;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     display: block;
     transition: 0.3s;
     padding: 8px 20px;
@@ -458,7 +471,7 @@ body{
 
 
 .outline-img{
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
     
 }
 
@@ -466,18 +479,18 @@ body{
     margin:0% 0% 0% 1%;
 }
 .outline-img2{
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
     width: 30vw;
     height: auto;
 }
 .outline-img3{
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
     width: 20vw;
     height: auto;
 }
 
 .outline-img-white{
-    border: #fefce7 .5vw solid;
+    border: var(--accent-white) .5vw solid;
 }
 .image-cluster{
    float: inline-start;
@@ -486,7 +499,7 @@ body{
    
 }
 .image-cluster img{
-    border: #fedb00 .5vw solid;
+    border: var(--democracy-yellow) .5vw solid;
    max-height: 20vw;
    max-width: 30vw;
    display: inline;
@@ -501,12 +514,12 @@ body{
 
 .image-cluster2 {
     text-align: center;
-    color: #fedb00;
+    color: var(--democracy-yellow);
     font-size: 1.6em;
 }
 
 .image-cluster2 img {
-    border: #fedb00 0.5vw solid;
+    border: var(--democracy-yellow) 0.5vw solid;
     max-height: 20vw;
     max-width: 30vw;
     display: block;
@@ -522,6 +535,35 @@ body{
 .loadout img{
     float:right;
     height: 15vw;
+}
+
+.loadoutsmall {
+    display: block;
+    padding: 1%;
+    overflow: auto;   
+}
+.loadoutsmall img{
+    float:right;
+    height: 10vw;
+}
+.centered-boxload{
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.subtitle-load {
+    border:var(--democracy-yellow) solid;
+    border-width: 0 0 1.5px 0;
+    text-align: left;
+    width: 80%;
+    font-size: 1.5em;
+    color: var(--democracy-yellow);
+    display: block;
+    clear: both;
+    line-height: 1;
+    padding-left: 1.5vw;
 }
 
 .loadout-armor {
@@ -548,7 +590,7 @@ body{
     float: right;
     text-align: center;
     font-family: "Myriad Pro";
-    color: #fefce7;
+    color: var(--accent-white);
     line-height: 1.2;
     font-size: 1em;
 }
@@ -565,7 +607,7 @@ body{
     width: 45%;
     margin: auto;
     display: block;
-    border: #fedb00 .2vw solid;
+    border: var(--democracy-yellow) .2vw solid;
     float: right;
 }
 .video-text {
@@ -592,7 +634,7 @@ body{
 #hide-button {
     display: none;
     background-color: red;
-    color:#fefce7 ;
+    color:var(--accent-white) ;
 }
 
 /*Shock and Swarm*/
@@ -601,23 +643,23 @@ body{
     margin: 0;
     margin-bottom: 10px;
     background: 100% url('../images/bot/backgroundclear.png');
-    outline:#631011 solid 10px;
+    outline:var(--bot-red) solid 10px;
     text-align: center;
     padding: 6%;
     margin-top: .1em;
     font-size: 5em;
-    color: #fefce7;
+    color: var(--accent-white);
     line-height: 1;
 }
 
 .b-subtitle{
     margin: 3% 0 1%;
     background: 100% url('../images/bot/backgroundclear.png');
-    outline:#631011 solid 3px;
+    outline:var(--bot-red) solid 3px;
     text-align: center;
     padding: 3%;
     font-size: 2.5em;
-    color: #fefce7;
+    color: var(--accent-white);
     line-height: 1;
     z-index: 1;
     clear: both;
@@ -625,7 +667,7 @@ body{
 
 #b-main {
     transition: .5s;
-    outline: 20px solid #631011;
+    outline: 20px solid var(--bot-red);
     background-color:#1a1a1a;
     background-size: auto;
     padding-bottom: 2%;
@@ -639,14 +681,14 @@ body{
     padding: 5px 10px;
     background-color: #1a1a1a;
     transition: 0.5s;
-    outline:#631011 solid 4px;
+    outline:var(--bot-red) solid 4px;
     line-height: 1;
     z-index: 2;
 }
 .b-header a {
     text-decoration: none;
     font-size: 1.2em;
-    color: #fefce7;
+    color: var(--accent-white);
     padding:  inherit ;
     height: inherit;
     border-width: 0 4px 0 0;
@@ -655,7 +697,7 @@ body{
 }
 .b-link-button {
     font-family: "Myriad Pro";
-    background-color:#631011;
+    background-color:var(--bot-red);
     border:none;
     height: 40px;
     width: 100%;
@@ -665,7 +707,7 @@ body{
     transition: 0.3s;
     color: black;
     display: inline-block;
-    color: #fefce7;
+    color: var(--accent-white);
 } 
 .b-link-button:hover {
     opacity: 1;

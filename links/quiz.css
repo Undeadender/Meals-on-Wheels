@@ -25,7 +25,7 @@
     transition: 0.3s;
     color: black;
     display: inline-block;
-    background-color: #fedb00;
+    background-color: var(--democracy-yellow);
 } 
 .answers button:hover {
     background-color: #ffa600;
@@ -50,7 +50,7 @@
     transition: 0.3s;
     color: black;
     display: inline-block;
-    background-color: #fedb00;
+    background-color: var(--democracy-yellow);
 }
 .reset:hover {
     opacity: 1;
