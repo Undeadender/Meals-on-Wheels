@@ -50,12 +50,110 @@
 }
 
 
+.driver-guide-box-title{ 
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 2.5em;
+    margin-top: 1vw;
+    margin-bottom: 0px; 
+    padding-right: 7vw;
+    padding-left: 1vw;
+    padding-bottom: 0;
+    width: max-content;
+    line-height: 1;
+    color: var(--democracy-yellow);
+}
+.driver-guide-box-text{
+    padding-left: 1vw;
+    margin-bottom: 0px;
+    margin-top: .3vw;
+    font-size: 1.1em;
+}
+.driver-guide-box{
+    grid-column: span 6;
+}
 
+.driver-guide-box-text.right{
+    text-align: right;
+    clear: both;
+    padding-right: 1vw;
+}
+.driver-guide-box-title.right{
+    text-align: right;
+    padding-left: 7vw;
+    padding-right: 1vw;
+    float: right;
+}
+.driver-guide-box img{
+    width: 90%;
+    float: right;
+    border: solid var(--democracy-yellow);
+    border-width: 5px 0 5px 5px;
+}
 
+.hazard-header-box{
+    grid-column: span 12;
+}
+.hazard-header-box-title{
+    border-bottom: 7px solid var(--democracy-yellow); 
+    font-size: 2.5em;
+    margin-top: 1vw;
+    margin-bottom: 0px; 
+    padding-right: 3vw;
+    padding-left: 1vw;
+    padding-bottom: 0;
+    width: max-content;
+    line-height: 1;
+    color: var(--democracy-yellow);
+}
 
+.driver-hazard1{
+    grid-column: span 12;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+.driver-hazard1 div{
+    grid-column: span 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.driver-hazard1 img{
+    height: 10.5vw;
+    border: 3px solid var(--democracy-yellow);
+}
+.driver-hazard1 p{
+    margin-top: .3vw;
+    font-size: .9em;
+}
 
-
-
+.driver-hazard2{
+    grid-column: span 12;
+    display: grid;
+    width: 90%;
+    place-self: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+.driver-hazard2 div{
+    grid-column: span 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.driver-hazard2 div div{
+    display: flex;
+    flex-direction: row;
+}
+.driver-hazard2 img{
+    height: 12vw;
+    border: 3px solid var(--democracy-yellow);
+    display: block;
+    object-fit: contain;
+}
+.driver-hazard2 p{
+    margin-top: .3vw;
+    font-size: .9em;
+}
 
 .top-grid{
     background: 100% url('../images/backgroudHQ.png'); 
@@ -68,6 +166,7 @@
     grid-column: span 4; 
     padding: 2vw;
     border-bottom: 10px solid var(--democracy-yellow);
+    border-top: 10px solid var(--democracy-yellow);
     align-content: center;
 }
 .class-icon-box img{
@@ -77,6 +176,7 @@
 .loadout-title-box{
     grid-column: span 8;
     border-bottom: 10px solid var(--democracy-yellow);
+    border-top: 10px solid var(--democracy-yellow);
     align-content: flex-end;
 }
 .loadout-title-box p{
@@ -94,15 +194,12 @@
     display: grid; 
     grid-template-columns: repeat(12, 1fr); 
     margin: 0; 
-    font-size: 90%;
-    border-bottom: 12px solid var(--democracy-yellow); 
 }
 .stratagem-box{
     margin-top: 2vw;
     grid-column: span 3;
     text-align: center;
     flex-direction: column; 
-    align-content: center;
 }
 .stratagem-box p{
     width: 80%;

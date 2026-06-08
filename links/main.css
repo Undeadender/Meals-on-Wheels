@@ -241,36 +241,6 @@ body{
     clear: both;
     line-height: 1;
 }
-.subtitle-3 {
-    margin: 0;
-    border:var(--democracy-yellow) solid;
-    border-width: 0 0 1.5px 0;
-    text-align: left;
-    margin-left: 3%;
-    width: 25%;
-    font-size: 1.2em;
-    color: var(--democracy-yellow);
-    display: block;
-    clear: both;
-    line-height: 1;
-    padding-left: 1.5vw;
-    margin-top: 5vw;
-}
-.subtitle-4 {
-    margin: 0;
-    border:var(--democracy-yellow) solid;
-    border-width: 0 0 2px 0;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 80%;
-    font-size: 1.4em;
-    color: var(--democracy-yellow);
-    display: block;
-    clear: both;
-    line-height: 1;
-    margin-top: 5vw;
-}
 .text{
     margin: 1% auto 3%;
     width: 85%;
@@ -328,22 +298,6 @@ body{
 .hidden-break {
     clear: both;
 }
-.mobile-break {
-    clear: both;
-    display: none;
-}
-
-
-
-.mobile {
-    display: none;
-}
-.desktop {
-    display: inline;
-}
-
-
-
 
 
 
@@ -368,66 +322,6 @@ body{
     
 }
 
-.bar-button{
-    margin: 3vh;
-    z-index: 1;
-    display: block;
-    
-}
-.navbarstack{
-    height: 5vw ;
-    max-height: 36px;
-}
-.sidebar {
-    height: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    background-color: #1a1a1a;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s;
-    outline:var(--democracy-yellow) solid 7px;
-     
-}
-@keyframes slide {
-    0%      {
-      left:-250px;
-      display: none;
-    }
-    100%    {
-      left:0px;
-      display:block;
-    }
-}
-.slide, .slideAway {
-    animation-name: slide;
-    animation-timing-function:linear;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-}
-.slideAway {
-    animation-direction:reverse;  
-}
-.hidden{
-  display:none
-}
-
-.sidebar a {
-    text-decoration: none;
-    font-size: 25px;
-    color: var(--democracy-yellow);
-    display: block;
-    transition: 0.3s;
-    padding: 8px 20px;
-}
-
-.sidebar a:hover {
-  color: #ffa600;
-}
-
-.role-seat {
-    width: 30vw;
-    
-}
 
 
 .role-button {
@@ -478,35 +372,11 @@ body{
 .left-space{
     margin:0% 0% 0% 1%;
 }
-.outline-img2{
-    border: var(--democracy-yellow) .5vw solid;
-    width: 30vw;
-    height: auto;
-}
-.outline-img3{
-    border: var(--democracy-yellow) .5vw solid;
-    width: 20vw;
-    height: auto;
-}
 
-.outline-img-white{
-    border: var(--accent-white) .5vw solid;
-}
-.image-cluster{
-   float: inline-start;
-   width: 30vw;
-   text-align: center;
-   
-}
-.image-cluster img{
-    border: var(--democracy-yellow) .5vw solid;
-   max-height: 20vw;
-   max-width: 30vw;
-   display: inline;
-}
 
 .image-cluster2-container {
     display: flex;
+    grid-column: span 12;
     flex-wrap: wrap;
     justify-content: center; /* centers the items horizontally */
     gap: 2vw; /* space between items */
@@ -526,98 +396,7 @@ body{
     margin: 0 auto; /* center the image inside its container */
 }
 
-.loadout {
-    display: block;
-    margin: auto;
-    padding-left: 2%;
-    overflow: auto;   
-}
-.loadout img{
-    float:right;
-    height: 15vw;
-}
 
-.loadoutsmall {
-    display: block;
-    padding: 1%;
-    overflow: auto;   
-}
-.loadoutsmall img{
-    float:right;
-    height: 10vw;
-}
-.centered-boxload{
-    margin: auto;
-    width: 95%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-.subtitle-load {
-    border:var(--democracy-yellow) solid;
-    border-width: 0 0 1.5px 0;
-    text-align: left;
-    width: 80%;
-    font-size: 1.5em;
-    color: var(--democracy-yellow);
-    display: block;
-    clear: both;
-    line-height: 1;
-    padding-left: 1.5vw;
-}
-
-.loadout-armor {
-    display: inline;
-    margin: auto;
-    padding-left: 2%;
-    overflow: auto; 
-    float: left;
-    text-align: left;
-    width: 50%;
-}
-
-.gunner-loadout-armor .loadout-armor{
-    width: 73%;
-}
-
-
-
-
-.loadout-armor-img {
-    display: inline;
-    margin: auto;
-    overflow: auto; 
-    float: right;
-    text-align: center;
-    font-family: "Myriad Pro";
-    color: var(--accent-white);
-    line-height: 1.2;
-    font-size: 1em;
-}
-
-.loadout-armor-img img{
-    height: 10vw;
-    display: inline;
-    
-}
-
-
-.sop-video {
-    aspect-ratio: 16/  9;
-    width: 45%;
-    margin: auto;
-    display: block;
-    border: var(--democracy-yellow) .2vw solid;
-    float: right;
-}
-.video-text {
-    margin: 1% auto 3%;
-    width: 90%;
-    text-align: left;
-    padding: 1%;
-    clear: both;
-    
-}
 /* Sections */
 #nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, 
 #rolling-sec, #shockswarm-sec, #pdf-sec,#web-but {
@@ -760,17 +539,12 @@ body{
 @media (max-width: 1100px) {
     
     #reinepual{font-size: .6em;}
-    .gunner-loadout-armor .loadout-armor-img img{height: 10vw;}
     
     
 }
 
 @media (max-width: 900px) {
-    .levi-info img{float: none; width: 100%;}
-    .sop-video {float: none; width: 85%;}
-    .loadout-armor-img img{height: 11vw;}
-    .loadout-armor{width: 70%;}
-    .loadout-armor-img {font-size: .7em;}    
+    .levi-info img{float: none; width: 100%;}   
     #reinepual{font-size: .8em;}
 
     /*homepage header sizing*/
@@ -781,10 +555,7 @@ body{
 
 
 @media (max-width: 700px) {
-    .gunner-loadout-armor .loadout-armor-img img{height: 10vw;}
-    .gunner-loadout-armor .loadout-armor{ width: 85%;}
-    .loadout-armor-img img{height: 20vw;}
-    .loadout-armor{width: 96%;}
+
     
 }
 
@@ -792,37 +563,22 @@ body{
     /*homepage header sizing*/
     #driv-head, #nav-head, #spot-head, #gun-head, #sec-head, #logi-head{display: none;}
     #sail-head-break {display: none;}
-    .gunner-loadout-armor .loadout-armor-img img{height: 15vw;}
-    .gunner-loadout-armor .loadout-armor{ width: 80%;}
 }
 
 
 @media (max-width: 500px) {
-    .text, .short-text,.video-text, .warnining-text, .levi-info, .loadout{font-size: 90%;line-height: 1.8;}
+    .text, .short-text, .warnining-text, .levi-info{font-size: 90%;line-height: 1.8;}
     .link-button-anchor, .b-link-button-anchor {width:100%;min-width: 0;}
     .link-button, .b-link-button{border-radius: 0px;}
     .pdf {width: 100%;}
-    .body {font-size: 100%;}
     .title, .b-title{font-size: 1.8em;}
-    .subtitle, .b-subtitle-no-stick, .subtitle-no-stick {font-size: 115%; top: 2.4em; line-height: 1.1;}
+    .subtitle {font-size: 115%; top: 2.4em; line-height: 1.1;}
     .subtitle-2{font-size: 100%; width: 80%;}
-    .subtitle-3{ width: 100%; font-size: 95%; margin-left: 0;}
-    .mobile {display: inline;}
-    .desktop {display: none;}
-    .header, .b-header {font-size: .8em;}
+   .header, .b-header {font-size: .8em;}
     .glossary {font-size: .7em;}
     .side-image img{height: 25vw;}
     .side-image iframe{width: 100%;}
-    .mobile-break {display: block;}
-    .loadout-armor{font-size: 90%em;}  
-    .loadout img{height: 20vw;}
-    .outline-img2{width: 90%;}
 
-
-    .gunner-loadout-armor .loadout-armor{ width: 66%;}
-    .gunner-loadout-armor .loadout-armor-img{font-size: .7em;}
-    .gunner-loadout-armor .loadout-armor-img img{height: 23.2vw;}
-    .loadout-armor-img {font-size: .7em;}
     #reinepual{font-size: .8em;}
 
     .role-button p {font-size: 1em;}
