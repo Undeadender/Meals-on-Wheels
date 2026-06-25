@@ -278,14 +278,17 @@
     grid-column: span 6; 
     font-size: 2em;
     line-height: 1.7;
-}    
+} 
+.gr-sc-container{
+    grid-column: span 6; 
+    grid-row: span 3;
+}
 
 .gr-box{
     border: solid var(--democracy-yellow);
     border-width:  5px 0 0 0;
     margin-top: 0px;
     margin-bottom: 0px;
-    grid-column: span 6;
     line-height: 1.25;
     position: relative;
     display: flex;
@@ -298,7 +301,7 @@
     margin-top: .3w;
     display: block;
     align-self: center;
-    font-size: clamp(60%, 100%, 100%);
+    font-size: 1.5cqb;
 }
 .gr-box img{
     height: 7vw; 
@@ -335,18 +338,18 @@
     border-width:  5px 0 0 5px;
     margin-top: 0px;
     margin-bottom: 0px;
-    grid-column: span 6;
     line-height: 1.25;
     position: relative;
     display: flex;
     height: 7vw; 
+    
 }
 .sc-box-text{
     margin-left: .3vw;
     margin-top: .3vw;
     display: block;
     align-self: center;
-    font-size: clamp(60%, 100%, 100%);
+    font-size: 1.5cqb;
 }
 .sc-box img{
     border-right: 5px solid var(--democracy-yellow);
@@ -443,7 +446,7 @@
 
 .backpack-box .top{
     text-align: center;
-    font-size: 3.5em;
+    font-size: clamp(100%, 3em, 5cqi);
     margin-top: 0px;
     margin-bottom: 0px;
     
@@ -488,4 +491,13 @@
 }
 
 
-
+@media (max-width: 1000px) {
+    
+    .sop-video-box, .sop-box, .armor-text-box, .tac-info-box, .backpack-box,.primary-box, .gr-sc-container {grid-column: span 12;}
+    .armor-atr-box,.sop-box-seat {grid-column: span 6;}
+    .primary-box img {height:20vw;}
+    .gr-sc-title-box{font-size: 1.2em;}
+    .sc-box,.gr-box, .sc-box img,.gr-box img{height: 15vw;}
+    .sc-box-text, .gr-box-text{font-size: 2.6cqb;}
+    
+}
