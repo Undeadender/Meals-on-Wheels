@@ -34,7 +34,7 @@
     padding-left: 1vw;
     margin-bottom: 0px;
     margin-top: .3vw;
-    font-size: 1.1em;
+    font-size: 90%;
 }
 
 .video-box{
@@ -386,7 +386,7 @@
 .sc-box .weapon-count {
     top: 4vw;
     right: 36vw;
-    font-size: 2vw; 
+    font-size: 3vw; 
 }
 
 .armor-text-box{
@@ -435,7 +435,7 @@
 
 
 .armor-atr-box div p{ /*ATRITBUTE TEXT */
-    font-size: 1.5em;
+    font-size: 1.4cqi;
     line-height: 1.2;
     margin-top: 6%;
     margin-bottom: 6%;
@@ -465,7 +465,7 @@
 }
 .backpack-box .bottom{
     text-align: center;
-    font-size: 2em;
+    font-size: clamp(100%, 2em, 5cqi);
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -505,11 +505,27 @@
 
 @media (max-width: 1000px) {
     
-    .sop-video-box, .sop-box, .armor-text-box, .tac-info-box, .backpack-box,.primary-box, .gr-sc-container {grid-column: span 12;}
-    .armor-atr-box,.sop-box-seat {grid-column: span 6;}
+    .video-box, .std-box, .armor-text-box, .tac-info-box, .backpack-box, .primary-box, .gr-sc-container, .extended-box, .image-box {grid-column: span 12;}
+    .armor-atr-box,.std-box-seat,.stratagem-box,.driver-hazard1 div,.driver-hazard2 div  {grid-column: span 6;}
+    .driver-hazard1,.driver-hazard2{grid-template-columns: repeat(12, 1fr); width: 100%;}
+    .driver-hazard1 img,.driver-hazard2 img{height: 30vw;}
     .primary-box img {height:20vw;}
     .gr-sc-title-box{font-size: 1.2em;}
-    .sc-box,.gr-box, .sc-box img,.gr-box img{height: 15vw;}
-    .sc-box-text, .gr-box-text{font-size: 2.6cqb;}
-    
+    .sc-box img,.gr-box img{height: 20vw;border-bottom: 5px solid var(--democracy-yellow);}
+    .sc-box,.gr-box {height: 35vw;}
+    .sc-box-text, .gr-box-text{font-size: 1.8cqb; align-self:normal;}
+    .image-box{height: 25vw;}
+    .std-box-title, .tac-info-box-title,.armor-text-box-title,.std-box-seat-title {font-size: 1.5em;}
+    .backpack-box {border:none;}
+    .backpack-box img {width: 20%;}
+    .std-box-seat-title {padding-left: 1vw; padding-right: 7vw; text-align: left; float: left;}
+    .sc-box .weapon-name {right: 58vw;font-size: 3vw; }
+    .sc-box .weapon-count {top: 14vw;right: 58vw;font-size: 4vw; }
+    .gr-box .weapon-name {right: 77vw;font-size: 3vw; }
+    .gr-box .weapon-count {top: 14vw;right: 77vw;font-size: 4vw; }
+    .primary-box .weapon-count {
+    top: 14vw;
+    right: 58.5vw;
+    font-size: 5vw; 
+}
 }
