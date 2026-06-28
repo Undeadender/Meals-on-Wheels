@@ -301,7 +301,7 @@
     margin-top: .3w;
     display: block;
     align-self: center;
-    font-size: 1.5cqb;
+    font-size: clamp(100%, 1em, 1.5cqi);
 }
 .gr-box img{
     height: 7vw; 
@@ -349,7 +349,7 @@
     margin-top: .3vw;
     display: block;
     align-self: center;
-    font-size: 1.5cqb;
+    font-size: clamp(100%, 1em, 1.5cqi);
 }
 .sc-box img{
     border-right: 5px solid var(--democracy-yellow);
