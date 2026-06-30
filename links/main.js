@@ -1,4 +1,15 @@
 
+function toggleapx() {
+  var x = document.getElementById("appx-sec"); 
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {  
+    x.style.display = "block";
+  }
+}
+
+
 function showpdf() {
   var x = document.getElementById("pdf-sec"); 
   var y = document.getElementById("web-text");
