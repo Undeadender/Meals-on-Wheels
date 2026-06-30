@@ -528,28 +528,20 @@ body{
     display: block;
 }
 
-@media (max-width: 1150px) {
-    /*homepage header sizing*/
-    
-    #driv-head, #nav-head {display: none;}
-
-}
 
 
-@media (max-width: 1100px) {
-    
-    #reinepual{font-size: .6em;}
-    
+
+@media (max-width: 1000px) {
+
+    .image-cluster2 img{
+        max-height: 45vw;
+        max-width: 45vw;
+    }
     
 }
 
 @media (max-width: 900px) {
     .levi-info img{float: none; width: 100%;}   
-    #reinepual{font-size: .8em;}
-
-    /*homepage header sizing*/
-    #driv-head, #nav-head, #spot-head, #gun-head, #sec-head, #logi-head{display: inline;}
-    #sail-head-break {display: block;}
     
 }
 
