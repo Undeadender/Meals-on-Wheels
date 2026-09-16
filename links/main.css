@@ -8,7 +8,6 @@
 .Nav-Blue {color:var(--nav-blue);}
 .Shock-Blue {color:var(--shock-blue) ;}
 .Swarm-Blue {color:var(--swarm-blue) ;} 
-.Bot-Red {color:var(--bot-red) ;}
 .op-toggle { opacity: .5 !important; } /* override any class when active */
 
 :root {
@@ -207,9 +206,27 @@ body{
 }
 .driver-title {
     color: var(--driver-purple);
+    margin: 0;
+    margin-bottom: 10px;
+    background: 100% url('../images/backgroudHQ.png');
+    outline:var(--driver-purple) solid 10px;
+    text-align: center;
+    padding: 3%;
+    margin-top: .1em;
+    font-size: 5em;
+    line-height: 1;
 }
 .nav-title {
     color: var(--nav-blue);
+    margin: 0;
+    margin-bottom: 10px;
+    background: 100% url('../images/backgroudHQ.png');
+    outline:var(--nav-blue) solid 10px;
+    text-align: center;
+    padding: 3%;
+    margin-top: .1em;
+    font-size: 5em;
+    line-height: 1;
 }
 
 
