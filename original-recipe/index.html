@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meals On Wheels</title>
+    <link rel="stylesheet" href="/Meals-on-Wheels/links/main.css">
+    <link rel="stylesheet" href="/Meals-on-Wheels/links/quiz.css">
+    <link rel="stylesheet" href="/Meals-on-Wheels/links/loadout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <script src="/Meals-on-Wheels/links/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/Meals-on-Wheels/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+</head>
+<body>
+    
+
+    
+    <div id="main">
+     
+     
+    <!--<div class="header">
+            <a href="/Meals-on-Wheels/">Home</a>
+            <a href="/Meals-on-Wheels/pdf/">PDF</a>
+    </div> -->
+        
+        
+        <p class="title">Meals on Wheels</p>
+        
+        <div id="pdf-but">
+            <p class="short-text" style="margin-bottom: 0;">For a more condensed version of content on this site the PDF exists</p>
+            <a class="link-button-anchor"target="_self" onclick="showpdf()">
+                <button class="link-button">PDF</button>
+            </a>
+        </div>
+
+        <div id="web-but">
+            
+            <a style="margin-top: 5%;" class="link-button-anchor"target="_self" onclick="showpdf()">
+                <button class="link-button">Back to Web</button>
+            </a>
+        </div>
+
+        <div id="pdf-sec">
+            <p class="short-text">Hosted below is our comprehensive PDF that will teach you how to run the Meals on Wheels strategy.
+            <br>Feel free to download and share with your friends!</p>
+            
+            <a class="link-button-anchor"target="_self"href="https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%202.1.1%20SH.pdf">
+                <button class="link-button">Download MoW 2.1.1 PDF (5.48MB)</button>
+            </a>
+            
+            <iframe frameBorder="0" scrolling="auto" class="pdf"
+            src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/Undeadender/Meals-on-Wheels/main/Meals%20on%20Wheels%20rev%202.1.1%20SH.pdf#toolbar=0&scrollbar=0&view=FitW"
+            ></iframe>
+            
+            <p class="short-text">There are several links in the document that will send you to specific clips in the Meals on Wheels Video Companion.
+            <br>Embedded below is the video in it's entirety. </p>
+            
+            <iframe class="video"
+                src="https://www.youtube.com/embed/yFyu74oIinc?si=DU9smFB71GnNIPoJ"
+            ></iframe>
+            
+            <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+            
+        </div>
+
+
+
+        
+
+          
+           
+
+    <div id="web-text">
+         <!--main text-->
+        <p class="text cascadia-mono-text">As the Illuminate ravages our outer worlds, we take to the streets, in our Jeeps. Shaving valuable minutes off of each operation with the use of the FAST RECON VEHICLE (FRV),
+            <br>We will utilize our greatest tech since Roman times -- ROADS.
+            <br><br>However, an ominous presence plagues our valiant helldivers in the form of the massive and terrible LEVIATHAN.
+            <br>Capable of destroying our buggies in nary a single well placed shot.
+            <br><br>Fear not brave helldiver, for a new strategy is emerging...
+            <br>Using these tactics we will BRING THE WHALES DOWN, and complete our objectives in RECORD TIME.
+            <br>Ensuring that the fate of humanity and managed democracy will remain, stronger than ever.
+        </p>
+        <p class="subtitle-2">Glossary</p>
+        <div class="centered-box">
+            <p class="glossary"><span class="Driver-Purple">FRV</span> - Fast Recon Vehicle
+                <br><span class="Driver-Purple">HMG</span> - The FRV's Heavy Machine Gun
+                <br><span class="Support-Blue">RR</span> - Recoilless Rifle
+                <br><span class="Support-Blue">GL</span> - Grenade Launcher
+                <br><span class="Support-Blue">AMR</span> - Anti-Materiel Rifle
+                <br><span class="Support-Blue">AC</span> - Autocannon
+                <br>AO - Area of Operation
+                <br>AV - Armor Value
+                <br>SOP - Standard Operating Procedures
+                <br><span class="Airstrike-Red">E-SOP</span> - Emergency SOP
+                <br>OBJ - Objective site
+            </p>
+            <p class="glossary">
+                [<span class="Democracy-Yellow">Yellow Text</span>] - Important info, key comms, and alternative weapons
+                <br>[<span class="Airstrike-Red">Red Text</span>] - Targets for weapons, minimum safe distance, and E-SOP
+                <br>[<span class="Support-Blue">Blue Text</span>] - Support Weapons and stun targets for weapons
+                <br>[<span class="Teammate-Green">Green Text</span>] - MoW roles
+                <br>[<span class="Driver-Purple">Purple Text</span>] - Relating to the Driver and FRV/Bastion
+                <br>[<span class="Nav-Blue">Light Blue Text</span>] - Relating to the Navigator
+            </p>
+        </div>
+        <div class="hidden-break"></div>
+        <p class="subtitle-2">Boosters</p>
+        <img src="/Meals-on-Wheels/images/booster cluster.png"  style="width: 30vw; margin: auto; display: block;">
+        <p class="subtitle">What is Meals on Wheels?</p>
+        <br>
+        <p class="warnining-text">Meals on Wheels requires that every player fulfill the duty of their role.
+            <br><span class="Democracy-Yellow">DO NOT ATTEMPT</span> this strategy if even one player is not fully committed to coordinated teamplay.
+            <br>This guide has been crafted to give you the best information from the front lines, to better onboard new sailors to the strategy.</p>
+    
+        <p class="text">Meals on Wheels (MoW) is designed to be a hit-and-run strategy centered around two main stratagems as pillars
+                -- the <span class="Support-Blue">RECOILLESS RIFLE</span> (<span class="Support-Blue">RR</span>)
+                & <span class="Driver-Purple">FAST RECON VEHICLE</span> (<span class="Driver-Purple">FRV</span>).
+            <br><br>These pillars are manned by our two teams:
+        </p>
+
+        
+        <div class="main-grid">
+            <div class="extended-box">
+                <p class="std-box-title">The Whaling Team</p>
+                <p class="std-box-text">
+                Consisting of <span class="Teammate-Green">Gunner</span> and <span class="Teammate-Green">Spotter</span>.
+                The <span class="Support-Blue">RR</span> reloading mechanic has the highest damage output in the game;
+                it is their harpoon gun. With its flexibility,
+                the <span class="Support-Blue">RR</span> is the perfect candidate to take on the superheavy Illuminate LEVIATHAN.
+                The Whaling Team will determine the threat level of Leviathans and when to engage them.
+                They pave the way for the squad and remove this threat from the skies.
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/whaling team icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title">Gunner</p>
+                <p class="std-box-text">If any role is at the center of MoW, it is the <span class="Teammate-Green">Gunner</span>. You direct the power of the <span class="Support-Blue"> RR</span> to take down Leviathans.
+                This frees the team from the oppressive area denial effect of these superheavy units.
+                You are equipped to take hits like a beast, and your Shield Generator Pack is critical to protecting the <span class="Driver-Purple">FRV</span>.
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/Gunner icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title">Spotter</p>
+                <p class="std-box-text">The <span class="Teammate-Green">Spotter's</span> duty is to always be on watch for Leviathans lurking,
+                gauging their threat level to the team.
+                This role is for leaders; you make the call to initiate a Leviathan takedown.
+                It is critical to stay close to your <span class="Teammate-Green">Gunner</span>.
+                Direct them, coach them, and link up for the team-assisted reload.
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/spotter icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title">The Sailing Team</p>
+                <p class="std-box-text">This includes our <span class="Teammate-Green">Logistics</span> and <span class="Teammate-Green">Security</span>;
+                    one will be designated <span class="Driver-Purple">Driver</span>,
+                and the other, <span class="Nav-Blue">Navigator</span>. The <span class="Driver-Purple">FRV</span>
+                    will propel you through your mission; it will be your ship.
+                It is also a focal point for your squad, making it easy to keep everyone together for a speedy getaway.
+                The Sailing Team gives the <span class="Support-Blue">RR</span> platform rapid deployment, extra security, and longevity through the use of resupplies.
+                </p>
+            </div>
+            <img class="image-box"  src="/Meals-on-Wheels/images/sailng team icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title">Logistics</p>
+                <p class="std-box-text">The This is a role for Helldivers who excel at resource management and thinking on their feet.
+                    Your job is to keep an eye on  stratagem cooldowns and the <span class="Teammate-Green">Spotter's</span> recoilless ammo.
+                    On objectives, you are working terminals, turning valves, etc.
+                    This role assists in locating Leviathans and provides secondary security for the Whaling Team.
+                </p>
+            </div>
+            <img class="image-box"  src="/Meals-on-Wheels/images/Logistics icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title">Security</p>
+                <p class="std-box-text">The name of this role says it all.
+                You are the bodyguard of the Whaling Team. Without the buffer that you provide,
+                taking down a Leviathan in a hot zone is significantly more difficult.
+                Your loadout is solely focused on slaying as many hostiles threatening the squad and keeping them safe at all costs.
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/Sercurity icon.png">
+
+            <div class="extended-box">
+                <p class="std-box-title"><span class="Driver-Purple">Driver</span> & <span class="Nav-Blue">Navigator</span></p>
+                <p class="std-box-text"><span class="Teammate-Green">Logistics</span> already knows what resources the team has at their disposal,
+                allowing them to focus on HOW to tackle the next objective.
+                This makes them a natural fit for <span class="Nav-Blue">Navigator</span>.
+                <br>However, this leaves <span class="Teammate-Green">Security</span> as Driver,
+                slowing their ability to engage hostiles.
+                <br>As the team grows in experience with MoW,
+                the mental load of Navigator and resource management is DEMOCRATIZED.
+                <br>This allows <span class="Teammate-Green">Security</span> to more easily take on the
+                <span class="Nav-Blue">Navigator</span> role AND enter the fight faster.
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/drive_nav.png ">
+
+            <div class="extended-box">
+                <p class="std-box-title">Your Ship</p>
+                <p class="std-box-text">The <span class="Driver-Purple">FRV</span> keeps you mobile, picking up the squad and moving locations quickly.
+                It allows your team to rapidly deploy on objectives, bases, and Leviathans,
+                while simultaneously disengaging from Illuminate ship reinforcements.
+                To best take advantage of this increased mobility,
+                the team needs to transition into and out of the <span class="Driver-Purple">FRV</span> seamlessly.
+                This is why each role in the squad has a designated position:(see right).
+                <br><span class="Democracy-Yellow">DO NOT make your squad wait for you to mount up. Stop fighting and get in.</span>
+                <br>The Shield Generator Pack is critical for protecting the <span class="Driver-Purple">FRV</span> and its occupants, always mount-up with it equipped.
+                <br>The rear of the <span class="Driver-Purple">FRV</span> has full cover from the Shield,
+                the sides have half cover, and the front has limited cover (<span class="Teammate-Green">Gunner</span> and <span class="Nav-Blue">Navigator</span> only).
+                </p>
+            </div>
+            <img class="image-box" src="/Meals-on-Wheels/images/FRV/allrolefrv.png">
+
+            <div class="std-box">
+                <p class="std-box-title">The Supply Chain</p>
+                <p class="std-box-text">The Meals on Wheels strategy is uniquely capable of engaging and destroying multiple consecutive Leviathans.
+                The <span class="Support-Blue">RR</span> is hungry for ammo, and we're here to feed it.
+                The <span class="Teammate-Green">Logistics</span> resupplies the <span class="Teammate-Green">Spotter</span>,
+                    who in turn loads the <span class="Teammate-Green">Gunner</span>,
+                who sends the goods down range. Embedded to the right is a video of the Resupply Drill.
+                <br>Every MoW operator is well-versed in it. Learn it, love it.
+                </p>
+            </div>
+            <iframe class="video-box" 
+                src="https://www.youtube.com/embed/jm4KFPxXk-I?si=RYEPubK9lnYcI-_u"
+            ></iframe>
+
+        
+        </div>
+        
+        
+        <p class="levi-info"><img src="/Meals-on-Wheels/images/whaling/levi map.png">
+            <span class="Democracy-Yellow">
+            Let's get one thing straight -- Leviathans have no weak points; the only way to kill them is to deal 15,000 (15k) damage.
+            Best case scenario you need at least 5 shots from The Recoilless Rifle aimed at 5 different parts of the levi to bring it down.
+            <br><br>This is difficult at long range, bad angles, or under pressure,
+            but a dead Leviathan is always better than a full pack.
+            When the Whaling Team is called to “ENGAGE” rapid deployment, regardless of circumstances, is essential.
+            </span>
+            <br><br>The <span class="Support-Blue">RR</span> does 3.2k damage per shot at Armor Penetration 6 (AP6). 3.2k damage x 5 shots = 16k damage.
+            <br><br>But why does it sometimes take more than 5 shots? Each part (shown right)
+            has MAGENTA outlines with its own HP pool and Armor Value 5 (AV5).
+            <span class="Democracy-Yellow">If you do enough damage to break a part, damage exceeding the HP of the part will be discarded.</span>
+            This is why you want to avoid hitting the parts highlighted in RED and avoid hitting the YELLOW parts more than once.
+            <br><br>Example: the Tail has 3.9k HP. 2 hits with the <span class="Support-Blue">RR</span> can do up to 6.4k damage.
+            3.9k - 6.4k = -2.5k meaning hitting this part twice will result in 2.5k damage discarded!
+            <br><br>If you break a part, it will reveal the smoking blue interior with AV4.
+            The interior is the Main Body hitbox and any <span class="Support-Blue">RR</span> rounds here will do 100% damage to the Leviathan.
+            <br><br>A 5-shot takedown will empty the<span class="Teammate-Green"> Spotter's</span> pack and leave the <span class="Support-Blue">RR</span> loaded.
+            The <span class="Teammate-Green">Spotter</span> can refill his pack fully from a stratagem resupply,
+            which is more efficient than using the supply pack.
+            [appx. 2.3, 7]
+        </p>
+        <div class="break"></div>
+        <p class="levi-info" ><img src="/Meals-on-Wheels/images/whaling/gauge.png">
+            The image right is the threat level gauge for a Leviathan, 
+            showing danger based on its cover, distance, and relevance. 
+            It ranges from <span class="Support-Blue">Low</span> (full cover, far away, and/or moving away) to <span class="Democracy-Yellow">Severe</span> 
+            (very close, moving into area of operation and/or and limited/no cover). 
+            The needle is at <span class="Airstrike-Red">High</span>, meaning it's time to <span class="Democracy-Yellow">“ENGAGE!”</span>
+        </p>
+        <p class="subtitle">The Takedown Maneuver</p>
+        <div class="main-grid">
+            <div class="std-box">
+                <p class="std-box-title">What is It?</p>
+                <p class="std-box-text">The takedown maneuver is the core of Meals on Wheels. 
+                    A takedown maneuver is how the team kills Leviathans. Upon spotting a Leviathan, 
+                    the team will move to an appropriate location, deploy necessary equipment, and kill the Leviathan.
+                    In short, <span class="Teammate-Green">Security</span> ensures the safety of the team, <span class="Teammate-Green">Logistics</span> keeps the rounds going, 
+                    <span class="Teammate-Green">Spotter</span> loads <span class="Teammate-Green">Gunner</span>, and <span class="Teammate-Green">Gunner</span> sends rounds down range. 
+                    <br><span class="Democracy-Yellow">To the Right is a video demonstration of a takedown.</span>
+                </p>
+            </div>
+             <iframe class="video-box" 
+                src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+            <div class="box-full">
+                <p class="std-box-title">Order of Events</p>
+                <p class="std-box-text">Squad keeps lookout for Leviathans
+                        <br>When Leviathan is spotted call-out to squad
+                        <br>Do NOT use ping, use direction or bearing on compass and state approximate distance, 
+                        <br>example: <span class="Democracy-Yellow">“LEVIATHAN NW, 290°, CLOSE”</span>
+                        <br><span class="Teammate-Green">Spotter</span> determines the threat level of the Leviathan
+                        <br>If the threat level is ELEVATED or greater <span class="Teammate-Green">Spotter</span> makes the call to <span class="Democracy-Yellow">“ENGAGE”</span>
+                        <br>If on foot: Whaling Team will initiate the Takedown Maneuver immediately.
+                        <br>If in transit: <span class="Driver-Purple">Driver</span> will say, <span class="Democracy-Yellow">“MOVING TO INTERCEPT”</span>,the team remains in the vehicle until directed.
+                        <br>Once arrived at intercept point <span class="Driver-Purple">Driver</span> will call out, <span class="Democracy-Yellow">“DISMOUNT”</span>, and Whaling Team will initiate the Takedown Maneuver
+                        <br><span class="Teammate-Green">Logistics</span> and <span class="Teammate-Green">Security</span> will meet with the Whaling Team and will keep the inside and outside of the relay clear of hostiles respectively.
+                        <br><span class="Teammate-Green">Spotter</span> leads <span class="Teammate-Green">Gunner</span>
+                         to the best line of sight and deploys a Shield Generator Relay(Big Bubble). Whaling Team will destroy the Leviathan, with <span class="Teammate-Green">Logistics</span>
+                          resupplying <span class="Teammate-Green">Spotter</span> as needed.
+                        <br>If <span class="Teammate-Green">Security</span> is unable to ensure the squads safety they will instruct the team a direction 
+                        to exfiltrate the area or tell them to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>.
+
+                </p>
+            </div>
+        </div>
+
+        
+        <p class="short-text" >For a quiz on what class should play click the button below</p>
+        <div class="centered-box">
+                <button style="width:50%;" onclick="showquiz()">WCSIP?</button>
+        </div>
+        <div id="quiz-sec"> <!--QUIZ-->
+            <p class="subtitle">What Class Should I Play?</p>
+            <button class="reset" onclick="resetquiz()">Reset</button>
+            <div>
+                <p class="question">Have you played MoW before?</p>
+                <div class="answers">
+                    <button id="dexpx" onclick="quizFunction('dexp','gqx')">At least once</button>
+                    <button id="gqx" onclick="quizFunction('gq','dexpx')">Never have I ever</button>
+                </div>
+            </div>
+        
+            <div id="dexp">
+                <p class="question">Are you an experienced driver?</p>
+                <div class="answers">
+                    <button id="dqx" onclick="quizFunction('dq','hmchx')">Hell YES!!</button>
+                    <button id="hmchx" onclick="quizFunction('hmch','dqx')">Not really...</button>
+                </div>
+            </div>
+        
+        
+        
+            <div id="dq">
+                <p class="question">Do you want to drive?</p>
+                <div class="answers">
+                    <button id="sdax" onclick="quizFunction('sda','hmch2x')">Hell YES!!</button>
+                    <button id="hmch2x" onclick="quizFunction('hmch','sdax')">Nope</button>
+                </div>
+            </div>
+            <div id="hmch">
+                <p class="question">How much have you run run MoW?</p>
+                <div class="answers">
+                    <button id="sobx" onclick="quizFunction('sob','boomx')">Tons</button>
+                    <button id="boomx" onclick="quizFunction('boom','sobx')">A bit</button>
+                </div>
+            </div>
+            <div id="sob">
+                <p class="question">Streetsmart or Booksmart</p>
+                <div class="answers">
+                    <button id="spotx" onclick="quizFunction('spot','logix')">Streetsmart</button>
+                    <button id="logix" onclick="quizFunction('logi','spotx')">Booksmart</button>
+                </div>
+            </div>
+            <div id="boom">
+                <p class="question">Quality or Quantity of BOOM</p>
+                <div class="answers">
+                    <button id="gunx" onclick="quizFunction('gun','secux')">5 BIG BOOMS</button>
+                    <button id="secux" onclick="quizFunction('secu','gunx')">BOOMS, BOOMS EVERYWHERE</button>
+                </div>
+            </div>
+            <div id="sda">
+                <p class="question">Support or Direct Action?</p>
+                <div class="answers">
+                    <button id="dlogix" onclick="quizFunction('dlogi','dsecux')">Support</button>
+                    <button id="dsecux" onclick="quizFunction('dsecu','dlogix')">Put me in Coach!</button>
+                </div>
+            </div>
+            <div id="gq">
+                <p class="question">is Gunner open?</p>
+                <div class="answers">
+                    <button id="gun2x" onclick="quizFunction('gun','secuqx')">Yes</button>
+                    <button id="secuqx" onclick="quizFunction('secuq','gun2x')">No</button>
+                </div>
+            </div>
+            <div id="secuq">
+                <p class="question">is Security open?</p>
+                <div class="answers">
+                    <button id="secu2x" onclick="quizFunction('secu','logiqx')">Yes</button>
+                    <button id="logiqx" onclick="quizFunction('logiq','secu2x')">No</button>
+                </div>
+            </div>
+            <div id="logiq">
+                <p class="question">is Logistics open?</p>
+                <div class="answers">
+                    <button id="logi2x" onclick="quizFunction('logi','spot2x')">Yes</button>
+                    <button id="spot2x" onclick="quizFunction('spot','logi2x')">Godspeed Helldiver</button>
+                </div>
+            </div>
+            <div id="gun" class="role-button">
+        
+                <p class="Democracy-Yellow" >Gunner</p>
+                <a onclick="toggleSection('gun-sec', document.getElementById('gunnerrole'))">
+                    <img src="/Meals-on-Wheels/images/Gunner icon.png">
+                </a>
+            </div>
+            <div id="spot" class="role-button">
+                <p class="Democracy-Yellow" >Spotter</p>
+                <a onclick="toggleSection('spot-sec', document.getElementById('spotterrole'))">
+                    <img src="/Meals-on-Wheels/images/spotter icon.png">
+                </a>
+            </div>
+            <div id="logi" class="role-button">
+                <p class="Democracy-Yellow">Logistics</p>
+                <a onclick="
+                    toggleSection('logi-sec', document.getElementById('logisticsrole'));
+                    toggleSection('nav-sec', document.getElementById('navigatorrole'));
+                ">
+                    <img style="margin-top: 13%;" src="/Meals-on-Wheels/images/Logistics icon.png">
+                </a>
+            </div>
+            <div id="secu" class="role-button">
+                <p class="Democracy-Yellow" >Security</p>
+                <a onclick="
+                    toggleSection('sec-sec', document.getElementById('securityrole'));
+                    toggleSection('nav-sec', document.getElementById('navigatorrole'));
+                ">
+                    <img src="/Meals-on-Wheels/images/Sercurity icon.png">
+                </a>
+            </div>
+            <div id="dlogi" class="role-button">
+                <p class="Driver-Purple">Driver Logistics</p>
+                <a onclick="
+                    toggleSection('drive-sec', document.getElementById('driverrole'));
+                    toggleSection('logi-sec', document.getElementById('logisticsrole'));
+                ">
+                    <img style="margin-top: 13%;" src="/Meals-on-Wheels/images/Logistics icon.png" alt="Driver Logistics">
+                </a>
+            </div>
+            <div id="dsecu" class="role-button">
+                <p class="Driver-Purple">Driver Security</p>
+                <a onclick="
+                    toggleSection('drive-sec', document.getElementById('driverrole'));
+                    toggleSection('sec-sec', document.getElementById('securityrole'));
+                ">
+                    <img src="/Meals-on-Wheels/images/Sercurity icon.png">
+                </a>
+            </div>
+            <p class="short-text"> Click the image to show relevant pages</p>
+        </div>
+            <button  id="show-button" class="reset" onclick="showAll()">Show all</button>
+            <button id="hide-button" class="reset" onclick="hideAll()">Hide all</button>
+            <button style="float: right;" id="apx-button" class="reset" onclick="toggleapx()">Show/Hide Appendix</button>
+        
+            <p class="short-text" style="margin-bottom: 0;">Click the role icons below to show info related to that role</p>
+            <div class="role-centered-box"> <!-- Role Buttons-->
+                <!-- Gunner -->
+                <div id="gunnerrole" class="op-toggle role-button">
+                    <p  class="Democracy-Yellow" data-section="gun-sec">Gunner</p>
+                    <a onclick="toggleSection('gun-sec', document.getElementById('gunnerrole'))">
+                        <img src="/Meals-on-Wheels/images/Gunner icon.png">
+                    </a>
+                </div>
+                <!-- Spotter -->
+                <div id="spotterrole" class="op-toggle role-button">
+                    <p  class="Democracy-Yellow" data-section="spot-sec">Spotter</p>
+                    <a onclick="toggleSection('spot-sec', document.getElementById('spotterrole'))">
+                        <img src="/Meals-on-Wheels/images/spotter icon.png">
+                    </a>
+                </div>
+                <!-- Logistics -->
+                <div id="logisticsrole" class="op-toggle role-button logistics">
+                    <p  class="Democracy-Yellow" data-section="logi-sec">Logistics</p>
+                    <a onclick="toggleSection('logi-sec', document.getElementById('logisticsrole'))">
+                        <img src="/Meals-on-Wheels/images/Logistics icon.png">
+                    </a>
+                </div>
+                <!-- Security -->
+                <div id="securityrole" class="op-toggle role-button">
+                    <p  class="Democracy-Yellow" data-section="sec-sec">Security</p>
+                    <a onclick="toggleSection('sec-sec', document.getElementById('securityrole'))">
+                        <img src="/Meals-on-Wheels/images/Sercurity icon.png">
+                    </a>
+                </div>
+                <!-- Driver -->
+                <div id="driverrole" class="op-toggle role-button">
+                    <p  data-section="drive-sec" class="Driver-Purple">Driver</p>
+                    <a onclick="toggleSection('drive-sec', document.getElementById('driverrole'))">
+                        <img src="/Meals-on-Wheels/images/driver icon.png">
+                    </a>
+                </div>
+                <!-- Navigator -->
+                <div id="navigatorrole" class="op-toggle role-button">
+                    <p  class="Nav-Blue" data-section="nav-sec">Navigator</p>
+                    <a onclick="toggleSection('nav-sec', document.getElementById('navigatorrole'))">
+                        <img src="/Meals-on-Wheels/images/Navigator icon.png">
+                    </a>
+                </div>
+            </div>
+            
+            <p class="short-text Democracy-Yellow" style="margin-bottom: 0; font-size: 2em;">For the new variation using the 
+                <span class="Driver-Purple">Bastion</span> click below</p>
+            <a class="link-button-anchor" style="opacity: .5;" onclick="showToT(this)">
+                <button class="link-button">Treats on Tracks</button>
+            </a>
+
+
+            <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+        
+        
+        <div id="ToT-sec"> <!-- Treats on Tracks-->
+        
+            <p class="title Accent-White">Treats on Tracks</p>
+        
+            <p class="warnining-text" style="margin-top: 5%;">Treats on Tracks is a variation of Meals on Wheels where the <span class="Driver-Purple">FRV</span>
+                is substituted for the <span class="Driver-Purple">Bastion</span>. It is still a hit-and-run strategy, just with more hit and less run.
+                Anything not explicitly changed is the same as traditional MoW
+                It is recommended that you become experienced in the traditional method Before trying Treats on Tracks.
+                <span class="Democracy-Yellow">Treats on Tracks is a challenge variation.</span>
+            </p>
+        
+            <p class="subtitle-2">The Bastion</p>
+            <p class="side-image"><img src="/Meals-on-Wheels/images/bastseat.png">
+                With 8k health, the <span class="Driver-Purple">Bastion</span> has 4x the health of the <span class="Driver-Purple">FRV</span> and much
+                greater offensive power, a <span class="Driver-Purple">120mm HV cannon</span> with 31 rounds and a coaxial HMG with 2k rounds,
+                at the cost of speed. Due to this and other factors, <span class="Teammate-Green">Logistics</span> as
+                <span class="Driver-Purple">Driver</span> can be more effective because
+                the <span class="Driver-Purple">Bastion</span> does not need to be protected as much. <span class="Democracy-Yellow">To the Right is the new seating chart.</span>
+            </p>
+            <p class="side-image"><img class="outline-img left-space"  src="/Meals-on-Wheels/images/bastside.png">
+                The <span class="Driver-Purple">Bastion</span> is also completely enclosed, protecting passengers from any explosions,
+                Tesla towers, or any incoming fire.
+                For <span class="Nav-Blue">Navigator</span> and <span class="Teammate-Green">Spotter</span>, it is best to mount by climbing the sides near the ladder
+                <span class="Democracy-Yellow">(pictured right)</span>,
+                    to avoid running in the way of <span class="Teammate-Green">Gunner</span>.
+            </p>
+            <p class="subtitle-2">Offensive Power</p>
+            <p class="side-image">
+                The <span class="Driver-Purple">Bastion</span> can take down Leviathans in 5-7 shots from it's <span class="Driver-Purple">120mm HV cannon</span>.
+                    <br><span class="Democracy-Yellow">Distance is required as the cannon can only tilt roughly 25 degrees up.</span>
+                    <br>Reinforcement Warpships can also be eliminated by stripping the shield with the<span class="Driver-Purple"> coaxial HMG</span> and a round from the <span class="Driver-Purple">120mm HV cannon</span>.
+                <br>The <span class="Driver-Purple">Bastion</span> can also destroy landed Warpships by stripping the shield with the <span class="Driver-Purple">coaxial HMG</span>
+                    and a round from the <span class="Driver-Purple">120mm HV cannon</span> through the door or two rounds to the outer shell.
+            </p>
+        
+            <p class="subtitle-2">SOP Changes</p>
+            <p class="side-image">
+        
+                The first and most important change is that Leviathans can be eliminated from the <span class="Driver-Purple">Bastion</span>.
+                Because there are two forms of takedown, they are now referred to as: <span class="Support-Blue">dismount/traditional takedown</span>,
+                 which uses the <span class="Support-Blue">Recoilless Rifle</span>, and <span class="Driver-Purple">cannon takedown</span>,
+                 which uses the <span class="Driver-Purple">Bastion's 120mm cannon</span>.
+                When starting a takedown, <span class="Teammate-Green">Spotter</span> will still call, <span class="Democracy-Yellow">“ENGAGE”</span>,
+                but this does not mean exit the <span class="Democracy-Yellow">Bastion</span>. <span class="Driver-Purple">Driver</span>
+                will respond with, <span class="Democracy-Yellow">“DISMOUNT/CANNON”</span>, depending on which takedown is best.
+                In the case that <span class="Teammate-Green">Gunner</span> can no longer aim high enough to fire upon a Leviathan,
+                 they can also call, <span class="Democracy-Yellow">“DISMOUNT”</span>. If the dismount takedown is used,
+                 the Traditional SOP applies, with the exception of the <span class="Driver-Purple">Bastion</span>
+                  not needing to be placed in a safe area.
+                During a <span class="Driver-Purple">cannon takedown</span>, <span class="Driver-Purple">Driver</span>
+                will maneuver the <span class="Driver-Purple">Bastion</span>
+                so <span class="Teammate-Green">Gunner</span> can simply kill a Leviathan by firing upon it with the
+                <span class="Driver-Purple">120mm shells</span>. If the <span class="Driver-Purple">Bastion</span> is expected to stay stationary,
+                <span class="Democracy-Yellow">Spotter</span> should call a shield relay to block some damage.
+                <br><span class="Democracy-Yellow">To the right is a clip showing a cannon takedown.</span>
+                <iframe
+                src="https://www.youtube.com/embed/j1-IUlxCY-I?si=Gvv5tO-rcFuUovd7&amp;clip=Ugkx-YgC_5FoYy2NZhzeBkV0HdLVVJHSSd5H&amp;clipt=EPqFCBiXhQo"
+                ></iframe>
+                <br>When <span class="Driver-Purple">Driver</span> decides whether to engage with a <span class="Support-Blue">dismount takedown</span>
+                 or a<span class="Support-Blue"> cannon takedown</span>,
+                the main factors are distance and the number of Leviathans. At further distances, <span class="Driver-Purple">cannon takedown</span>
+                is better as the<span class="Driver-Purple"> 120mm cannon</span> has slightly more damage, allowing more falloff without affecting the
+                rounds needed to kill. On the flip side, the elevation of the <span class="Driver-Purple">120mm cannon</span> is limited, meaning that
+                at close range, a <span class="Driver-Purple">cannon takedown</span> is not possible. Secondly,
+                the <span class="Driver-Purple">Bastion's 120mm cannon</span> has a much
+                slower rate of fire, so if more than one Leviathan needs to be engaged, a <span class="Support-Blue">dismount takedown</span> is preferred.
+            </p>
+            <p class="side-image hidden-break">
+                <iframe
+                    src="https://www.youtube.com/embed/j1-IUlxCY-I?si=Ps3zVsJLO0eRQePH&amp;start=334">
+                </iframe>
+                The second change is the drive-by drill, as there are now 4 ways to approach.
+                1. <span class="Teammate-Green">Gunner</span> can strip the shield with the<span class="Driver-Purple"> coaxial HMG </span>
+                and fire a round from the <span class="Driver-Purple">120mm HV cannon </span>through the door of the Warpship.
+                2. <span class="Teammate-Green">Gunner</span> strips the shield with the <span class="Driver-Purple">coaxial HMG</span>
+                 and fires two<span class="Driver-Purple"> 120mm HV rounds</span> upon the outer shell of the Warpship,
+                 this is best if the door is not visable/accessable.
+                3. <span class="Teammate-Green">Spotter</span> or <span class="Teammate-Green">Security</span>
+                 strips the shield with their primary and fires a round from the <span class="Support-Blue">GL/Autocannon</span> through the door.
+                4. <span class="Teammate-Green">Spotter</span> fires an Ultimatum round to hit the outer shell.
+                <br><span class="Democracy-Yellow">To the right is a clip demonstrating each method.</span>
+                Different situations necessitate different methods.
+            </p>
+            <p class="subtitle-2"><span class="Driver-Purple">Driving Notes</span></p>
+            <p class="text">
+                The <span class="Driver-Purple">Bastion</span> has similar controls to the <span class="Driver-Purple">FRV</span>
+                , but notable differences are that the handbrake does not allow you to drift; it simply stops the
+                <span class="Driver-Purple">Bastion</span> very fast at any speed.
+                The <span class="Driver-Purple">Bastion</span> can turn without moving forward or backward, simply by holding left or right while stationary.
+                <br>
+                <br>While <span class="Driver-Purple">FRV</span> struggles to navigate the destroyed streets,
+                the <span class="Driver-Purple">Bastion</span> can easily drive over most obstacles.
+                Due to this, keeping to the center of roads is recommended. The only threat on the streets is the Illuminate barriers,
+                as the <span class="Driver-Purple">Bastion</span> will break the barrels within and take a large amount of damage.
+                    This can be avoided by <span class="Teammate-Green">Spotter</span> firing the <span class="Support-Blue">GL</span> upon any Illuminate barriers.
+                <br>The largest threat to the Bastion is a Stingray, as it does not have the speed to evade in most cases,
+                and 3 strafes with kill a <span class="Driver-Purple">Bastion</span> from full health.
+            </p>
+            <p class="subtitle-2">Additonal Notes</p>
+            <p class="text">
+                Loadouts are unchanged, with the exception the <span class="Driver-Purple">FRV</span> being
+                subbed for the <span class="Driver-Purple">Bastion</span>,
+                an option for an Ultimatum for <span class="Teammate-Green">Spotter's</span> secondary, and <span class="Teammate-Green">Security's </span>
+                loadout flexibilty in terms of support weapon being reduced due to the extreme threat Stingrays pose.
+            </p>
+        
+        
+        
+        
+        <p class="short-text" style="margin-bottom:0;">Thanks for your interest in our strategy, have fun!</p>
+        
+        </div>
+        <div id="whale-sec"> <!-- Whaling team    -->
+        
+            <p class="title">Whaling Team</p>
+            <p class="text cascadia-mono-text">Since the invasion of Super Earth, the Leviathans have terrorized our citizens and SEAF forces.
+                The lives of countless Helldivers cut short from these nearly impervious enemies.
+                <br><br>As a member of the WHALING TEAM, you will bring the fight to THEM.
+                You will understand your quarry, bringing the might of the RECOILLESS RIFLE to harpoon them from our skies.
+                <br><br>No longer will they fly unrestricted through our cities.
+                <br><br>No longer will our allies fear them.
+                <br><br>The Illuminate will know of our victory by the carcasses left in our wake.</p>
+        
+            
+            <div id="gun-sec"> <!-- Gunner -->
+                <p class="title">Gunner SOP</p>
+                <div class="main-grid"><!-- SOP -->
+                    <div class="std-box">
+                        <p class="std-box-title">Load-In</p>
+                        <p class="std-box-text">Call Shield Generator Pack and <span class="Support-Blue">Recoilless Rifle</span>
+                            (<span class="Support-Blue">RR</span>)
+                            <br>Equip only <span class="Support-Blue">RR</span>
+                            (leave pack for <span class="Teammate-Green">Spotter</span>).[appx. 5]</p>
+                    </div>
+                    <div class="std-box-seat" >
+                        <p class="std-box-seat-title">Seat</p><br>
+                        <img style="width: 80%; float: right; margin-right: 2vw;" src="/Meals-on-Wheels/images/FRV/frvgunnerwhaler.png">
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Transit</p>
+                        <p class="std-box-text">Keep the <span class="Driver-Purple">Heavy Machine Gun</span> <span class="Driver-Purple">HMG</span>
+                            pointed rear of  <span class="Driver-Purple">FRV</span>. 
+                            <br>Notify <span class="Driver-Purple">Driver</span> when reloading last magazine.[appx. 6.3]
+                            <br>If there is a package you will carry it.</p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Objectives</p>
+                        <p class="std-box-text">Use <span class="Driver-Purple">HMG</span> for fire support on approach.
+                            Take a central position with <span class="Teammate-Green">Spotter</span> and alternate shield relays.
+                            Be ready to engage Leviathans (see Takedown).
+                        </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Outpost</p>
+                        <p class="std-box-text">Follow specific directions from <span class="Driver-Purple">Driver</span>.
+                            <br> Take out shields on Illuminate ships as directed by <span class="Driver-Purple">Driver</span>.
+                            <br> Hold fire when <span class="Teammate-Green">Spotter</span> leans to destroy the ship or hazards in the outpost.
+                        </p>
+                    </div>
+                    <iframe class="video-box" 
+                            src="https://www.youtube.com/embed/JmK30AHcuag?si=ko06h6f-QpgxH94Y"></iframe>
+                    <div class="std-box">
+                        <p class="std-box-title">Takedown</p>
+                        <p class="std-box-text">
+                            Follow <span class="Teammate-Green">Spotter</span> to the best line of sight, it is your responsibility to stay with 
+                            <span class="Teammate-Green">Spotter</span> at all times during a takedown. 
+                            <br>Help <span class="Teammate-Green">Spotter</span> clear any enemies in the immediate area before initiating the takedown. 
+                            If <span class="Teammate-Green">Spotter's</span> Relay is on cooldown or destroyed, he will say <span class="Democracy-Yellow">“GUNNER BIG BUBBLE”</span> and you will deploy yours. 
+                            Drop a shield grenade is your are waiting for the relay to deploy to cover  Whaling Team. 
+                            <br>Stand still and fire upon the Leviathan saying, <span class="Democracy-Yellow">“FIRING”</span>. 
+                            Fire until the Leviathan is destroyed. 
+                            <br>Once it is destroyed say, <span class="Democracy-Yellow">“LEVIATHAN DOWN”</span>. 
+                            If any Harvesters are threatening the squad destroy them before reengaging a Leviathan. 
+                            <br>If <span class="Teammate-Green">Spotter</span> leaves they will say, <span class="Democracy-Yellow">“STAND BY”</span>, 
+                            and <span class="Democracy-Yellow">“BACK ON YOU”</span>, when returning. 
+                            <br>If you do not have a round loaded into the RR while <span class="Teammate-Green">Spotter</span> is attached, 
+                            say <span class="Democracy-Yellow">“FAILURE TO LOAD”</span>. <span class="Airstrike-Red">[ESOP]</span>
+                            <br>If Whaling Team is threated during team reload, 
+                            <span class="Democracy-Yellow"><span class="Teammate-Green">Spotter</span></span> will call out “BREAK”.  
+                            This means to clear the immediate area. Once sufficiently cleared, QUICKLY re-engage the Leviathan.
+                            <br>If Leviathan flies behind cover, move to a position where you can engage again, <span class="Teammate-Green">Spotter</span> will follow. 
+                            If the Leviathan too far, <span class="Teammate-Green">Spotter</span> will say, <span class="Democracy-Yellow">“MOUNT UP”</span>, 
+                            and <span class="Driver-Purple">Driver</span> will move the team to a new intercept point
+                            <br>If <span class="Teammate-Green">Security</span> is unable to ensure the squads safety they will instruct the team
+                            a direction to exfiltrate the area or say to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>
+                            <span class="Teammate-Green">Spotter</span> will determine if the Whaling team will mount the <span class="Driver-Purple">FRV</span> or commit 
+                            to the kill. [appx. 6.1, 6.3, 6.4, 7]
+                        </p>
+                    </div>
+                    <iframe class="video-box" src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+                    
+                </div>
+                <div><!-- LOADOUTS-->
+                <div class="top-grid">
+                    <div class="class-icon-box"> 
+                        <img  src="/Meals-on-Wheels/images/Gunner icon.png">
+                    </div>
+                    <div class="loadout-title-box">
+                        <p >Gunner Loadout</p>
+                    </div>
+                    
+                </div>
+                    <div class="main-grid">
+                        <!--RR-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Recoilless_Rifle_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Recoilless Rifle</span>
+                            Never leave port without your
+                            HARPOON GUN. MoW uses the <span class="Support-Blue">RR</span>
+                            delivering massive damage to
+                            Leviathans to BRING THEM DOWN.</p>
+                        </div>
+                        <!--Shield Generator Pack-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Shield_Generator_Pack_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Shield Generator Pack</span>
+                            This is your team's lifeline. It
+                            protects <span class="Teammate-Green">Spotter</span> while they load
+                            you and the <span class="Driver-Purple">FRV</span> while you're in it.</p>
+                        </div>
+                        <!--Shield Generator Relay-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Shield_Generator_Relay_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Shield Generator Relay</span>
+                            This is your team's lifeline. It
+                            protects <span class="Teammate-Green">Spotter</span> while they load
+                            you and the <span class="Driver-Purple">FRV</span> while you're in it.</p>
+                        </div>
+                        <!--Flex Slot-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/flex slot.png"> 
+                            <p><span class="stratagem-box-title">Flex Slot</span>
+                            Tesla Tower - For zoning<br>
+                            Gas/EMS mortar - Area Denial<br>
+                            Orbital Laser - For Blitz<br>
+                            Portable Hellbomb - For Monolith</p>
+                        </div>
+                        <!--Primary Weapons-->
+                        <p class="primary-title-box">Primary Options</p>
+                        <!--crossbow-->
+                        <div class="primary-box first"><img src="/Meals-on-Wheels/images/Loadout/primary/CB-9_Exploding_Crossbow_Primary_Weaponry.png">
+                            <p class="primary-box-title">Explosive Crossbow</p>
+                            
+                            <p class="primary-box-text">Good chaff clear
+                                Can flip FRV
+                                One handed
+                                Can destroy Ships and Lightning Spires<br>
+                                <span class="Airstrike-Red">
+                                    Targets: Voteless Horde, Overseers,
+                                    Fleshmobs
+                                </span><br>
+                                <span class="Democracy-Yellow">Alternative(s): One-Two</span>
+                            <span class="weapon-count">1</span>
+                        </p>
+                        </div>
+                        <!--Purifier-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/PLAS-101_Purifier_Primary_Weaponry.png">
+                            <p class="primary-box-title">Purifier</p>
+                            <p class="primary-box-text">Very large AOE
+                                Good ammo economy<br>
+                                <span class="Support-Blue">Stun Targets: Harvesters</span><br>
+                                <span class="Airstrike-Red">Targets: Voteless, Watchers, Overseers,Fleshmobs</span><br>
+                                <span class="Democracy-Yellow">Alternative(s): Punisher Plasma</span>
+                            <span class="weapon-count">2</span></p>
+                        </div>
+                        <!--Liberator/Trident-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/AR-23_Liberator_Primary_Weaponry.png">
+                            <p class="primary-box-title">Liberator/Trident</p>
+                            <p class="primary-box-text">Good all-arounder, Carbine consumes ammo quickly<br>
+                                    Trident can be good to
+                                    reduce need for supplies<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): Tenderizer, Defender</span>
+                                    
+                            <span class="weapon-count">3</span></p>
+                        </div>
+
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Grenade Options</p>
+                            
+                            
+                            <!--First Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/shield.png">
+                                <span class="weapon-name">Shield</span>
+                                <span class="weapon-count">1</span>
+                                <span class="gr-box-text">
+                                    Allows even more shields<br>
+                                    Can be thrown quickly—throw while relay deploys<br>
+                                    Keeps <span class="Teammate-Green">Spotter</span> completely covered
+                                </span>
+                            </p>
+                            <!--second Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-23_Stun_Throwable_Weaponry.png">
+                                <span class="weapon-name">Stun</span>
+                                <span class="weapon-count">2</span>
+                                <span class="gr-box-text">
+                                    Throw when exiting <span class="Driver-Purple">FRV</span> and initiating takedowns<br>
+                                    Allows more reaction time at point blank range<br>
+                                    Reduces pressure from Voteless during takedowns<br>
+                                    <span class="Democracy-Yellow">Alternative(s): Gas</span>
+                                </span>
+                            </p>
+                                                    <!--third Grenade Box-->
+                            <p class="gr-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-6_Frag_Throwable_Weaponry.png">
+                                <span class="weapon-name">Frag</span>
+                                <span class="weapon-count">3</span>
+                                <span class="gr-box-text">
+                                    Simple and effective crowd control<br>
+                                    Acccessible<br>
+                                    <span class="Democracy-Yellow">Alternative(s): Dynamite or Impacts</span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Secondary Options</p>
+                            <!--First Secondary Box-->
+                            <p class="sc-box">
+                                <img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/LAS-58_Talon_Secondary_Weaponry.png">
+                                <span class="weapon-name">Talon</span>
+                                <span class="weapon-count">1</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, Good hipfire<br>
+                                    Great ammo economy<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span>
+                                </span>
+                            </p>
+                            <!--second Secondary Box-->
+                            <p class="sc-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/warrant.png">
+                                <span class="weapon-name">Warrant</span>
+                                <span class="weapon-count">2</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, tracking for
+                                    Watchers, Fast reload and controllable<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): Verdict, Veto</span>
+                                </span>
+                            </p>
+                            <!--third Secondary Box-->
+                            <p class="sc-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/P-2_Peacemaker_Secondary_Weaponry.png">
+                                <span class="weapon-name">Talon</span>
+                                <span class="weapon-count">3</span>
+                                <span class="sc-box-text">
+                                    High ROF and longevity<br>
+                                    Accessible<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): M6C</span>
+                                </span>
+                            </p>
+                        </div> 
+                        <p class="armor-text-box">
+                            <span class="armor-text-box-title">Armor</span><br>
+                            Armor for <span class="Teammate-Green">Gunner</span> is chosen solely for survivability. You MUST run the heaviest
+                            armor, best for this is the CPR-80 Bulwark.
+                            It will keep the <span class="Teammate-Green">Gunner</span> alive during
+                            takedowns, inside Stingray strafes, and on
+                            the <span class="Driver-Purple">FRV</span> turret. Heavy Fortified is best if the
+                            CPR-80 Bulwark is unavalable. Heavy extra
+                            padded can also be effective.
+                        </p>
+                        <div class="armor-atr-box white"> <p>Passive</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Concussive_Padding_Armor_Passive_Heavy_Icon.png"><p >Concussive Padding</p></div>
+                            
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Fortified_Armor_Passive_Icon.png"><p>Fortified</p></div>
+                        </div>
+                        <div class="armor-atr-box yellow"> <p>Weight</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/heavy armor icon.png"><p>Heavy</p></div>
+                        </div>
+                        <div class="backpack-box">
+                            <p class="top">Backpack</p>
+                            <img src="/Meals-on-Wheels/images/Loadout/Stratagem/Shield_Generator_Pack_Stratagem_Icon.png" >
+                            <p class="bottom">Shield Generator Pack</p>
+                            
+                        </div>
+                        <p class="tac-info-box">
+                            <span class="tac-info-box-title">Tactical Info</span>
+                            <br>
+                            <span class="Airstrike-Red">
+                                RR Targets: Leviathan, Harvester, Stingray(Emergency)<br>
+                                FRV HMG Priority Targets:Stingrays, Ship Shields, Fleshmobs
+                            </span><br><br>
+
+                            The RR rounds have drop, see image left for the reticle holdovers.<br><br>
+
+                            <span class="Democracy-Yellow">Shield Generator Relay</span> -  See SOP for usage<br>
+                            <span class="Democracy-Yellow">FLEX STRATAGEMS</span><br>
+                            <span class="Democracy-Yellow">Tesla Tower</span> - Deploy tower 50m from the squad. 
+                            This is the MoW alternative to a turret. It does not affect the shield relay and if used correctly, 
+                            will not harm the Whaling Team.<br>
+                            <span class="Democracy-Yellow">Gas/EMS mortar</span> - Gas is prefered, deploy at takedown sites and objectives.<br>
+                            <span class="Democracy-Yellow">Orbital Laser</span> - For destroying outposts efficiently in a blitz.<br>
+                            <span class="Democracy-Yellow">Portable Hellbomb</span> - For destroying Monoliths on the Free the City mission.
+                            Do not call in your Shield Generator Pack or Recoilless until after the Monolith is destroyed. 
+                            Spotter will assist in delivering the Hellbomb.<br>
+                            [appx. 1, 2.1, 2.3, 3.3, 3.4, 3.6, 3.7, 5, 6.1, 6.3, 6.4, 7, 8.1]
+                            
+                        </p>
+                        <div class="backpack-box full"><img src="/Meals-on-Wheels/images/Loadout/holdovers.png" ></div>
+
+
+                    </div>
+                </div>
+        
+            </div>
+            <div id="spot-sec"> <!-- Spotter -->
+                <p class="title">Spotter SOP</p>
+                <div class="main-grid"><!-- SOP -->
+                    <div class="std-box">
+                        <p class="std-box-title">Load-In</p>
+                        <p class="std-box-text">Call Supply Pack (for <span class="Teammate-Green">Logistics</span>), call <span class="Support-Blue">Grenade Launcher</span> (<span class="Support-Blue">GL</span>), 
+                            and equip <span class="Support-Blue">Recoiless Rifle</span> (<span class="Support-Blue">RR</span>) PACK.</p>
+                    </div>
+                    <div class="std-box-seat" >
+                        <p class="std-box-seat-title">Seat</p><br>
+                        <img style="width: 80%; float: right; margin-right: 2vw;" src="/Meals-on-Wheels/images/FRV/frvspotterloader.png">
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Transit</p>
+                        <p class="std-box-text">Keep watch and listen for Leviathans
+                            <br>When a Leviathan is spotted, call out <span class="Democracy-Yellow">DIRECTION</span> and <span class="Democracy-Yellow">DISTANCE</span>
+                            <br>When using <span class="Support-Blue">GL</span>, keep it pointed forward of the <span class="Driver-Purple">FRV</span>.
+                            <br>Minimum safe distance for <span class="Support-Blue">GL</span> use is 15m. [appx. 4]</p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Objectives</p>
+                        <p class="std-box-text">Dismount first at objective site, clear site with <span class="Support-Blue">GL</span>.
+                            <br>Take a central position with <span class="Teammate-Green">Gunner</span> and alternate shield relays.
+                            <br>Keep watch for Leviathans and be ready to engage them (see Takedown). 
+                        </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Outpost</p>
+                        <p class="std-box-text">Follow specific directions from the <span class="Driver-Purple">Driver</span>. [appx. 5.4, 9.1]
+                            <br>Use <span class="Support-Blue">GL</span> to destroy Lightning Spires/explosive barrels on approach.
+                            <br>Do not lean while <span class="Teammate-Green">Gunner</span> is taking out shields. Once shields are down, lean out and <span class="Support-Blue">GL</span> doorway. 
+                            Use Orbital Laser when directed by <span class="Driver-Purple">Driver</span>.
+                        </p>
+                    </div>
+                    
+                    <iframe class="video-box" 
+                            src="https://www.youtube.com/embed/JmK30AHcuag?si=ko06h6f-QpgxH94Y"></iframe>
+                    <p style="display: block; grid-column: span 12; text-align: center; width: 100%;">
+                        <img style="width: 80%;"
+                        src="/Meals-on-Wheels/images/whaling/gauge2.png">
+                    </p>
+                    <div class="std-box">
+                        <p class="std-box-title">Takedown</p>
+                        <p class="std-box-text">
+                            Once a Leviathan is spotted determine the threat level of the Leviathan. 
+                            <br>If the threat level is <span class="Democracy-Yellow">ELEVATED</span> or greater make the call to <span class="Democracy-Yellow">“ENGAGE”</span>. 
+                            <br>While in transit, stay in the vehicle until <span class="Driver-Purple">Driver</span> calls,  <span class="Democracy-Yellow">“DISMOUNT”</span>. 
+                            <br>Clear any immediate enemies before initiating a takedown. 
+                            <br>Lead <span class="Teammate-Green">Gunner</span> to the best line of sight and deploy a Shield Generator Relay (Big Bubble), If your relay is not available, say <span class="Democracy-Yellow">“GUNNER BIG BUBBLE”</span> and <span class="Teammate-Green">Gunner</span> will drop theirs.  
+                            <br>Initiate team reload and count the rounds in your pack after each shot <span class="Democracy-Yellow">“5 IN PACK, 4, 3, 2…”</span>. 
+                            <br>Maintain situational awareness on the ground while <span class="Teammate-Green">Gunner</span> fires upon the Leviathan.
+                            <br>If the team resupply is available during a takedown it can be used instead of <span class="Teammate-Green">Logistics'</span> supply pack. 
+                            Say, <span class="Driver-Purple">“USING TEAM SUPPLY”</span> and <span class="Teammate-Green">Logistics</span> will echo back, this can be done in reverse order depending on who sees the team resupply first. 
+                            <br>When enemies are threatening Whaling Team, call out <span class="Democracy-Yellow">“BREAK”</span>, clear the Relay area of immediate threats, and QUICKLY re-engage the Leviathan. 
+                            <br>If <span class="Teammate-Green">Gunner</span> says <span class="Democracy-Yellow">“FAILURE TO LOAD”</span> , detach and re-attach to resume loading properly. <span class="Airstrike-Red">[ESOP]</span> 
+                            <br>If Leviathan flies behind cover, <span class="Teammate-Green">Gunner</span> will move to reengage, follow them. If the Leviathan is too far say, <span class="Democracy-Yellow">“MOUNT UP”</span>, and <span class="Driver-Purple">Driver</span> will move the team. 
+                            <br>If <span class="Teammate-Green">Security</span> is unable to ensure the squads safety they will instruct the team a direction to exfiltrate the area or say to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>. Determine if the Whaling team will mount the <span class="Driver-Purple">FRV</span> or COMMIT.
+                            [appx. 2.3, 5.1, 5.5, 6.3]
+                        </p>
+                    </div>
+                    <iframe class="video-box" src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+                    <div style="grid-column: span 12;">
+                        <p class="std-box-title">Tips</p>
+                        <p class="std-box-text">Notify logistics when Supply Pack is off cooldown, 
+                            call in at their request.
+                        </p>
+
+                    </div>
+                
+                </div>
+                <div><!-- LOADOUTS-->
+                <div class="top-grid">
+                    <div class="class-icon-box"> 
+                        <img  src="/Meals-on-Wheels/images/spotter icon.png">
+                    </div>
+                    <div class="loadout-title-box">
+                        <p >Spotter Loadout</p>
+                    </div>
+                    
+                </div>
+                    <div class="main-grid">
+                        <!--GL-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Grenade_Launcher_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Grenade Launcher</span>
+                            If the <span class="Support-Blue">RR</span> is the harpoon, this is your ship's cannons. 
+                            Destroy enemy ships and clear the wake for your team.</p>
+                        </div>
+                        <!--Supply Pack-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Supply_Pack_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Supply Pack</span>
+                            Always notify <span class="Teammate-Green">Logistics</span> when the Supply Pack is off cooldown, 
+                            that way he can supply someone other than you. Sheesh.</p>
+                        </div>
+                        <!--Shield Generator Relay-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Shield_Generator_Relay_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Shield Generator Relay</span>
+                            It's your job to initiate the takedown, and a huge golden bubble communicates that well. </p>
+                        </div>
+                        <!--Orbital Laser-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Orbital_Laser_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Orbital Laser</span>
+                            You are always riding shotgun, so you are always ready to throw a laser out of a moving vehicle. 
+                            Do it when <span class="Driver-Purple">Driver</span> tells you to.</p>
+                        </div>
+                        <!--Primary Weapons-->
+                        <p class="primary-title-box">Primary Options</p>
+                        <!--Scorcher-->
+                        <div class="primary-box first"><img src="/Meals-on-Wheels/images/Loadout/primary/PLAS-1_Scorcher_Primary_Weaponry.png">
+                            <p class="primary-box-title">Scorcher</p>
+                            
+                            <p class="primary-box-text">
+                                <span class="weapon-count">1</span>
+                                <br>AoE damage, explosive protection from armor
+                                <br>Ammo consumption is offset by
+                                <br>resupplies from Leviathan takedowns
+                                <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers, Fleshmobs</span>
+                        </p>
+                        </div>
+                        <!--Knight-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/MP-98_Knight_Primary_Weaponry.png">
+                            <p class="primary-box-title">Knight</p>
+                            <p class="primary-box-text">
+                                <span class="weapon-count">2</span>
+                                Very high damage
+                                <br>Ammo consumption is offset by resupplies from Leviathan takedowns
+                                <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span>
+                                <br><span class="Democracy-Yellow">Alternative(s): Gallant, Liberator Variants, Adjudicator, Reprimand</span></p>
+                        </div>
+                        <!--Punisher/Breaker-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/SG-8_Punisher_Primary_Weaponry.png">
+                            <p class="primary-box-title">Punisher/Breaker</p>
+                            <p class="primary-box-text">Short range
+                                    <br>Punisher has stagger,
+                                    while Breaker has damage output
+                                    <br><span class="Airstrike-Red">Targets: Voteless, Overseers,
+                                    Watchers, Fleshmobs</span>
+                                    <br><span class="Democracy-Yellow">Alternative(s): Cookout, Trident,
+                                    Breaker Incendiary </span>
+                                    
+                                    <span class="weapon-count">3</span>
+                                </p>
+                        </div>
+
+
+                        
+                        
+                        
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Grenade Options</p>
+                            <!--First Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-4_Gas_Throwable_Icon.png">
+                                <span class="weapon-name">Gas</span>
+                                <span class="weapon-count">1</span>
+                                <span class="gr-box-text">
+                                    Area denial, is still passable.
+                                    <br>Use in choke points on objectives or during takedown.
+                                </span>
+                            </p>
+                            
+                            <!--second Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-23_Stun_Throwable_Weaponry.png">
+                                <span class="weapon-name">Stun</span>
+                                <span class="weapon-count">2</span>
+                                <span class="gr-box-text">
+                                    Throw when exiting <span class="Driver-Purple">FRV</span> and initiating takedowns<br>
+                                    Allows more reaction time at point blank range<br>
+                                    Reduces pressure from Voteless during takedowns<br>
+                                    <span class="Democracy-Yellow">Alternative(s): Gas</span>
+                                </span>
+                            </p>
+                            <!--third Grenade Box-->
+                            <p class="gr-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-10_Incendiary_Throwable_Weaponry.png">
+                                <span class="weapon-name">Fire</span>
+                                <span class="weapon-count">3</span>
+                                <span class="gr-box-text">
+                                    Both variants are effective.
+                                    <br>Large Area fire.
+                                    <br>Longer Lasting Than explosives.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Secondary Options</p>
+                            <!--First Secondary Box-->
+                            <p class="sc-box">
+                                <img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/P-19_Redeemer_Secondary_Weaponry.png">
+                                <span class="weapon-name">Redeemer</span>
+                                <span class="weapon-count">1</span>
+                                <span class="sc-box-text">
+                                    High RoF, light pen, good crowd control.
+                                    <br>Ammo Consumption offset by resupplies
+                                    <br><span class="Airstrike-Red">Targets: Voteless, Overseers</span>
+                                </span>
+                            </p>
+                            <!--second Secondary Box-->
+                            <p class="sc-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/warrant.png">
+                                <span class="weapon-name">Warrant</span>
+                                <span class="weapon-count">2</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, tracking for
+                                    Watchers, Fast reload and controllable<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): Verdict, Veto, Peacemaker</span>
+                                </span>
+                            </p>
+                            
+                            <!--third Secondary Box-->
+                            <p class="sc-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/Missile Pistol.png">
+                                <span class="weapon-name">Missile Pistol</span>
+                                <span class="weapon-count">3</span>
+                                <span class="sc-box-text">
+                                    Tracking best to one shot Stingrays
+                                    <br>Nontracking for Fleshmobs as close range
+                                    <br><span class="Airstrike-Red">Targets: Stingrays, Fleshmobs, Harvester</span>
+                                </span>
+                            </p>
+                        </div>
+                        <p class="armor-text-box">
+                            <span class="armor-text-box-title">Armor</span><br>
+                            The top choice for <span class="Teammate-Green">Spotter</span> is the CPG-48 Sapper armor. 
+                            Concussive Padding improves survivability against most Illuminate and the Whaling Team's own weapons. 
+                            The additional grenades also provide a larger store for emergencies. 
+                            Medium or Light is critical for the mobility to always keep up with your <span class="Teammate-Green">Gunner</span>. 
+                            It allows for more mission flexibility. Fortified can also work.
+                        </p>
+                        <div class="armor-atr-box white"> <p>Passive</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Concussive_Padding_Armor_Passive_Medium_Icon.png"><p >Concussive Padding</p></div>
+                            
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Extra_Padding_Armor_Passive_Icon.png"><p>Extra Padding</p></div>
+                        </div>
+                        <div class="armor-atr-box yellow"> <p>Weight</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/medium armor icon.png"><p>Medium</p></div>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/light armor icon.png"><p>Light</p></div>
+                        </div>
+                        <div class="backpack-box">
+                            <p class="top">Backpack</p>
+                            <img src="/Meals-on-Wheels/images/Loadout/Stratagem/rr pack icon.png" >
+                            <p class="bottom">Recoilless Rifle Pack</p>
+                            
+                        </div>
+                        <p class="tac-info-box">
+                            <span class="tac-info-box-title">Tactical Info</span>
+                            <br>
+                            <span class="Airstrike-Red">
+                                GL Targets: Voteless Horde, Fleshmob,  Overseers.
+                                <br>GL Demolition Targets: explosive barrels, Lightning Spire/Tesla Tower, Cognitive Disruptor PSU, fences, crates, Illuminate barriers.
+                            </span>
+                            <br><span class="Democracy-Yellow">Stuns are very important to have if the shield grenade is not taken on the Whaling Team, if <span class="Teammate-Green">Gunner</span> is unable to bring Stuns you must bring them instead.</span>
+                            <br>
+                            <br>While using the <span class="Support-Blue">GL</span> in the <span class="Driver-Purple">FRV</span>, keep it pointed forward. The minimum safe distance is 15m. The grenades will ricochet off of your <span class="Teammate-Green">Gunner's</span> Shield Generator Pack. Make sure that you have a clear shot when destroying outpost ships.
+                            <br>
+                            <span class="Democracy-Yellow"><br>Supply Pack</span> - Notify <span class="Teammate-Green">Logistics</span> when the Supply Pack is off cooldown. This helps the <span class="Teammate-Green">Logistics</span> keep YOU resupplied. Calling your Supply Pack early allows <span class="Teammate-Green">Logistics</span> to use the remainder of their current Supply Pack to resupply the rest of the team. The redundancy of this Stratagem allows <span class="Teammate-Green">Logistics</span> more flexibility. They can call in their Supply Pack stratagem alternating with yours or keep it in reserve for emergencies.
+                            <br><span class="Democracy-Yellow">Shield Generator Relay</span> -  See SOP for usage. Always make sure that the <span class="Teammate-Green">Spotter</span> is the first to deploy a Shield Generator Relay during a Leviathan Takedown. This gives the <span class="Teammate-Green">Gunner</span> more time to acquire their target. Place Stratagem in location with best line-of-sight to the Leviathan.
+                            <br><span class="Democracy-Yellow">Orbital Laser</span> - While often a Flex Stratagem, the <span class="Teammate-Green">Spotter</span> will always run it. This is because you will always be riding shotgun in the <span class="Driver-Purple">FRV</span>. This allows <span class="Teammate-Green">Spotter</span> to lean out and call in the Orbital Laser, quickly dispatching outposts of 2-3 ships.
+                            [appx. 1, 6.1, 6.3, 6.4, 8.2, 9.1]
+                            
+                        </p>
+                    
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sail-sec"> <!--SAILING TEAM-->
+        
+            <p class="title">Sailing Team</p>
+            <p class="text cascadia-mono-text">All through the history of Super Earth, we have coveted the fastest ships of our time.
+                From the clipper ships of olde, to the FTL Super Destroyers.
+                In your mission profile, the quickest craft by far is the FAST RECON VEHICLE.
+                <br><br>As a member of the SAILING TEAM, you will be in charge of steering clear of hazards and navigating the ship for safe passage.
+                Your cargo will be Supply Packs and one really pissed-off privateer.
+                <br><br>Deliverance will be your mission.
+                <br><br>Information is your weapon.
+                <br><br>The Illuminate will never know what hit them, and you'll be back in time for tea.</p>
+        
+            <div id="drive-sec"><!--Driver-->
+        
+                <p class="driver-title">Driver's Guide</p>
+                <div class="main-grid"><!-- Driver guide -->
+                    <div class="driver-guide-box">
+                        <p class="driver-guide-box-title">General</p>
+                        <p class="driver-guide-box-text">The handbrake can be used to turn the <span class="Driver-Purple">FRV</span> quickly.
+                            <br><span class="Democracy-Yellow">It is more important to be in control of the FRV than it is to be fast.</span>
+                            <br>Flipping over or ejecting teammates slows you way down.
+                            <br>Try to keep the map visible to be able to orient yourself.
+                            <br>DO NOT try to be your own <span class="Nav-Blue">Navigator</span>.
+                            <br>Drive is the main gear you use as it allows you to reach greater speeds
+                            <br>1st and 2nd gear should not be ignored.
+                            <br>The limited speed can be beneficial, especially on difficult terrain.</p>
+
+                    </div>
+                    <div class="driver-guide-box right">
+                        <p class="driver-guide-box-title right">Parking</p>
+                        <p class="driver-guide-box-text right">Whenever parking the car make it clear 
+                            you are stopping by saying, <span class="Democracy-Yellow">“DISMOUNT”</span>.
+                            Avoid Parking near barrels or in open areas, alleys often work well
+                            If the <span class="Driver-Purple">FRV</span> is damaged or overrun after parking, 
+                            it is better to find a safe place and drop a new one
+                            Park in a position where the <span class="Driver-Purple">HMG</span> turret is useful if possible, 
+                            examples below.</p>
+                            <img src="/Meals-on-Wheels/images/driver/parking.png">
+                        
+
+                        
+                    </div>
+
+                    <div class="hazard-header-box">
+                        <p class="hazard-header-box-title">Hazards</p>
+                        <p>Keep these in mind when driving the <span class="Driver-Purple">FRV</span></p>
+                    </div>
+                    
+                    <div class="driver-hazard1">
+                        
+                        <div><img src="/Meals-on-Wheels/images/driver/destroyed car.png">
+                            <p><span class="Democracy-Yellow">Illuminate barriers</span>
+                            <br>Can contain Hidden barrels that can be driven through w/o blowing barrels,
+                            but Illuminate can hit a barrel causing it to explode
+                            </p></div>
+                        <div ><img src="/Meals-on-Wheels/images/driver/illminate-barrier.png">
+                            <p><span class="Democracy-Yellow">Destroyed Cars</span>
+                            <br>Solid but driving over them will cause them to explode</p></div>
+                        <div ><img src="/Meals-on-Wheels/images/driver/batteries.png">
+                            <p><span class="Democracy-Yellow">Illuminate batteries</span>
+                            <br>These will explode during collisions, killing passengers</p></div>
+                        <div><img src="/Meals-on-Wheels/images/driver/beacon.png">
+                            <p><span class="Democracy-Yellow">Illuminate Beacon</span>
+                            <br>Can be driven through at  moderate speeds, but are solid at low speeds</p></div>
+                        <div><img src="/Meals-on-Wheels/images/driver/sandbags.png">
+                            <p><span class="Democracy-Yellow">Sand bags</span>
+                            <br>Solid, no matter the speed</p></div>
+                    </div>
+                    <div class="driver-hazard2">
+                        <div><img src="/Meals-on-Wheels/images/driver/Harvester_Enemy_Icon.png">
+                            <p><span class="Democracy-Yellow">Harvester</span>
+                            <br>Beam can melt the <span class="Driver-Purple">FRV</span>, and pop a tire</p></div>
+                        <div><img src="/Meals-on-Wheels/images/driver/Fleshmob_Enemy_Icon.png">
+                            <p><span class="Democracy-Yellow">Fleshmob</span>
+                                <br>Attacks can Flip <span class="Driver-Purple">FRV</span>
+                                <br>Acts as a solid barrier</p></div>
+                        <div><img src="/Meals-on-Wheels/images/driver/Stingray_Enemy_Icon.png">
+                            <p><span class="Democracy-Yellow">Stingray</span>
+                            <br>Can heavily damage the <span class="Driver-Purple">FRV</span> in a single strafe</p></div>
+                        <div><img src="/Meals-on-Wheels/images/driver/Leviathan_Enemy_Icon.png">
+                            <p><span class="Democracy-Yellow">Leviathan</span>
+                            <br>Can cause extreme damage to the <span class="Driver-Purple">FRV</span></p></div>
+                        <div>
+                            <div>
+                                <img src="/Meals-on-Wheels/images/driver/Illuminate_Exploding_Barrel.png">
+                                <img src="/Meals-on-Wheels/images/driver/gayzer.png">
+                                <img src="/Meals-on-Wheels/images/driver/Illuminate_Lightning_Spire.png">
+                            </div>
+                            <p><span class="Democracy-Yellow">Illuminate Obstacles</span>
+                            <br>Lighting Spire can wipe the team while, the Gazer can heavily damage the <span class="Driver-Purple">FRV</span>.
+                            Barrels do heavy damage and set Helldivers alight.
+                            <br>Are best destroyed by <span class="Teammate-Green">Spotter</span> with the <span class="Support-Blue">GL</span> </p>
+                        </div>
+                    </div>
+                    
+                    
+                
+                </div>
+        
+                <p class="driver-title">Driver SOP</p>
+                <div class="main-grid"><!-- SOP -->
+                    <div class="std-box">
+                        <p class="std-box-title">Outpost</p>
+                        <p class="std-box-text">Determine the layout of the outpost, if there are Lightning Spire/barrels, 
+                            and the number of ships.
+                            <br>If there are barrels in the way of the <span class="Driver-Purple">FRV</span>, bring the <span class="Driver-Purple">FRV</span>
+                            to a safe distance and direct <span class="Teammate-Green">Spotter</span> to shoot the barrel by saying, <span class="Democracy-Yellow">“SPOTTER SHOOT BARREL FRONT/LEFT/RIGHT”</span>.
+                            <br>If there are Lightning Spires or Gazer, direct <span class="Teammate-Green">Spotter</span> to destroy the Lightning Spire by saying, <span class="Democracy-Yellow">“SPOTTER SHOOT LIGHTNING SPIRE FRONT/LEFT/RIGHT”</span>, while maintaining a safe distance.
+                            <br>If the outpost has 1 ship or is navigable with <span class="Driver-Purple">FRV</span>,
+                             direct <span class="Teammate-Green">Gunner</span> to shoot a ship saying, <span class="Democracy-Yellowspan Democracy-Yellow">”LEFT/RIGHT SIDE STRIP SHIELD”</span>,
+                            while <span class="Teammate-Green">Gunner</span> is shooting, position <span class="Driver-Purple">FRV</span>
+                             for a clear door shot at a distance of at least 5m from the <span class="Teammate-Green">Spotter's</span> <span class="Support-Blue">Grenade Launcher</span>.
+                            <br>If <span class="Teammate-Green">Security</span> is <span class="Nav-Blue">Navigator</span>, you can direct them to destroy a ship while <span class="Teammate-Green">Gunner</span> and <span class="Teammate-Green">Spotter</span> destroy a ship on the opposing side.
+                            <br>If the outpost has 2-3 ships and is impassable with the <span class="Driver-Purple">FRV</span> or is overrun with hostile forces, direct a team member to throw an Orbital Laser at the outpost without exiting the vehicle.
+                            <br>Circle back later if the laser does not destroy all ships.
+                        </p>
+                    </div>
+                    <iframe class="video-box" 
+                            src="https://www.youtube.com/embed/JmK30AHcuag?si=ko06h6f-QpgxH94Y"></iframe>
+                    <div class="std-box">
+                        <p class="std-box-title">Takedown</p>
+                        <p class="std-box-text">
+                            If <span class="Teammate-Green">Spotter</span> makes the call to <span class="Democracy-Yellow">“ENGAGE”</span>, while driving say <span class="Democracy-Yellow">“MOVING TO INTERCEPT”</span>,
+                            the team will stay in the <span class="Driver-Purple">FRV</span> until directed. 
+                            <br>Attempt to put hard cover between the <span class="Driver-Purple">FRV</span> and the Leviathan.
+                            <br>Move the <span class="Driver-Purple">FRV</span> to an intercept location ahead of the Leviathan.
+                            <br>The best intercept locations are free of fleshmobs and clear of patrols.
+                            <br>Once arrived at intercept point call out <span class="Democracy-Yellow">“DISMOUNT”</span> and initiate the Takedown Maneuver.
+                            <br>Park the <span class="Driver-Purple">FRV</span> close to the team in a location with cover from the Leviathan.
+                            <br>If the Leviathan moves too far, <span class="Teammate-Green">Spotter</span> will say, <span class="Democracy-Yellow">“MOUNT UP”</span>, and you will drive the team to a new intercept point.
+                            <br>If <span class="Teammate-Green">Security</span> is unable to ensure the squads safety they will instruct the team a direction to exfiltrate the area or tell them to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>, at this point get the team to safety.
+                            <br><span class="Teammate-Green">Spotter</span> will determine if the Whaling team will mount the <span class="Driver-Purple">FRV</span> or COMMIT to the kill. If they COMMIT pick them up while they are moving to a new takedown location.
+                            <br>[appx. 2.4, 5.3, 7.5]
+
+                        </p>
+                    </div>
+                    <iframe class="video-box" src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+                    
+                    
+                
+                </div>
+            </div>
+
+            <div id="nav-sec"> <!--NAV-->
+                <p class="nav-title">Navigator Guide</p>
+                <div class="main-grid">
+                    <div class="std-box">
+                        <p class="std-box-title">Pre-Mission</p>
+                        <p class="std-box-text">As <span class="Nav-Blue">Navigator</span>, it is your job to determine where the squad will drop.
+                            This will give you a better idea of the map layout and squad orientation.
+                            Due to the squad's complex load-in, it is more important to drop clear of enemy forces and
+                            in an open area where Watchers can be put down quickly.
+                            The speed of the <span class="Driver-Purple">FRV</span> allows dropping further from objectives.
+                            <br><br>If dropping into a Free the City mission, place the squad as close to the Monolith as possible.
+                            The <span class="Teammate-Green">Gunner</span> will not have
+                            his <span class="Support-Blue">RR</span> until this objective is demolished with the Portable Hellbomb.'
+                        </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Transit</p>
+                        <p class="std-box-text">Determine the heading of the squad and direct them from objective to objective.
+                            <br>Pin the map to direct <span class="Driver-Purple">Driver</span>.
+                            <br>Assist <span class="Teammate-Green">Spotter</span> in watching for Leviathans
+                            <br>Tell Driver good entry points for Objectives. Ask what info <span class="Driver-Purple">Driver</span> needs from you.
+                            <br><br>To help <span class="Driver-Purple">Driver</span> be aware of what the next ping is as well as assess whether a drive-by drill or laser is more effective,
+                            you can check what side objective you have marked and the number of ships in an outpost from the map; examples of each are below.
+                            <br>[appx. 2.2, 4.1, 5.3, 8.1]
+                        </p>
+                    </div>
+                    <div class="image-cluster2-container">
+                    <p class="image-cluster2">
+                        Seaf Artillery
+                        <img src="/Meals-on-Wheels/images/nav/artie.png" alt="Seaf Artillery">
+                    </p>
+                    <p class="image-cluster2">
+                        Seaf Sam
+                        <img src="/Meals-on-Wheels/images/nav/seaf sam.png" alt="Seaf Sam">
+                    </p>
+                    <p class="image-cluster2">
+                        Cognitive Disruptor
+                        <img src="/Meals-on-Wheels/images/nav/congni.png" alt="Cognitive Disruptor">
+                    </p>
+                    <p class="image-cluster2">
+                        Lidar Station
+                        <img src="/Meals-on-Wheels/images/nav/lidar.png" alt="Lidar Station">
+                    </p>
+                    <p class="image-cluster2">
+                        1 Ship
+                        <img src="/Meals-on-Wheels/images/nav/1 ship.png" alt="1 Ship">
+                    </p>
+                    <p class="image-cluster2">
+                        2 Ships
+                        <img src="/Meals-on-Wheels/images/nav/2 ships.png" alt="2 Ships">
+                    </p>
+                    <p class="image-cluster2">
+                        3 Ships
+                        <img src="/Meals-on-Wheels/images/nav/3 ships.png" alt="3 Ships">
+                    </p>
+                </div>
+                </div>
+        
+                
+                <div class="hidden-break"></div>
+            </div>
+        
+            <div id="logi-sec"> <!-- Logi -->
+                <p class="title">Logistics SOP</p>
+                <div class="main-grid"><!-- SOP -->
+                    <div class="std-box">
+                        <p class="std-box-title">Load-In</p>
+                        <p class="std-box-text">Call <span class="Support-Blue">Anti-Materiel Rifle</span> (<span class="Support-Blue">AMR</span>)/<span class="Support-Blue">Stalwart</span> 
+                            and equip Supply Pack (from <span class="Teammate-Green">Spotter</span>).</p>
+                    </div>
+                    <div class="std-box-seat" >
+                        <p class="std-box-seat-title">Seat</p><br>
+                        <img style="width: 80%; float: right; margin-right: 2vw;" src="/Meals-on-Wheels/images/FRV/frvlogisticsorsecurity.png">
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Transit</p>
+                        <p class="std-box-text"><span class="Driver-Purple">If Driver, See Driver's Guide.</span>
+                            <br><span class="Nav-Blue">If Navigator, See Navigator's Guide.</span>
+                            </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Objectives</p>
+                        <p class="std-box-text">On approach, find Watchers and eliminate them QUICKLY.
+                            <br>Your job is to work the terminals and objective assets.
+                            <br>Be ready to resupply Spotter if they begin engaging Leviathan.
+ 
+                        </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Outpost</p>
+                        <p class="std-box-text"><span class="Driver-Purple">If Driver, see Driver SOP.</span>
+                            <br><span class="Nav-Blue">If Navigator,</span> use Orbital Laser when 
+                            directed by <span class="Driver-Purple">Driver</span>. [appx. 9.1]
+
+                        </p>
+                    </div>
+                    <iframe class="video-box" 
+                            src="https://www.youtube.com/embed/JmK30AHcuag?si=ko06h6f-QpgxH94Y"></iframe>
+                    <div class="std-box">
+                        <p class="std-box-title">Takedown</p>
+                        <p class="std-box-text"> 
+                            Meet with the Whaling Team and keep the inside of the relay area clear of hostiles.
+                            <br>Watchers are highest priority even if outside relay area.
+                            <br>Call out any Harvesters and proactively strip their shields, 
+                            to give a clear shot to <span class="Teammate-Green">Gunner</span> with the <span class="Support-Blue">RR</span>.
+                            <br>Resupply the <span class="Teammate-Green">Spotter</span> when his pack reaches 2 or lower, it will look like this —><img style="height: 2em; display: inline; vertical-align: middle; outline: 2px solid var(--democracy-yellow);" src="/Meals-on-Wheels/images/pack/2 in pack.png">
+                            <br>If the team resupply is available during a takedown it can be used instead of your supply pack.
+                            <br>If <span class="Teammate-Green">Spotter</span> says <span class="Democracy-Yellow">“USING TEAM SUPPLY”</span>, echo back and hold resupplies, this can be done in reverse order depending on who sees the team resupply first.
+                            <br><span class="Teammate-Green">Security</span> will meet with the Whaling Team to provide protection from hostiles outside of the relay area.
+                            <br>If <span class="Teammate-Green">Security</span> is unable to ensure the squads safety they will instruct the team a direction to exfiltrate the area or tell them to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>.
+                            <br>[appx. 6.1, 6.4]
+                        </p>
+                    </div>
+                    <iframe class="video-box" src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+                    <div style="grid-column: span 12;">
+                        <p class="std-box-title">Tips</p>
+                        <p class="std-box-text">Keep an eye on Supply Pack cooldowns for you and <span class="Teammate-Green">Spotter</span>.
+                            <br>If there is still ammo in the pack on call in, resupply teammates based on need.
+                            <br>Call Super Destroyer Resupply when the team is in a solid position.
+                            <br>If you have a mostly spent Pack during a takedown make sure to notify
+                            the Whaling Team and instruct them to conserve ammo if possible.
+                        </p>
+
+                    </div>
+                    
+                    
+                
+                </div>
+                <div><!-- LOADOUTS-->
+                <div class="top-grid">
+                    <div class="class-icon-box"> 
+                        <img  src="/Meals-on-Wheels/images/Logistics icon.png">
+                    </div>
+                    <div class="loadout-title-box">
+                        <p >Logistics Loadout</p>
+                    </div>
+                    
+                </div>
+                    <div class="main-grid">
+                        <!--AMR/Stal-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/AMR-Stalwart Icon.png"> 
+                            <p><span class="stratagem-box-title">AMR/Stalwart</span>
+                            You need to kill Watchers. The <span class="Support-Blue">AMR</span> excels at this. Pair with a primary for chaff. 
+                            Or run the <span class="Support-Blue">Stalwart</span>, but you must take a marksman's rifle.</p>
+                        </div>
+                        <!--Supply Pack-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Supply_Pack_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Supply Pack</span>
+                                <span class="Teammate-Green">Spotter</span> will call in your first pack, try to avoid calling your own. 
+                                Use Super Destroyer Resupply to refill when practical.</p>
+                        </div>
+                        <!--FRV-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Fast_Recon_Vehicle_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Fast Recon Vehicle</span>
+                            It's the “W” in “MoW”. <span class="Teammate-Green">Security</span> will always call theirs first, yours is the ace in the hole. 
+                            Choose your timing wisely. </p>
+                        </div>
+                        <!--Flex-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/flex slot.png"> 
+                            <p><span class="stratagem-box-title">Flex Slot</span>
+                            Orbital Laser - If <span class="Nav-Blue">Navigator</span>
+                            <br>Gas/EMS mortar - Area Denial
+                            <br>Eagle 500kg - For drops/utility
+                            <br>Tesla Tower - For zoning
+                            <br>Solo Silo - extra Levi damage</p>
+                        </div>
+                        <!--Primary Weapons-->
+                        <p class="primary-title-box">Primary Options</p>
+                        <!--Diligence CS-->
+                        <div class="primary-box first"><img src="/Meals-on-Wheels/images/Loadout/primary/R-63CS_Diligence_Counter_Sniper_Primary_Weaponry.png">
+                            <p class="primary-box-title">Diligence CS</p>
+                            
+                            <p class="primary-box-text">
+                                <span class="weapon-count">1</span>
+                                High damage, Med pen, Precision
+                                <br>Best Paired with a Stalwart
+                                <br><span class="Airstrike-Red">Targets: Overseers, Watchers </span>
+                                <br><span class="Democracy-Yellow">Alternative(s): Deadeye</span></span>
+                        </p>
+                        </div>
+                        <!--Pummeler-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/SMG-72_Pummeler_Primary_Weaponry.png">
+                            <p class="primary-box-title">Pummeler</p>
+                            <p class="primary-box-text">
+                                <span class="weapon-count">2</span>
+                                Low damage,use grenades
+                                <br>One-handed
+                                <br><span class="Airstrike-Red">Targets: Voteless, Watchers</span>
+                                <br><span class="Support-Blue">
+                                    Stun Targets: Watchers,
+                                    Overseers, Fleshmob
+                                </span>
+                                <br><span class="Democracy-Yellow">Alternative(s): Defender, Stoker</span></p>
+                        </div>
+                        <!--Punisher Plasma-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/SG-8P_Punisher_Plasma_Primary_Weaponry.png">
+                            <p class="primary-box-title">Punisher Plasma</p>
+                            <p class="primary-box-text">High Damage
+                                Stagger and AOE
+                                <br>Trades stun for lethality
+                                <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Fleshmobs</span>
+                                <br><span class="Democracy-Yellow">Alternative(s): Breaker S&P, Trident,<br> Tenderizer, Liberator Variants </span>
+                                    
+                                    <span class="weapon-count">3</span>
+                                </p>
+                        </div>
+
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Grenade Options</p>
+                            
+                            
+                            <!--First Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-4_Gas_Throwable_Icon.png">
+                                <span class="weapon-name">Gas</span>
+                                <span class="weapon-count">1</span>
+                                <span class="gr-box-text">
+                                    Area denial, is still passable
+                                    <br>Use in choke points on OBJ or during takedown.
+                                    <br><span class="Democracy-Yellow">Alternative(s): Stuns</span>
+                                </span>
+                            </p>
+                            <!--second Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-142_Pyrotech_Throwable_Weaponry.png">
+                                <span class="weapon-name">Pyrotech</span>
+                                <span class="weapon-count">2</span>
+                                <span class="gr-box-text">
+                                    Good area denial, but less traversable
+                                    <br>High damage, apply liberally
+                                    <br>Use stun weapons to hold enemies in AOE.
+                                    <br><span class="Democracy-Yellow">Alternative(s): Incendiaries</span>
+                                </span>
+                            </p>
+                            <!--third Grenade Box-->
+                            <p class="gr-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-6_Frag_Throwable_Weaponry.png">
+                                <span class="weapon-name">Frag</span>
+                                <span class="weapon-count">3</span>
+                                <span class="gr-box-text">
+                                    Simple and effective.
+                                    <br><span class="Democracy-Yellow">Alternative(s): Dynamite or Impacts</span>
+                                </span>
+                            </p>
+                        </div>
+
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Secondary Options</p>
+                            <!--First Secondary Box-->
+                            <p class="sc-box">
+                                <img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/PLAS-15_Loyalist_Secondary_Weaponry.png">
+                                <span class="weapon-name">Loyalist</span>
+                                <span class="weapon-count">1</span>
+                                <span class="sc-box-text">
+                                    Very effective against fleshmobs
+                                    <br>Good AOE but Ineffective at close range
+                                    <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Fleshmobs</span>
+                                    <br><span class="Democracy-Yellow">Alternative(s): Missile Pistol</span>
+                                </span>
+                            </p>
+                            
+                            <!--second Secondary Box-->
+                            <p class="sc-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/warrant.png">
+                                <span class="weapon-name">Warrant</span>
+                                <span class="weapon-count">2</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, tracking for
+                                    Watchers, Fast reload and controllable<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): Verdict, Talon, Veto</span>
+                                </span>
+                            </p>
+                            <!--third Secondary Box-->
+                            <p class="sc-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/P-11_Stim_Pistol_Secondary_Weaponry.png">
+                                <span class="weapon-name">Stim Pistol</span>
+                                <span class="weapon-count">3</span>
+                                <span class="sc-box-text">
+                                    “Support loadout”, best with medkit armor
+                                    <br>Stand still and crouch for better accuracy
+                                    <br>Shields mitigate usage
+                                    <br><span class="Airstrike-Red">Targets: Your friends</span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <p class="armor-text-box">
+                            <span class="armor-text-box-title">Armor</span><br>
+                            The Rock Solid armor passive prevents ragdolling while in the backblast of the RR. 
+                            This enhances mobility around the Whaling Team during takedowns. 
+                            Unflinching armor has greater survivability. 
+                            It gives <span class="Nav-Blue">Navigator</span> more map info . 
+                            Extra Padding is noteworthy for general survivability, Medkit is for Stim Pistol users.  
+                        </p>
+                        <div class="armor-atr-box white"> <p>Passive</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Rock_Solid_Armor_Passive_Icon.png"><p>Rock Solid</p></div>
+                            
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Unflinching_Armor_Passive_Icon.png"><p>Unflinching</p></div>
+                        </div>
+                        <div class="armor-atr-box yellow"> <p>Weight</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/medium armor icon.png"><p>Medium</p></div>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/light armor icon.png"><p>Light<br><span style="font-size: .6em;"> (Unflinching Only)</span></p></div>
+                        </div>
+                        <div class="backpack-box">
+                            <p class="top">Backpack</p>
+                            <img src="/Meals-on-Wheels/images/Loadout/Stratagem/rr pack icon.png" >
+                            <p class="bottom">Recoilless Rifle Pack</p>
+                            
+                        </div>
+                        <p class="tac-info-box">
+                            <span class="tac-info-box-title">Tactical Info</span>
+                            <br>
+                            <span class="Airstrike-Red">
+                                GL Targets: Voteless Horde, Fleshmob,  Overseers.
+                                <br>GL Demolition Targets: explosive barrels, Lightning Spire/Tesla Tower, Cognitive Disruptor PSU, fences, crates, Illuminate barriers.
+                            </span>
+                            <br><span class="Democracy-Yellow">Stuns are very important to have is the shield grenade is not taken on the Whaling Team, if <span class="Teammate-Green">Gunner</span> is unable to bring Stuns you must bring them instead.</span>
+                            <br>
+                            <br>While using the <span class="Support-Blue">GL</span> in the <span class="Driver-Purple">FRV</span>, keep it pointed forward. The minimum safe distance is 15m. The grenades will ricochet off of your <span class="Teammate-Green">Gunner's</span> Shield Generator Pack. Make sure that you have a clear shot when destroying outpost ships.
+                            <br>
+                            <span class="Democracy-Yellow"><br>Supply Pack</span> - Notify <span class="Teammate-Green">Logistics</span> when the Supply Pack is off cooldown. This helps the <span class="Teammate-Green">Logistics</span> keep YOU resupplied. Calling your Supply Pack early allows <span class="Teammate-Green">Logistics</span> to use the remainder of their current Supply Pack to resupply the rest of the team. The redundancy of this Stratagem allows <span class="Teammate-Green">Logistics</span> more flexibility. They can call in their Supply Pack stratagem alternating with yours or keep it in reserve for emergencies.
+                            <br><span class="Democracy-Yellow">Shield Generator Relay</span> -  See SOP for usage. Always make sure that the <span class="Teammate-Green">Spotter</span> is the first to deploy a Shield Generator Relay during a Leviathan Takedown. This gives the <span class="Teammate-Green">Gunner</span> more time to acquire their target. Place Stratagem in location with best line-of-sight to the Leviathan.
+                            <br><span class="Democracy-Yellow">Orbital Laser</span> - While often a Flex Stratagem, the <span class="Teammate-Green">Spotter</span> will always run it. This is because you will always be riding shotgun in the <span class="Driver-Purple">FRV</span>. This allows <span class="Teammate-Green">Spotter</span> to lean out and call in the Orbital Laser, quickly dispatching outposts of 2-3 ships.
+                            <br>[appx. 1, 6.1, 6.3, 6.4, 8.2, 9.1]
+                            
+                        </p>
+                        <div class="backpack-box full">
+                            <img src="/Meals-on-Wheels/images/Loadout/packstates.png" >               
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+        
+            </div>
+
+            <div id="sec-sec"> <!-- Sec -->
+                <p class="title">Security SOP</p>
+                <div class="main-grid"><!-- SOP -->
+                    <div class="std-box">
+                        <p class="std-box-title">Load-In</p>
+                        <p class="std-box-text">Call in the first <span class="Driver-Purple">FRV</span>
+                             in a safe location and call in <span class="Support-Blue">Autocannon</span> (<span class="Support-Bluespan Support-Blue">AC</span>).</p>
+                    </div>
+                    <div class="std-box-seat" >
+                        <p class="std-box-seat-title">Seat</p><br>
+                        <img style="width: 80%; float: right; margin-right: 2vw;" src="/Meals-on-Wheels/images/FRV/frvlogisticsorsecurity.png">
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Transit</p>
+                        <p class="std-box-text"><span class="Driver-Purple">If Driver, See Driver's Guide.</span>
+                            <br><span class="Nav-Blue">If Navigator, See Navigator's Guide.</span>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Objectives</p>
+                        <p class="std-box-text">On approach, find Watchers and eliminate them QUICKLY.
+                            <br>Clear objective of hostiles and guard the objective area,
+                            <br>ask for assistance if required. Kill watchers QUICKLY. [appx. 4]
+                            <br>If reinforcements are called, place Tesla Tower in a choke point and request help from <span class="Teammate-Green">Logistics</span>. 
+                            <br>If overwhelmed, say, <span class="Democracy-Yellow">“LEAVE”</span> and direct them to <span class="Driver-Purple">FRV</span> while providing covering fire.
+
+ 
+                        </p>
+                    </div>
+                    <div class="std-box">
+                        <p class="std-box-title">Outpost</p>
+                        <p class="std-box-text"><span class="Driver-Purple">If Driver, see Driver SOP.</span>
+                            <br><span class="Nav-Blue">If Navigator,</span> use Orbital Laser or <span class="Support-Blue">AC</span> when 
+                            directed by Driver. [appx. 9.1]
+
+                        </p>
+                    </div>
+                    <iframe class="video-box" 
+                            src="https://www.youtube.com/embed/JmK30AHcuag?si=ko06h6f-QpgxH94Y"></iframe>
+                    <div class="std-box">
+                        <p class="std-box-title">Takedown</p>
+                        <p class="std-box-text">
+                            Meet with the Whaling Team to provide protection from hostiles outside of the relay area.
+                            <br>Provide 360° protection of the Whaling Team. 
+                            <br>Focus on threats outside of the Relay area, specifically Watchers, Fleshmobs, and Stingrays
+                            <br>Call out any Watchers for assistance from <span class="Teammate-Green">Logistics</span>.
+                            <br>Call out any Harvesters and proactively strip their shields to give a clear shot to <span class="Teammate-Green">Gunner</span> with the <span class="Support-Blue">RR</span>.
+                            <br>While the Whaling Team is deploying the Shield Relay, deploy a Tesla Tower <span class="Democracy-Yellow">~50M</span> away to cover an open angle and misdirect hostiles toward it.
+                            <br>Use any other stratagems, throwables, and weaponry to bear in defence of the team.
+                            <br>If you are unable to ensure the squads safety instruct the team a direction to exfiltrate the area or tell them to <span class="Democracy-Yellow">“MOUNT UP”</span> into the <span class="Driver-Purple">FRV</span>.
+                            <br>Example: <span class="Democracy-Yellow">“DROP INCOMING, YOU HAVE 10 SECONDS. EVERYONE EXFIL NW TOWARD BLUE PING”</span> 
+                            <br>As <span class="Teammate-Green">Security</span> you must anticipate this and communicate accordingly.
+                            <br>[appx. 6.1]
+
+                        </p>
+                    </div>
+                    <iframe class="video-box" src="https://www.youtube.com/embed/wgb-9NX4Ytg?si=78ULkcjdk7A247Xq"></iframe>
+                    
+                    
+                
+                </div>
+                <div><!-- LOADOUTS-->
+                <div class="top-grid">
+                    <div class="class-icon-box"> 
+                        <img  src="/Meals-on-Wheels/images/Sercurity icon.png">
+                    </div>
+                    <div class="loadout-title-box">
+                        <p >Security Loadout</p>
+                    </div>
+                    
+                </div>
+                    <div class="main-grid">
+                        <!--Autocannon-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Autocannon_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Autocannon</span>
+                            If there was ever a support weapon for Illuminate, this is it. Flak deletes Fleshmobs, Stingrays and anything else you need gone.</p>
+                        </div>
+                        <!--FRV-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Fast_Recon_Vehicle_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Fast Recon Vehicle</span>
+                                <span class="Teammate-Green">Spotter</span> Always call in the first <span class="Driver-Purple">FRV</span> when loading in. 
+                                This vehicle will help you keep the squad safe when you need a quick getaway.</p>
+                        </div>
+                        <!--Telsa-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/Tesla_Tower_Stratagem_Icon.png"> 
+                            <p><span class="stratagem-box-title">Tesla Tower</span>
+                            Helps to zone for the Whaling Team and cover your flank. Just don't roast your protectees, 
+                            <br><span class="Airstrike-Red">MININUM safe distance is 50m. </span></p>
+                        </div>
+                        <!--Flex-->
+                        <div class="stratagem-box"><img src="/Meals-on-Wheels/images/Loadout/Stratagem/flex slot.png"> 
+                            <p><span class="stratagem-box-title">Flex Slot</span>
+                            Orbital Laser - If <span class="Nav-Blue">Navigator</span>
+                            <br>HMG Emplacement - For drops/OBJ
+                            <br>Gas/EMS mortar - Area Denial
+                            <br>Eagle 500kg - For bases/drops</p>
+                        </div>
+                        <!--Primary Weapons-->
+                        <p class="primary-title-box">Primary Options</p>
+                        <!--Variable-->
+                        <div class="primary-box first"><img src="/Meals-on-Wheels/images/Loadout/primary/variable.png">
+                            <p class="primary-box-title">Variable</p>
+                            
+                            <p class="primary-box-text">
+                                <span class="weapon-count">1</span>
+                                Highest DPS, Flexible
+                                <br>Can engage Fleshmobs without risk of  injuring teamates using volley/total modes
+                                <br><span class="Airstrike-Red">Targets: Fleshmobs, Voteless, Overseers</span>
+                            </p>
+                        </div>
+                        <!--Diligence CS-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/R-63CS_Diligence_Counter_Sniper_Primary_Weaponry.png">
+                            <p class="primary-box-title">Diligence CS</p>
+                            <p class="primary-box-text">
+                                <span class="weapon-count">2</span>
+                                High damage, Med pen, Precision
+                                <br>Enhanced ergo with peak physique
+                                <br><span class="Airstrike-Red">Targets: Overseers, Watchers</span>
+                                <br><span class="Democracy-Yellow">Alternative(s): Amendment, Deadeye, Diligence</span></p>
+                        </div>
+                        <!--Adjudicator-->
+                        <div class="primary-box"><img src="/Meals-on-Wheels/images/Loadout/primary/AR-23_Liberator_Primary_Weaponry.png">
+                            <p class="primary-box-title">Adjudicator</p>
+                            <p class="primary-box-text">High damage
+                                <br>Bad ammo economy
+                                <br>Liberator Penetrator trades damage for better ammo economy
+                                <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span>
+                                <br><span class="Democracy-Yellow">Alternative(s):Liberator Penetrator, MA5C, Coyote </span>
+                                    <span class="weapon-count">3</span>
+                                </p>
+                        </div>
+
+
+                        
+                        
+                        
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Grenade Options</p>
+                            <!--First Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/G-142_Pyrotech_Throwable_Weaponry.png">
+                                <span class="weapon-name">Pyrotech</span>
+                                <span class="weapon-count">1</span>
+                                <span class="gr-box-text">
+                                    Good area denial, but less traversable
+                                    <br>High damage, apply liberally
+                                    <br><span class="Democracy-Yellow">Alternative(s): Incendiaries, Gas</span>
+                                </span>
+                            </p>
+                            <!--second Grenade Box-->
+                            <p class="gr-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/lure.png">
+                                <span class="weapon-name">Lure</span>
+                                <span class="weapon-count">2</span>
+                                <span class="gr-box-text">
+                                    Controls the flow of enemies
+                                    <br>High damage
+                                    <br>Lack of throw distance, so must plan</span>
+                                </span>
+                            </p>
+                            <!--third Grenade Box-->
+                            <p class="gr-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/grenade/TED-63_Dynamite_Throwable_Weaponry.png">
+                                <span class="weapon-name">Dynamite</span>
+                                <span class="weapon-count">3</span>
+                                <span class="gr-box-text">
+                                    Huge radius, high damage, & visible to team
+                                    <br>Cook it for better results
+                                    <br><span class="Democracy-Yellow">Alternative(s): Frags, Impact</span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="gr-sc-container">
+                            <p class="gr-sc-title-box">Secondary Options</p>
+                            <!--First Secondary Box-->
+                            <p class="sc-box">
+                                <img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/LAS-58_Talon_Secondary_Weaponry.png">
+                                <span class="weapon-name">Talon</span>
+                                <span class="weapon-count">1</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, good hipfire
+                                    <br>Great ammo economy
+                                    <br><span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span>
+                                </span>
+                            </p>
+                            
+                            
+                            <!--second Secondary Box-->
+                            <p class="sc-box"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/warrant.png">
+                                <span class="weapon-name">Warrant</span>
+                                <span class="weapon-count">2</span>
+                                <span class="sc-box-text">
+                                    High damage, medium pen, tracking for
+                                    Watchers, Fast reload and controllable<br>
+                                    <span class="Airstrike-Red">Targets: Voteless, Overseers, Watchers</span><br>
+                                    <span class="Democracy-Yellow">Alternative(s): Verdict, Talon, M6C</span>
+                                </span>
+                            </p>
+                            
+                            <!--third Secondary Box-->
+                            <p class="sc-box last-row"><img
+                                src="/Meals-on-Wheels/images/Loadout/secondary/CQC-5_Combat_Hatchet_Secondary_Weaponry.png">
+                                <span class="weapon-name">Melee</span>
+                                <span class="weapon-count">3</span>
+                                <span class="sc-box-text">
+                                    Hatchet, Saber, Machete, or Stun Baton
+                                    <br>Synergizes with armor passives
+                                    <br>Keeps you in the fight without reloading
+                                </span>
+                            </p>
+                        </div> 
+                        <p class="armor-text-box">
+                            <span class="armor-text-box-title">Armor</span><br>
+                            Longevity in the fight and ability to quickly engage is paramount. 
+                            Peak Physique armor passive allows for rapid acquisition with long guns and <span class="Support-Blue">AC</span>, 
+                            better melee keeps you in the fight longer. 
+                            Reinforced Epaulettes has similar melee damage and faster reloading, 
+                            and thus gives more uptime on primary.
+                        </p>
+                        <div class="armor-atr-box white"> <p>Passive</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Peak_Physique_Armor_Passive_Icon.png"><p>Peak Physique</p></div>
+                            
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/Reinforced_Epaulettes_Armor_Passive_Icon.png"><p >Reinforced Epaulettes</p></div>
+                        </div>
+                        <div class="armor-atr-box yellow"> <p>Weight</p>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/heavy armor icon.png"><p>Heavy</p></div>
+                            <div><img src="/Meals-on-Wheels/images/Loadout/armor/medium armor icon.png"><p>Medium</p></div>
+                        </div>
+                        <div class="backpack-box">
+                            <p class="top">Backpack</p>
+                            <img src="/Meals-on-Wheels/images/Loadout/Stratagem/ac pack icon.png" >
+                            <p class="bottom">Autocannon Pack</p>
+                            
+                        </div>
+                        <p class="tac-info-box">
+                            <span class="tac-info-box-title">Tactical Info</span>
+                            
+                            <span class="Airstrike-Red">
+                                <br>AC Flak Targets: Fleshmob, Stingray, Voteless Horde, Elevated Overseer, Watcher, Outpost Shields
+                                <br>AC APHET Targets: Harvester (leg joint), Overseer (head),  Lightning Spire, Tesla Tower, Outpost Doors
+                            </span>
+                            <br>Never let your <span class="Support-Blue">Autocannon</span> go completely empty. Always try to reload after firing 5 rounds. This will speed up your reloads greatly and keep you in the fight.
+                            <br>
+                            <br><span class="Driver-Purple">FRV</span> - During loadout always call in your <span class="Driver-Purple">FRV</span> first.
+                             Never call in your <span class="Driver-Purple">FRV</span> if the team is expecting to stay in the area. 
+                            Don't let your <span class="Driver-Purple">FRV</span> be collateral in your bloodthirst for the Illuminate.
+                            <br><span class="Democracy-Yellow">Tesla Tower</span> - The Tesla Tower can wipe an ENTIRE TEAM in an instant if misplaced. DO NOT place a Tesla Tower within <span class="Airstrike-Red">50m</span> of squad. It will zone as well, if not better, than a turret if placed properly. The Benefit over a turret is it will not stray fire into the Whaling Team or their Shield Generator Relays.
+                            <br>
+                            <br><span class="Democracy-Yellow">FLEX STRATAGEMS</span>
+                            <br><span class="Democracy-Yellow">Orbital Laser</span> - Great option for outposts from the <span class="Driver-Purple">FRV</span> as <span class="Nav-Blue">Navigator</span>.
+                            <br>HMG Emplacement - Very effective at engaging drops because of its ability to kill multiple Harvesters quickly.
+                            <br><span class="Democracy-Yellow">Gas/EMS mortar</span> - Gas is prefered, deploy at takedown sites and objectives.
+                            <br><span class="Democracy-Yellow">Eagle 500kg Bomb</span> - Useful for engaging drops and bases.
+                            <br>[appx. 1, 2.1, 3.1, 3.1, 3.2, 3.4, 3.6, 6.2, 8.4, 9.1]
+                            
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div id="appx-sec">
+            <p class="subtitle">Appendix</p>
+            <p class="text">
+                <span class="Democracy-Yellow">Relevant Appendixes:</span> <span class="Teammate-Green">Gunner</span> [1, 2.1, 2.3, 3.3, 3.6, 3.7, 5, 6.1, 6.3, 6.4, 7, 8.1] 
+                <span class="Teammate-Green">Spotter</span> [1, 2.3, 4, 5.1, 5.4, 5.5, 6.1, 6.3, 6.4, 7, 8.2, 9.1] 
+                <span class="Driver-Purple">Driver</span> [2.4, 5.2, 5.3, 7] 
+                <span class="Nav-Blue">Navigator</span> [2.2, 4.1, 5.3, 9.1] 
+                <span class="Teammate-Green">Logistics</span> [1, 2.1, 3.1, 3.3, 3.4, 3.5, 3.6, 3.7, 6.1, 6.2, 6.4, 8.3, 9.1] 
+                <span class="Teammate-Green">Security</span>: [1, 2.1, 3.1, 3.1, 3.2, 3.6, 3.7, 4, 6.1, 6.2, 8.4, 9.1]
+                <br><span class="Democracy-Yellow">1 Boosters</span>
+                <br>1.1 We have not included boosters in the main body of each loadout. Boosters for the squad will usually be chosen based on planetary modifiers and DSS activity.
+                <br>1.2 The standard spread of Boosters is Hellpod Space Optimization (<span class="Teammate-Green">Logistics</span>), Dead Sprint (<span class="Teammate-Green">Gunner</span>), 
+                Vitality Enhancement (<span class="Teammate-Green">Spotter</span>), and Experimental Infusion (<span class="Teammate-Green">Security</span>).
+                <br>1.3 If the DSS is present Stamina Enhancement should be taken.
+                <br>
+                <br><span class="Democracy-Yellow">2 Mission Parameters</span>
+                <br>2.1 On a Blitz mission every flex stratagem should be the Orbital Laser, 500kg, or Orbital Gas Strike (ordered from most effective to least effective).
+                <br>2.2 With the Ion Storm planetary modifier, <span class="Nav-Blue">Navigator</span> should ask the squad to pin upcoming objectives so that they appear on your compass while the map is jammed. Thinking ahead here is key!
+                <br>2.3 If stratagems are jammed and the Whaling Team cannot place a Shield Generator Relay, they MUST engage the Leviathan AS QUICKLY AS POSSIBLE if it threatens the squad.
+                <br>2.4 Mega cities can vary in difficulty based on the campaign type; defense Mega Cities are much easier to drive on than liberation Mega Cities.
+                <br>
+                <br><span class="Democracy-Yellow">3 Flex Stratagems</span>
+                <br>3.1 Orbital Gas Strike is much less effective on Mega City maps due to the need for repositioning.
+                <br>3.2 The HMG Emplacement is very effective for <span class="Teammate-Green">Security</span>. In combination with Tesla Tower and good positioning, it can contain an entire drop. It shores up <span class="Teammate-Green">Security's</span> ability to engage Harvesters and does not need reloading.
+                <br>3.3 Avoid having 3 Tesla Towers in a team.
+                <br>3.4 The Expendable Napalm is also quite effective, especially on city maps. Aim for a wall 20-30m above your target for a greater spread. It can also one-shot Fleshmobs in a pinch.
+                <br>3.5 The MS-11 Solo Silo does massive damage, this stratagem can greatly reduce the strain on the <span class="Support-Blue">RR's</span> ammo supply and reduce takedown times. Just make sure to place it away from the whaling team during a takedown. Aim center mass for the most damage.
+                <br>3.6 Flame sentries can also be effective. Usage is similar to Tesla towers with a lesser minimum distance.
+                <br>
+                <br><span class="Democracy-Yellow">4 Cognitive Disruptor</span>
+                <br>4.1 The Cognitive Disruptor greatly inhibits the deployment speed of Shield Generator Relay, making it a priority target.
+                <br>4.2 While in TRANSIT, it is the <span class="Teammate-Green">Spotter's</span> duty to engage the Disruptor with the <span class="Support-Blue">GL</span>. Other team members will stay clear unless called.
+                <br>4.3 While on an OBJECTIVE, it is the <span class="Teammate-Green">Security's</span> duty to engage a nearby Disruptor with the <span class="Support-Blue">AC</span>. This keeps the Whaling Team together on OBJ.
+                <br>
+                <br><span class="Democracy-Yellow">5 Shield Generator Pack</span>
+                <br>5.1 Stratagem beacons will stick to the Shield Generator Pack, do not throw stratagems on your <span class="Teammate-Green">Gunner</span>!
+                <br>5.2 The Shield Generator Pack is critical for protecting the <span class="Driver-Purple">FRV</span> and its occupants, always mount-up with it equipped.
+                <br>5.3 The rear of the <span class="Driver-Purple">FRV</span> has full cover from the Shield (<span class="Teammate-Green">Gunner</span> and <span class="Nav-Blue">Navigator</span> only), the sides have half cover, and the front has limited cover.
+                <br>5.4 <span class="Support-Blue">Grenade Launcher</span> will ricochet off of <span class="Support-Blue">Gunner's</span> Shield Generator Pack.
+                <br>5.5 During a takedown, the Shield Generator Pack will protect the Whaling Team from Stingray strafes, do not break if targeted.
+                <br>5.6 The time until regeneration of the Shield is 12 seconds if it is destroyed. It is 60 seconds if it is only damaged. It can be useful to get a teammate to pop your bubble during downtime to have a full health bubble later. 
+                <br>
+                <br><span class="Democracy-Yellow">6 Shield Generator Relay</span>
+                <br>6.1 Do not throw Stratagems (e.g. Resupply, Support Weapons) into the Shield Relay area. Two stratagems are enough to break it.
+                <br>6.2 Do not throw the 500kg Bomb within 50M of the Relay area. It will catch on the top of the Relay and kill everyone inside.
+                <br>6.3 Whaling Team should focus on keeping the team covered with Shield Relays whenever on objectives or during takedowns.
+                <br>6.4 A single Shield Relay will block 12 Leviathan cannon rounds. If the Shield is hit with a Hellpod, it will only block 5 cannon rounds.
+                <br>
+                <br><span class="Democracy-Yellow">7 Leviathan</span>
+                <br>7.1 If the Leviathan is flying directly towards you or directly away from you, do not attempt to hit different parts. Simply hit the same part until it breaks and target the main body. This will normally result in a 6 shot takedown.
+                <br>7.2 While under pressure, it is common to forget which part you have already hit. You can use the back fins as an indicator in this situation. While losing out slightly on damage, if they have not been broken, you know that they haven’t already been hit.
+                <br>7.3 When engaging the Leviathan is at long ranges is it best to try to hit the Leviathan in the same part until it falls. This will help reduce missed shots by going for different parts.
+                <br>7.4 When Leviathan is moving between buildings, just hit the visible parts. Often, buildings have larger hitboxes than what is visible.
+                <br>7.5 The best way to takedown a Leviathan in Transit is to intercept it. Learn to predict where the Leviathan will be and deploy the Whaling Team there.
+                <br>
+                <br><span class="Democracy-Yellow">8 Alternative Loadout Items</span>
+                <br>8.1 <span class="Teammate-Green">Gunner</span> Primary Info
+                    <span style="padding-left: 3%; display: block;">
+                        The Trident and Sickle can avoid needing resupplies for primary ammo, the Trident is best.
+                        <br>Tenderizer is better for Overseers, worse for Voteless
+                    </span>
+                8.2 <span class="Teammate-Green">Spotter</span> Loadout Info 
+                    <span style="padding-left: 3%; display: block;">
+                        Sta-11, M7S, Gallant, and Liberator Carbine are direct alternatives to the knight.
+                        <br>The Ajudicator, MA5C, Liberator Penatrator, and Reprimand are medium penetration options.
+                        <br>The Variable, Coyote, and Pacifier provide utility.
+                        <br>The Ultimatum can be very effective, it is best you have experience before using it.
+                    </span>
+                8.3 <span class="Teammate-Green">Logistics</span> Loadout info
+                    <span style="padding-left: 3%; display: block;">
+                        The Trident and Sickle can avoid needing resupplies for primary ammo, the Trident is best.
+                        <br>The total loadout is very flexible; many support and primary options can be used, but the most differing loadout is Diligence CS with a <span class="Support-Blue">Stalwart</span>. 
+                        The Idea is to have a long-range(Watchers) weapon with a short-range pairing(Voteless). Stun/stagger is highly recommended. 
+                        A ranked list of support weapons from most recommended to least: <span class="Support-Blue">Stalwart</span>, <span class="Support-Blue">Anti-Materiel Rifle</span>, (Medium) <span class="Support-Blue">Machine Gun</span>, <span class="Support-Blue">Laser Cannon</span>,
+                          <span class="Support-Blue">Heavy Machine Gun</span>.
+                        For armor many passives are effective including Engineering Kit(when paired with an <span class="Support-Blue">MG</span>) or Peak Physique (Better <span class="Support-Blue">AMR</span> handling).
+                    </span>
+                8.4 <span class="Teammate-Green">Security</span> Loadout Info 
+                    <span style="padding-left: 3%; display: block;">
+                        The Trident and Breaker Spray and Pray work well in clearing crowds fast but struggle against Watchers.
+                        <br>The total loadout is very flexible; many support and primary options can be used. Your flex slot can even be used for a backpack, but you must ensure you can still kill Fleshmobs, Voteless and Watchers quickly.
+                    </span>
+                <br>9 Misc
+                <br>9.1 Steps to call stratagems from car 
+                    <span style="padding-left: 3%; display: block;">
+                        1. Aim to lean out
+                        <br>2. Hold stratagem key (this will keep you leaning out of <span class="Driver-Purple">FRV</span>)
+                        <br>3. Enter stratagem code
+                        <br>4. Throw stratagem
+                    </span>
+
+
+
+            </p>
+        </div>
+    
+    </div>
+
+
+
+
+</div>
+
+</body>
+</html>
