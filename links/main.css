@@ -276,7 +276,7 @@ body{
     outline:var(--democracy-yellow) solid 6px;
 }
 .short-text{
-    margin: 1% auto 3%;
+    margin: 1% auto 1%;
     width: 80%;
     text-align: center;
     padding: 1%;
