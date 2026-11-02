@@ -8,8 +8,19 @@ function toggleapx() {
     x.style.display = "block";
   }
 }
-function showwebsec() {
- var x = document.getElementById("web-text");
+
+
+function showORsec() {
+ var x = document.getElementById("OR-text");
+ if (x.style.display === "block") {
+   x.style.display = "none";
+ } else {
+   x.style.display = "block";
+ }
+}
+
+function showSEsec() {
+ var x = document.getElementById("SE-text");
  if (x.style.display === "block") {
    x.style.display = "none";
  } else {

@@ -6,8 +6,7 @@
 .Driver-Purple {color:var(--driver-purple);}
 .Teammate-Green {color:var(--teammate-green) ;}
 .Nav-Blue {color:var(--nav-blue);}
-.Shock-Blue {color:var(--shock-blue) ;}
-.Swarm-Blue {color:var(--swarm-blue) ;} 
+
 .op-toggle { opacity: .5 !important; } /* override any class when active */
 
 :root {
@@ -415,7 +414,7 @@ body{
 
 
 /* Sections */
-#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, #web-text, #appx-sec {
+#nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, #web-text, #appx-sec, #OR-text,#SE-text {
     display: none;
     
 }
