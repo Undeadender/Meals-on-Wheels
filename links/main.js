@@ -8,7 +8,14 @@ function toggleapx() {
     x.style.display = "block";
   }
 }
-
+function showwebsec() {
+ var x = document.getElementById("web-text");
+ if (x.style.display === "block") {
+   x.style.display = "none";
+ } else {
+   x.style.display = "block";
+ }
+}
 
 function showpdf() {
   var x = document.getElementById("pdf-sec"); 

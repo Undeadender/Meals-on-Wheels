@@ -416,7 +416,7 @@ body{
 
 /* Sections */
 #nav-sec, #drive-sec, #spot-sec, #gun-sec, #sec-sec, #logi-sec, #sail-sec, #whale-sec, #ToT-sec, 
-#rolling-sec, #shockswarm-sec, #pdf-sec,#web-but, #appx-sec {
+#rolling-sec, #shockswarm-sec, #pdf-sec,#web-but, #web-text, #appx-sec {
     display: none;
     
 }
