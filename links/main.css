@@ -176,7 +176,7 @@ body{
 
 .pdf {
     aspect-ratio: 8.5 / 11;
-    width: 60vw;
+    width: 75vw;
     margin: 5% auto;
     max-width: 1000px;
     display: block;
