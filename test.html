@@ -1,0 +1,50 @@
+<div class="pdf-container"
+     data-pdf="Meals on Wheels Scorched rev 3.0-se SH.pdf">
+  <iframe class="pdf-viewer"
+          title="Meals on Wheels Scorched rev 3.0-se SH PDF"></iframe>
+</div>
+
+<div class="pdf-container"
+     data-pdf="Meals on Wheels rev 3.0.1 SH.pdf">
+  <iframe class="pdf-viewer"
+          title="Meals on Wheels rev 3.0.1 SH PDF"></iframe>
+</div>
+
+<style>
+  .pdf-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .pdf-viewer {
+    display: block;
+    width: 100%;
+    height: 800px;
+    border: 0;
+  }
+</style>
+
+<script>
+  const projectBase = new URL("/Meals-on-Wheels/", window.location.origin);
+
+  document.querySelectorAll(".pdf-container").forEach(container => {
+    const viewer = container.querySelector(".pdf-viewer");
+    const pdfUrl = new URL("pdfs/" + container.dataset.pdf, projectBase);
+    let currentSpread = "";
+
+    function updatePdfView() {
+      const spread = container.clientWidth >= 900 ? "even" : "none";
+
+      if (spread === currentSpread) return;
+      currentSpread = spread;
+
+      const viewerUrl = new URL("pdfjs/web/viewer.html", projectBase);
+      viewerUrl.searchParams.set("file", pdfUrl.href);
+      viewerUrl.hash = `spread=${spread}`;
+      viewer.src = viewerUrl.href;
+    }
+
+    new ResizeObserver(updatePdfView).observe(container);
+    updatePdfView();
+  });
+</script>
