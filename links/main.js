@@ -1,4 +1,25 @@
 
+  document.querySelectorAll(".pdf-container").forEach(container => {
+    const viewer = container.querySelector(".pdf-viewer");
+    const pdfPath = "pdfs/" + container.dataset.pdf;
+    let currentSpread = "";
+
+    function updatePdfView() {
+      const spread = container.clientWidth >= 900 ? "even" : "none";
+      if (spread === currentSpread) return;
+      currentSpread = spread;
+
+      const pdfUrl = new URL(pdfPath, document.baseURI);
+      const viewerUrl = new URL("pdfjs/web/viewer.html", document.baseURI);
+      viewerUrl.searchParams.set("file", pdfUrl.href);
+      viewerUrl.hash = `spread=${spread}`;
+      viewer.src = viewerUrl.href;
+    }
+
+    new ResizeObserver(updatePdfView).observe(container);
+    updatePdfView();
+  });
+
 function toggleapx() {
   var x = document.getElementById("appx-sec"); 
 
